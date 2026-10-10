@@ -34,7 +34,7 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - if: inputs.mode == 'check'
-        run: claude -p "Reply with exactly: OK"
+        run: claude -p "Reply with the word OK"
 
       - if: inputs.mode != 'check'
         uses: actions/setup-node@v5

@@ -1,0 +1,178 @@
+{
+  "id": "day05",
+  "series": ".NET FROM ZERO",
+  "day": 5,
+  "title": "Arrays",
+  "next": {
+    "day": 6,
+    "title": "foreach"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 5
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "foreach": "for each"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "array": "dotnet",
+    "arrays": "dotnet",
+    "int": "int",
+    "index": "api",
+    "zero": "csharp",
+    "Zero": "csharp",
+    "Length": "aspnet",
+    "foreach": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "What if you need to store fifty test scores?",
+          "cues": {
+            "fifty": "fifty"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Don't make fifty variables! Welcome to Day 5: arrays.",
+          "cues": {
+            "fiftyVars": "variables",
+            "day5": "Day 5",
+            "arrays": "arrays"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "A variable is one box. An array is a row of boxes with one name.",
+          "cues": {
+            "oneBox": "one box",
+            "row": "row",
+            "oneName": "one name"
+          }
+        },
+        {
+          "id": "index",
+          "text": "Each box gets a number, its index, starting at zero!",
+          "cues": {
+            "number": "number",
+            "indexWord": "index",
+            "zero": "zero"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "decl",
+          "text": "In C#, int with square brackets is an array of whole numbers.",
+          "cues": {
+            "intArr": "int",
+            "brackets": "square"
+          }
+        },
+        {
+          "id": "values",
+          "text": "The values go inside curly braces.",
+          "cues": {
+            "braces": "curly"
+          }
+        },
+        {
+          "id": "access",
+          "text": "To read one, write its index in square brackets.",
+          "cues": {
+            "index": "index"
+          }
+        },
+        {
+          "id": "first",
+          "text": "Zero gets the first one. Two gets the third.",
+          "cues": {
+            "zeroFirst": "Zero",
+            "twoThird": "Two"
+          }
+        },
+        {
+          "id": "length",
+          "text": "And Length tells you how many.",
+          "cues": {
+            "length": "Length",
+            "howMany": "how many"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it: 90, 82, and 3!",
+          "cues": {
+            "n1": "90",
+            "n2": "82",
+            "n3": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: one name, many values, and the index starts at zero.",
+          "cues": {
+            "rName": "name",
+            "rMany": "many",
+            "rIndex": "index",
+            "rZero": "zero"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 5! See you in Day 6: foreach!",
+          "cues": {
+            "day5done": "Day 5",
+            "seeYou": "See you",
+            "day6": "Day 6",
+            "foreach": "foreach"
+          }
+        }
+      ]
+    }
+  ]
+}

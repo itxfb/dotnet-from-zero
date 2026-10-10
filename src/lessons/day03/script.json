@@ -1,0 +1,171 @@
+{
+  "id": "day03",
+  "series": ".NET FROM ZERO",
+  "day": 3,
+  "title": "if & else: Making Decisions",
+  "next": {
+    "day": 4,
+    "title": "Loops"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 96,
+    "seed": 3
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 3": "Day three",
+    "Day 4": "Day four"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "if": "dotnet",
+    "else": "str",
+    "condition": "api",
+    "true": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Can your code make decisions on its own?",
+          "cues": {
+            "decisions": "decisions"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "It can! Welcome to Day 3: if and else.",
+          "cues": {
+            "itCan": "It can!",
+            "day3": "Day 3",
+            "ifelse": "if and else"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "You make decisions all the time.",
+          "cues": {
+            "allTime": "all the time"
+          }
+        },
+        {
+          "id": "rain",
+          "text": "If it's raining, take an umbrella. Else, wear sunglasses.",
+          "cues": {
+            "raining": "raining",
+            "umbrella": "umbrella",
+            "else": "Else,",
+            "sunglasses": "sunglasses"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "same",
+          "text": "Code works the same way. Let's write one.",
+          "cues": {
+            "write": "write"
+          }
+        },
+        {
+          "id": "check",
+          "text": "We store an age, then check: is it 18 or more?",
+          "cues": {
+            "store": "store",
+            "check": "check:",
+            "eighteen": "18"
+          }
+        },
+        {
+          "id": "condition",
+          "text": "That check is called the condition.",
+          "cues": {
+            "condition": "condition"
+          }
+        },
+        {
+          "id": "branches",
+          "text": "If it's true, the first block runs. If not, the else block runs.",
+          "cues": {
+            "firstBlock": "first block",
+            "elseBlock": "else block"
+          }
+        },
+        {
+          "id": "run1",
+          "text": "Age is 20, so we get: You can vote!",
+          "cues": {
+            "twenty": "20",
+            "vote": "You can vote!"
+          }
+        },
+        {
+          "id": "run2",
+          "text": "Change it to 15, and now: Not yet!",
+          "cues": {
+            "change": "Change",
+            "fifteen": "15",
+            "notYet": "Not yet!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: if checks a condition, and else is the backup plan.",
+          "cues": {
+            "ifChecks": "if checks",
+            "elseBackup": "else is the backup plan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 3! See you in Day 4: loops!",
+          "cues": {
+            "day3done": "Day 3",
+            "seeYou": "See you",
+            "day4": "Day 4",
+            "loops": "loops"
+          }
+        }
+      ]
+    }
+  ]
+}

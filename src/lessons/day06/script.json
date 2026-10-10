@@ -1,0 +1,179 @@
+{
+  "id": "day06",
+  "series": ".NET FROM ZERO",
+  "day": 6,
+  "title": "foreach",
+  "next": {
+    "day": 7,
+    "title": "Lists"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 6
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "Day 7": "Day seven",
+    "foreach": "for each"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "foreach": "dotnet",
+    "array": "dotnet",
+    "playlist": "aspnet",
+    "index": "api",
+    "indexes": "api",
+    "every": "csharp",
+    "order": "api",
+    "lists": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Want to print every value in an array?",
+          "cues": {
+            "every": "every"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Skip the indexes! Welcome to Day 6: foreach.",
+          "cues": {
+            "skip": "Skip",
+            "day6": "Day 6",
+            "foreach": "foreach"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "Think of a playlist.",
+          "cues": {
+            "playlist": "playlist"
+          }
+        },
+        {
+          "id": "songs",
+          "text": "It plays song one, then two, then three, and stops at the end.",
+          "cues": {
+            "s1": "song one",
+            "s2": "two",
+            "s3": "three",
+            "ends": "stops"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "decl",
+          "text": "Here are our scores from Day 5.",
+          "cues": {
+            "scoresW": "scores"
+          }
+        },
+        {
+          "id": "loop",
+          "text": "Now add a foreach loop.",
+          "cues": {
+            "foreachLoop": "foreach"
+          }
+        },
+        {
+          "id": "read",
+          "text": "Read it like English: for each score in scores.",
+          "cues": {
+            "each": "each",
+            "score": "score",
+            "inScores": "in scores"
+          }
+        },
+        {
+          "id": "body",
+          "text": "The code inside the braces runs once for each value.",
+          "cues": {
+            "inside": "inside",
+            "once": "once"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it: 90, 75, 82!",
+          "cues": {
+            "n1": "90",
+            "n2": "75",
+            "n3": "82"
+          }
+        },
+        {
+          "id": "noIdx",
+          "text": "No index, no counting!",
+          "cues": {
+            "noIndex": "index",
+            "noCount": "counting"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: foreach visits every item, in order, one at a time.",
+          "cues": {
+            "rForeach": "foreach",
+            "rEvery": "every",
+            "rOrder": "order",
+            "rOne": "one at a time"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 6! See you in Day 7: lists!",
+          "cues": {
+            "day6done": "Day 6",
+            "seeYou": "See you",
+            "day7": "Day 7",
+            "lists": "lists"
+          }
+        }
+      ]
+    }
+  ]
+}

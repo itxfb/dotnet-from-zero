@@ -1,0 +1,140 @@
+{
+  "id": "day01",
+  "series": ".NET FROM ZERO",
+  "day": 1,
+  "title": "What is .NET?",
+  "next": { "day": 2, "title": "C# Basics" },
+  "fps": 30,
+  "targetSeconds": 60,
+
+  "voice": { "engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us" },
+  "music": { "enabled": true, "bpm": 96, "seed": 1 },
+
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "ASP.NET Core": "ASP dot net core",
+    "Day 1": "Day one",
+    "Day 2": "Day two"
+  },
+
+  "keywords": {
+    ".NET": "dotnet",
+    "C#": "csharp",
+    "ASP.NET Core": "aspnet",
+    "API": "api",
+    "APIs": "api"
+  },
+
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Want to learn .NET but don't know where to start?",
+          "cues": { "dotnet": ".NET", "confused": "don't know" }
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to Day 1! Let's understand .NET in the simplest way possible.",
+          "cues": { "day1": "Day 1", "understand": "understand", "simplest": "simplest" }
+        }
+      ]
+    },
+    {
+      "id": "what",
+      "lines": [
+        { "id": "what", "text": "So, what is .NET?", "cues": { "whatNet": ".NET" } },
+        {
+          "id": "platform",
+          "text": "Think of .NET as a development platform created by Microsoft.",
+          "cues": { "platform": "development platform", "microsoft": "Microsoft" }
+        },
+        {
+          "id": "apps",
+          "text": "It gives developers the tools to build different types of applications — like web apps, APIs, desktop apps, and cloud applications.",
+          "cues": {
+            "tools": "tools",
+            "types": "different types",
+            "web": "web apps",
+            "apis": "APIs",
+            "desktop": "desktop apps",
+            "cloud": "cloud applications"
+          }
+        }
+      ]
+    },
+    {
+      "id": "csharp",
+      "lines": [
+        { "id": "csharpQ", "text": "But where does C# fit in?", "cues": { "csharp": "C#", "fit": "fit in" } },
+        {
+          "id": "language",
+          "text": "C# is a programming language commonly used with .NET.",
+          "cues": { "language": "programming language", "usedWith": "used with" }
+        },
+        {
+          "id": "remember",
+          "text": "So remember: .NET is the platform. C# is the language.",
+          "cues": { "remember": "remember", "isPlatform": ".NET is the platform", "isLanguage": "C# is the language" }
+        }
+      ]
+    },
+    {
+      "id": "aspnet",
+      "lines": [
+        {
+          "id": "aspnet",
+          "text": "And when we use .NET to build websites and APIs, we commonly use ASP.NET Core.",
+          "cues": { "useNet": ".NET", "websites": "websites", "apis2": "APIs", "aspnet": "ASP.NET Core" }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        { "id": "example", "text": "For example, this is a simple C# program:", "cues": { "example": "example", "program": "program" } },
+        {
+          "id": "code",
+          "text": "Console.WriteLine(\"Hello .NET!\");",
+          "say": "Console dot WriteLine, Hello, dot net!",
+          "caption": false,
+          "cues": { "console": "Console", "writeline": "WriteLine", "hello": "Hello" }
+        },
+        {
+          "id": "dontWorry",
+          "text": "Don't worry if you don't understand it yet.",
+          "cues": { "worry": "worry" }
+        }
+      ]
+    },
+    {
+      "id": "roadmap",
+      "holdAfter": 1.7,
+      "lines": [
+        { "id": "stepByStep", "text": "We'll learn it step by step.", "cues": { "step": "step by step" } }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 1! See you in Day 2 — C# Basics!",
+          "cues": { "day1done": "Day 1", "seeYou": "See you", "day2": "Day 2", "basics": "C# Basics" }
+        }
+      ]
+    }
+  ]
+}

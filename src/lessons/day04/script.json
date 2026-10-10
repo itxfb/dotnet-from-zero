@@ -1,0 +1,178 @@
+{
+  "id": "day04",
+  "series": ".NET FROM ZERO",
+  "day": 4,
+  "title": "Loops: Repeat Without Copy-Paste",
+  "next": {
+    "day": 5,
+    "title": "Arrays"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 4
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 4": "Day four",
+    "Day 5": "Day five"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "loop": "dotnet",
+    "loops": "dotnet",
+    "condition": "api",
+    "true": "csharp",
+    "false": "str"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Want to print something a hundred times?",
+          "cues": {
+            "hundred": "hundred"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Don't copy and paste! Welcome to Day 4: loops.",
+          "cues": {
+            "copyPaste": "copy",
+            "day4": "Day 4",
+            "loops": "loops"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "A loop repeats code for you.",
+          "cues": {
+            "repeats": "repeats"
+          }
+        },
+        {
+          "id": "pushups",
+          "text": "Like push-ups: done five yet? No? Do one more. Yes? Stop!",
+          "cues": {
+            "doneFive": "done",
+            "no": "No?",
+            "oneMore": "one more",
+            "yes": "Yes?",
+            "stop": "Stop!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "forLoop",
+          "text": "In C#, the most common loop is the for loop.",
+          "cues": {
+            "forLoop": "for loop"
+          }
+        },
+        {
+          "id": "parts",
+          "text": "Three parts: start i at 1, keep going while i is 5 or less, and add 1 each time.",
+          "cues": {
+            "start": "start",
+            "keepGoing": "keep going",
+            "addOne": "add"
+          }
+        },
+        {
+          "id": "body",
+          "text": "Everything inside the braces runs each time.",
+          "cues": {
+            "inside": "inside"
+          }
+        },
+        {
+          "id": "run1",
+          "text": "Run it: 1, 2, 3, 4, 5!",
+          "cues": {
+            "n1": "1",
+            "n2": "2",
+            "n3": "3",
+            "n4": "4",
+            "n5": "5"
+          }
+        },
+        {
+          "id": "stop",
+          "text": "At 6, the condition is false, so it stops.",
+          "cues": {
+            "six": "6",
+            "stops": "stops"
+          }
+        },
+        {
+          "id": "run2",
+          "text": "Need a hundred? Change 5 to 100. Done!",
+          "cues": {
+            "change": "Change",
+            "hundred2": "100",
+            "done": "Done!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: while the condition is true, the loop repeats. When it's false, it stops.",
+          "cues": {
+            "condTrue": "condition",
+            "repeats2": "repeats",
+            "false2": "false",
+            "stops2": "stops"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 4! See you in Day 5: arrays!",
+          "cues": {
+            "day4done": "Day 4",
+            "seeYou": "See you",
+            "day5": "Day 5",
+            "arrays": "arrays"
+          }
+        }
+      ]
+    }
+  ]
+}

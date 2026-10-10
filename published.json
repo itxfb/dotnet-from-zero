@@ -1,0 +1,29 @@
+{
+  "day04": {
+    "videoId": "_dNY0UBg4pM",
+    "date": "2026-10-11",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "private",
+      "publishAt": "2026-10-11T01:17:08Z",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  "day05": {
+    "videoId": "4sVAlU9mWNc",
+    "date": "2026-10-11",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "day02",
+  "series": ".NET FROM ZERO",
+  "day": 2,
+  "title": "C# Basics: Variables",
+  "next": {
+    "day": 3,
+    "title": "If & Else"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 96,
+    "seed": 2
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 2": "Day two",
+    "Day 3": "Day three"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "string": "str",
+    "int": "int",
+    "bool": "bool",
+    "type": "dotnet",
+    "name": "aspnet",
+    "value": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "How does a program remember your name, your age, or your score?",
+          "cues": {
+            "name": "name",
+            "age": "age",
+            "score": "score"
+          }
+        },
+        {
+          "id": "answer",
+          "text": "With variables!",
+          "cues": {
+            "variables": "variables"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to Day 2! Let's learn C# basics.",
+          "cues": {
+            "day2": "Day 2",
+            "basics": "C# basics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "box",
+      "lines": [
+        {
+          "id": "box",
+          "text": "A variable is like a labeled box.",
+          "cues": {
+            "variable": "variable",
+            "box": "labeled box"
+          }
+        },
+        {
+          "id": "nameValue",
+          "text": "It has a name, and it holds a value.",
+          "cues": {
+            "hasName": "name",
+            "holds": "holds",
+            "value": "value"
+          }
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "lines": [
+        {
+          "id": "type",
+          "text": "Every box also has a type. The type tells C# what fits inside.",
+          "cues": {
+            "type": "type",
+            "fits": "fits inside"
+          }
+        },
+        {
+          "id": "kinds",
+          "text": "Text goes in a string. Whole numbers go in an int. And true or false goes in a bool.",
+          "cues": {
+            "text": "Text",
+            "string": "string",
+            "whole": "Whole numbers",
+            "int": "int",
+            "truefalse": "true or false",
+            "bool": "bool"
+          }
+        }
+      ],
+      "holdAfter": 0.7
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "write",
+          "text": "Here's how it looks in C#.",
+          "pauseAfter": 0.7,
+          "cues": {
+            "looks": "looks"
+          }
+        },
+        {
+          "id": "order",
+          "text": "First the type, then the name, then the value.",
+          "cues": {
+            "first": "type",
+            "then1": "name",
+            "then2": "value"
+          }
+        },
+        {
+          "id": "use",
+          "text": "Now let's use it.",
+          "cues": {
+            "use": "use"
+          }
+        },
+        {
+          "id": "dollar",
+          "text": "The dollar sign lets you drop a variable right into your text.",
+          "cues": {
+            "dollar": "dollar sign",
+            "drop": "drop"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it, and the program says: Hi, I'm Sam!",
+          "cues": {
+            "runIt": "Run",
+            "hi": "Hi,"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: type, name, value.",
+          "cues": {
+            "rType": "type,",
+            "rName": "name,",
+            "rValue": "value."
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 2! See you in Day 3, where your code learns to make decisions!",
+          "cues": {
+            "day2done": "Day 2",
+            "seeYou": "See you",
+            "day3": "Day 3",
+            "decisions": "decisions"
+          }
+        }
+      ]
+    }
+  ]
+}

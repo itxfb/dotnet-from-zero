@@ -28,6 +28,8 @@ jobs:
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - run: |
           curl -fsSL https://claude.ai/install.sh | bash
@@ -70,6 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git add -A
           git diff --cached --quiet && exit 0
           git commit -m "Daily lesson $(date +%F)"

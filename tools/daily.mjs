@@ -47,7 +47,9 @@ const pad = (n) => String(n).padStart(2, '0');
 const today = () => new Date().toLocaleDateString('en-CA');
 const published = () => (existsSync('published.json') ? json('published.json') : {});
 const queue = () => json(CURRICULUM).flatMap((s) => s.topics.map((title, i) => ({...s, title, day: i + 1, id: `${s.prefix}${pad(i + 1)}`})));
-const claude = (prompt, tools, minutes) => spawnSync('claude', ['-p', '--permission-mode', 'acceptEdits', '--allowedTools', tools], {input: prompt, stdio: ['pipe', log, log], timeout: minutes * 60e3});
+const {YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN, ...claudeEnv} = process.env;
+const claude = (prompt, tools, minutes) =>
+  spawnSync('claude', ['-p', '--permission-mode', 'acceptEdits', '--allowedTools', tools], {input: prompt, stdio: ['pipe', log, log], timeout: minutes * 60e3, env: claudeEnv});
 const client = () => {
   if (process.env.YT_CLIENT_ID) return {client_id: process.env.YT_CLIENT_ID, client_secret: process.env.YT_CLIENT_SECRET};
   const c = json('.secrets/client_secret.json');

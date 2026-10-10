@@ -152,6 +152,7 @@ export const Editor: React.FC<{
   runs?: EdRun[];
   termHeight?: number;
   command?: string;
+  lang?: string;
 }> = (p) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -267,7 +268,7 @@ export const Editor: React.FC<{
             fontSize: 28,
           }}
         >
-          <span style={{color: CONCEPT.csharp.main, fontWeight: 700, fontSize: 24}}>C#</span>
+          <span style={{color: CONCEPT.csharp.main, fontWeight: 700, fontSize: 24}}>{p.lang ?? 'C#'}</span>
           {p.filename}
         </div>
         <div

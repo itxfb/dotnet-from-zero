@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /**
  * Daily lesson: author the next lesson with Claude Code, render it, upload it to YouTube.
- *   node tools/daily.mjs                one run (no-op if today's video is already uploaded)
+ *   node tools/daily.mjs                make + upload the next lesson (no-op once MAX_PER_DAY are up today)
  *   node tools/daily.mjs auth           one-time Google sign-in -> .secrets/token.json
  *   node tools/daily.mjs upload day04   upload an already-rendered lesson
  *   node tools/daily.mjs prepare        author + render the next lesson now, upload on the next run
- * Topics: tools/curriculum.json   Uploads: published.json   Log: out/daily.log
+ *   node tools/daily.mjs plan           have Claude research trends and append a new series to the curriculum
+ * Series run in the order of tools/curriculum.json; when it runs out, Claude plans a new trending series.
+ * One upload per run, at most MAX_PER_DAY a day.   Uploads: published.json   Log: out/daily.log
  */
 import {spawnSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, openSync, readdirSync, readFileSync, rmSync, writeFileSync, writeSync} from 'node:fs';
@@ -22,8 +24,9 @@ const win = process.platform === 'win32';
 const npx = win ? 'npx.cmd' : 'npx';
 const py = win ? '.venv/Scripts/python.exe' : '.venv/bin/python';
 const REDIRECT = 'http://localhost:53682/';
-const ALLOWED = `Read,Write,Edit,Glob,Grep,Bash(node:*),Bash(npx tsc:*),Bash(${py}:*),Bash(dotnet:*)`;
-const topics = JSON.parse(readFileSync('tools/curriculum.json', 'utf8'));
+const ALLOWED = `Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(node:*),Bash(npx tsc:*),Bash(${py}:*),Bash(dotnet:*)`;
+const CURRICULUM = 'tools/curriculum.json';
+const MAX_PER_DAY = 3;
 
 const log = openSync('out/daily.log', 'a');
 const say = (m) => {
@@ -43,6 +46,8 @@ const json = (f) => JSON.parse(readFileSync(f, 'utf8'));
 const pad = (n) => String(n).padStart(2, '0');
 const today = () => new Date().toLocaleDateString('en-CA');
 const published = () => (existsSync('published.json') ? json('published.json') : {});
+const queue = () => json(CURRICULUM).flatMap((s) => s.topics.map((title, i) => ({...s, title, day: i + 1, id: `${s.prefix}${pad(i + 1)}`})));
+const claude = (prompt, tools, minutes) => spawnSync('claude', ['-p', '--permission-mode', 'acceptEdits', '--allowedTools', tools], {input: prompt, stdio: ['pipe', log, log], timeout: minutes * 60e3});
 const client = () => {
   if (process.env.YT_CLIENT_ID) return {client_id: process.env.YT_CLIENT_ID, client_secret: process.env.YT_CLIENT_SECRET};
   const c = json('.secrets/client_secret.json');
@@ -82,20 +87,19 @@ const accessToken = async () => {
 
 const upload = async (id) => {
   const {meta} = json(`src/lessons/${id}/timeline.json`);
-  const clean = (s) => s.replace(/[<>]/g, '');
+  const s = queue().find((l) => l.id === id);
+  let y = {};
+  try {
+    y = json(`src/lessons/${id}/youtube.json`);
+  } catch {}
+  const clean = (t) => t.replace(/[<>]/g, '');
+  const description = y.description ?? [`Day ${s.day} of ${s.name}: ${s.about}. New shorts every day.`, meta.next ? `Next: ${meta.next.title}.` : '', '', s.hashtags].join('\n');
   const video = readFileSync(`out/${id}.mp4`);
   const body = {
     snippet: {
-      title: clean(`${meta.title} | .NET From Zero Day ${meta.day} #Shorts`).slice(0, 100),
-      description: clean(
-        [
-          `Day ${meta.day} of .NET From Zero: learn C# and .NET from scratch, one short a day.`,
-          meta.next ? `Next: Day ${meta.next.day}, ${meta.next.title}.` : '',
-          '',
-          '#dotnet #csharp #programming #learntocode #shorts',
-        ].join('\n'),
-      ),
-      tags: ['dotnet', '.NET', 'csharp', 'C#', 'programming', 'learn to code', clean(meta.title)],
+      title: clean(`${y.title ?? `${meta.title} | ${s.name} Day ${s.day}`} #Shorts`).slice(0, 100),
+      description: clean(/#shorts/i.test(description) ? description : `${description} #shorts`).slice(0, 4900),
+      tags: [...new Set([...(y.tags ?? []), ...s.tags, clean(meta.title)])].slice(0, 20),
       categoryId: '27',
     },
     status: {privacyStatus: 'public', selfDeclaredMadeForKids: false},
@@ -114,50 +118,78 @@ const upload = async (id) => {
   say(`uploaded ${id}: https://youtu.be/${v.id} on "${v.snippet.channelTitle}" (${v.status.privacyStatus}${v.status.publishAt ? `, public at ${v.status.publishAt}` : ''})`);
 };
 
-const prompt = (n) => {
-  const id = `day${pad(n)}`;
-  return `Create lesson ${id} of the ".NET From Zero" YouTube Shorts series in this repo. This runs unattended: nobody will answer questions, so make sensible choices and finish.
-Day ${n}: "${topics[n - 1]}". Next lesson: Day ${n + 1}: "${topics[n] ?? 'More C#'}". Earlier days: ${topics.slice(0, n - 1).map((t, i) => `${i + 1}. ${t}`).join('; ')}.
+const prompt = (q, pos) => {
+  const l = q[pos];
+  const next = q[pos + 1];
+  const same = next.prefix === l.prefix;
+  const comp = l.id.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join('');
+  const earlier = q.filter((x) => x.prefix === l.prefix && x.day < l.day).map((x) => `${x.day}. ${x.title}`).join('; ');
+  return `Create lesson ${l.id} for a YouTube Shorts channel of short beginner lessons. This runs unattended: nobody will answer questions, so make sensible choices and finish.
+Series "${l.name}" (${l.about}), Day ${l.day}: "${l.title}". ${same ? `Next lesson: Day ${next.day}: "${next.title}".` : `This is the last lesson of the series; the next video starts the new series "${next.name}" with Day 1: "${next.title}".`}
+Earlier days of this series: ${earlier || 'none, so the hook also introduces the series'}.
 
-Follow README.md "Make the next lesson" and use src/lessons/day${pad(n - 1)} as the template. Read it and the components it uses before writing.
-1. src/lessons/${id}/script.json: id "${id}", day ${n}, the title above, next {day: ${n + 1}, title}, targetSeconds 60, the previous day's voice, music seed ${n}. Beginner level, building only on earlier days. Shape: hook question, everyday analogy with a visual, code demo in the Editor with a Run, recap, outro "That's Day ${n}! See you in Day ${n + 1}: <next topic>!".
-2. Run ${py} tools/build_audio.py ${id}. Fix every "cue not found" warning. The total must be 59 s or less; shorten the script if not.
-3. src/lessons/${id}/Day${pad(n)}.tsx exporting Day${pad(n)}: reuse the existing components. Only change a shared component if you must, and never in a way that changes earlier lessons.
+Follow README.md "Make the next lesson" and use src/lessons/${q[pos - 1].id} as the template. Read it and the components it uses before writing.
+1. src/lessons/${l.id}/script.json: id "${l.id}", series "${l.badge}", day ${l.day}, title "${l.title}", next {day: ${next.day}, title: "${next.title}"}, targetSeconds 60, the template's voice, music seed ${pos + 1}. Beginner level, building only on earlier days of this series. Shape: hook question, everyday analogy with a visual, a demo (code, config or terminal) in the Editor with a Run, recap, outro ${same ? `"That's Day ${l.day}! See you in Day ${next.day}: <next topic>!"` : `"That's the end of ${l.name}! Next up, a new series: ${next.name}!"`}.
+2. Run ${py} tools/build_audio.py ${l.id}. Fix every "cue not found" warning. The total must be 59 s or less; shorten the script if not.
+3. src/lessons/${l.id}/${comp}.tsx exporting ${comp}: reuse the existing components. Only change a shared component if you must, and never in a way that changes earlier lessons.
 4. Register it in src/lessons/index.ts and add its row to the README lessons table.
 5. npx tsc --noEmit must pass.
-6. Render stills at every key beat (node tools/stills.mjs ${id} <frame> <frame> ...) and Read each PNG in out/stills. Fix overlaps, clipped or off-screen text, captions covering visuals and highlights on the wrong characters, then check again.
-The C# shown must compile and print exactly what the terminal shows: prove it with dotnet new console -o .cache/csharp/${id} and dotnet run --project .cache/csharp/${id}. Run commands from the repo root. Do not render the full video, upload anything, or edit other lessons.`;
+6. Render stills at every key beat (node tools/stills.mjs ${l.id} <frame> <frame> ...) and Read each PNG in out/stills. Fix overlaps, clipped or off-screen text, captions covering visuals and highlights on the wrong characters, then check again.
+7. src/lessons/${l.id}/youtube.json: {"title", "description", "tags"} for the upload. title: at most 70 characters, a curiosity hook that contains the main search keyword (no hashtags; "#Shorts" is added for you). description: concise and inviting: a one-line hook, 2-3 short lines (or ✅ bullets) on what the viewer learns, "Day ${l.day} of ${l.name}" plus what comes next, a short call to follow for a new short every day, then one line of 5-8 hashtags. Use WebSearch to pick hashtags that are popular right now for this topic on YouTube Shorts, and always include #shorts. tags: 8-15 search phrases people actually type. Only claim what the video shows; no "<" or ">" characters.
+Everything shown must be correct for today's versions: check official docs with WebSearch/WebFetch for any command, config or API you are not sure about. Set the Editor's filename, lang and command props to match the demo (e.g. ".mcp.json", lang "JSON", command "claude mcp list"). Any C# must compile and print exactly what the terminal shows: prove it with dotnet new console -o .cache/csharp/${l.id} and dotnet run --project .cache/csharp/${l.id}. Run commands from the repo root. Do not render the full video, upload anything, or edit other lessons.`;
+};
+
+const plan = () => {
+  const before = readFileSync(CURRICULUM, 'utf8');
+  const n = queue().length;
+  say('planning a new series from current trends');
+  claude(
+    `Plan the next series for a YouTube Shorts channel of short beginner lessons for developers. This runs unattended: nobody will answer questions, so make sensible choices and finish.
+Series so far (never repeat these topics): ${json(CURRICULUM).map((s) => `${s.name}: ${s.topics.join('; ')}`).join(' | ')}.
+Use WebSearch and WebFetch to find what developers are talking about right now (the last two weeks) in AI-assisted software development: AI coding agents and assistants, MCP and agent tooling, prompting, token and cost efficiency, new model and tool releases. Pick a theme with clear demand that can be taught with short code, config or terminal demos.
+Append ONE new object to the JSON array in ${CURRICULUM}, in exactly the same shape as the existing entries: name (2-4 words), badge (the name in capitals, at most 16 characters), prefix (a new lowercase slug followed by "-day", e.g. "agents-day"), about (one short line), tags (5-8), hashtags (4, space separated), topics (exactly 10 titles of at most 40 characters, from basics to advanced). Edit nothing else.`,
+    'Read,Edit,WebSearch,WebFetch',
+    30,
+  );
+  try {
+    const q = queue();
+    if (q.length > n && new Set(q.map((l) => l.id)).size === q.length && q.every((l) => /^[a-z0-9-]+$/.test(l.id) && l.name && l.badge && l.about && l.tags && l.hashtags)) return;
+  } catch {}
+  writeFileSync(CURRICULUM, before);
+  fail(`planning did not add a valid series to ${CURRICULUM}`);
 };
 
 const main = async (uploadNow) => {
-  const pub = published();
-  if (uploadNow && Object.values(pub).some((p) => p.date === today())) return say('already uploaded today');
-  const last = Math.max(...readdirSync('src/lessons').filter((d) => /^day\d+$/.test(d)).map((d) => Number(d.slice(3))));
-  const n = pub[`day${pad(last)}`] ? last + 1 : last;
-  const id = `day${pad(n)}`;
-  if (!topics[n - 1]) fail(`no topic for day ${n}: add one to tools/curriculum.json`);
-  const tl = `src/lessons/${id}/timeline.json`;
+  const done = Object.values(published()).filter((p) => p.date === today()).length;
+  if (uploadNow && done >= MAX_PER_DAY) return say(`${done} videos already uploaded today`);
+  const next = () => queue().findIndex((l) => !published()[l.id]);
+  if (next() < 0 || next() === queue().length - 1) plan();
+  const q = queue();
+  const pos = next();
+  const l = q[pos];
+  const dir = `src/lessons/${l.id}`;
+  const tl = `${dir}/timeline.json`;
   const ready = () =>
-    existsSync(`src/lessons/${id}/Day${pad(n)}.tsx`) &&
     existsSync(tl) &&
+    readdirSync(dir).some((f) => f.endsWith('.tsx')) &&
     json(tl).durationInFrames / json(tl).fps <= 61 &&
-    readFileSync('src/lessons/index.ts', 'utf8').includes(`'${id}'`) &&
+    readFileSync('src/lessons/index.ts', 'utf8').includes(`'${l.id}'`) &&
     sh(npx, ['tsc', '--noEmit']) === 0;
   if (!ready()) {
-    rmSync(`out/${id}.mp4`, {force: true});
-    say(`authoring ${id}: ${topics[n - 1]}`);
-    spawnSync('claude', ['-p', '--permission-mode', 'acceptEdits', '--allowedTools', ALLOWED], {input: prompt(n), stdio: ['pipe', log, log], timeout: 60 * 60e3});
-    if (!ready()) fail(`${id} is incomplete, too long, or does not typecheck`);
+    rmSync(`out/${l.id}.mp4`, {force: true});
+    say(`authoring ${l.id}: ${l.name}, Day ${l.day}: ${l.title}`);
+    claude(prompt(q, pos), ALLOWED, 60);
+    if (!ready()) fail(`${l.id} is incomplete, too long, or does not typecheck`);
   }
-  if (!existsSync(`out/${id}.mp4`) && sh('node', ['tools/lesson.mjs', id]) !== 0) fail(`render ${id}`);
-  if (win) copyFileSync(`out/${id}.mp4`, path.join(path.parse(ROOT).root, `dotnet-from-zero-${id}.mp4`));
-  if (uploadNow) await upload(id);
-  else say(`${id} ready: out/${id}.mp4 (uploads on the next run)`);
+  if (!existsSync(`out/${l.id}.mp4`) && sh('node', ['tools/lesson.mjs', l.id]) !== 0) fail(`render ${l.id}`);
+  if (win) copyFileSync(`out/${l.id}.mp4`, path.join(path.parse(ROOT).root, `dotnet-from-zero-${l.id}.mp4`));
+  if (uploadNow) await upload(l.id);
+  else say(`${l.id} ready: out/${l.id}.mp4 (uploads on the next run)`);
 };
 
 const [cmd, arg] = process.argv.slice(2);
 try {
-  await (cmd === 'auth' ? auth() : cmd === 'upload' ? upload(arg) : main(cmd !== 'prepare'));
+  await (cmd === 'auth' ? auth() : cmd === 'upload' ? upload(arg) : cmd === 'plan' ? plan() : main(cmd !== 'prepare'));
 } catch (e) {
   fail(e.stack ?? e);
 }

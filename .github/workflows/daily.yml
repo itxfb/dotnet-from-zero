@@ -2,7 +2,7 @@ name: Daily lesson
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '0 5,10,15 * * *'
   workflow_dispatch:
     inputs:
       mode:

@@ -107,25 +107,31 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 
 ## Daily automation (GitHub Actions)
 
-`.github/workflows/daily.yml` runs every day at 10:00 Pakistan time (05:00 UTC) on GitHub, so no PC needs
-to be on. It runs `tools/daily.mjs`, which:
+`.github/workflows/daily.yml` runs at 10:00, 15:00 and 20:00 Pakistan time (05/10/15:00 UTC) on GitHub, so no
+PC needs to be on. Each run makes and uploads **one** lesson, at most 3 a day (`MAX_PER_DAY` in `tools/daily.mjs`):
 
-1. takes the next topic from `tools/curriculum.json`,
-2. has Claude Code (`claude -p`) write the lesson, check stills and prove the C# output with `dotnet run`,
-3. renders it, uploads it to YouTube as **public**, and records it in `published.json`.
+1. `tools/curriculum.json` lists the series in order (.NET From Zero → AI Dev Tools → Token Saver → …).
+   The next lesson is the first one not yet in `published.json`. Lesson ids are `<prefix><NN>`, e.g.
+   `day07`, `aitools-day01`.
+2. When the list is about to run out, Claude researches current trends in AI-assisted development
+   (web search) and appends a new 10-lesson series, so it keeps going forever.
+3. Claude Code (`claude -p`) writes the lesson, checks stills, verifies commands against official docs
+   and proves any C# output with `dotnet run`.
+4. Claude also writes `youtube.json` (hook title, short description, trending hashtags, search tags).
+5. It renders, uploads to YouTube as **public** with that metadata, and records the upload in `published.json`.
 
 The workflow then commits the new lesson back to this repo and attaches the mp4 + log to the run.
-It does nothing once today's video is up, and a lesson that fails its checks is not uploaded (the next run
-finishes it).
+A lesson that fails its checks is not uploaded; the next run finishes it.
 
 **Run it by hand:** Actions → *Daily lesson* → *Run workflow*, with mode `run` (make + upload today's),
 `prepare` (make the next lesson without uploading) or `check` (test the Claude login).
+To change what comes next, edit `tools/curriculum.json` (add, remove or reorder series and topics).
 
 **Secrets** (Settings → Secrets and variables → Actions): `CLAUDE_CODE_OAUTH_TOKEN` (from `claude setup-token`),
 `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (from `node tools/daily.mjs auth`, which saves
 `.secrets/token.json` locally).
 
-Locally the same script still works: `node tools/daily.mjs [prepare | upload dayNN | auth]` (log: `out/daily.log`).
+Locally the same script still works: `node tools/daily.mjs [prepare | plan | upload <id> | auth]` (log: `out/daily.log`).
 The consent screen's home page and privacy policy are served by GitHub Pages from `docs/`.
 
 ## Tuning

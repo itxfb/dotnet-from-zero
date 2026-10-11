@@ -1,7 +1,13 @@
 {
-  "day01": {"manual": true},
-  "day02": {"manual": true},
-  "day03": {"manual": true},
+  "day01": {
+    "manual": true
+  },
+  "day02": {
+    "manual": true
+  },
+  "day03": {
+    "manual": true
+  },
   "day04": {
     "videoId": "_dNY0UBg4pM",
     "date": "2026-10-11",
@@ -18,6 +24,19 @@
   },
   "day05": {
     "videoId": "4sVAlU9mWNc",
+    "date": "2026-10-11",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
+  },
+  "day06": {
+    "videoId": "m2bnJklOOrg",
     "date": "2026-10-11",
     "channel": "Adventure of Career",
     "status": {

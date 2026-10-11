@@ -81,6 +81,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `day04` | Loops: Repeat Without Copy-Paste | 54.4 s |
 | `day05` | Arrays | 48.6 s |
 | `day06` | foreach | 42.6 s |
+| `day07` | Lists | 37.6 s |
 
 ## Make the next lesson (Day 4)
 

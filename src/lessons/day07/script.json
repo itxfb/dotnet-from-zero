@@ -1,0 +1,138 @@
+{
+  "id": "day07",
+  "series": ".NET FROM ZERO",
+  "day": 7,
+  "title": "Lists",
+  "next": {
+    "day": 8,
+    "title": "Methods"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 7
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 6": "Day six",
+    "Day 7": "Day seven",
+    "Day 8": "Day eight",
+    "Ana": "Anna"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "list": "dotnet",
+    "lists": "dotnet",
+    "Lists": "dotnet",
+    "Add": "csharp",
+    "Count": "api",
+    "arrays": "aspnet",
+    "grows": "api",
+    "Methods": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Arrays can't grow. So what if you need more room?",
+          "cues": {"cant": "can't", "more": "more room"}
+        },
+        {
+          "id": "welcome",
+          "text": "Meet Day 7: Lists!",
+          "cues": {"day7": "Day 7", "lists": "Lists"}
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "Think of a shopping list.",
+          "cues": {"shop": "shopping list"}
+        },
+        {
+          "id": "grow",
+          "text": "Add milk, add eggs, and the list just grows.",
+          "cues": {"milk": "milk", "eggs": "eggs", "grows": "grows"}
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "decl",
+          "text": "Make an empty list of strings.",
+          "cues": {"declW": "empty list"}
+        },
+        {
+          "id": "adds",
+          "text": "Call Add to put a name on the end.",
+          "cues": {"addW": "Add"}
+        },
+        {
+          "id": "more",
+          "text": "Add as many as you like.",
+          "cues": {"many": "many"}
+        },
+        {
+          "id": "count",
+          "text": "Count tells you how many are inside.",
+          "cues": {"countW": "Count"}
+        },
+        {
+          "id": "idx",
+          "text": "And square brackets work just like arrays.",
+          "cues": {"brackets": "square brackets"}
+        },
+        {
+          "id": "run",
+          "text": "Run it: 3, then Ben!",
+          "cues": {"n1": "3", "n2": "Ben"}
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: a list grows with Add, and Count tells its size.",
+          "cues": {"rList": "list", "rAdd": "Add", "rCount": "Count"}
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 7! See you in Day 8: Methods!",
+          "cues": {"day7done": "Day 7", "seeYou": "See you", "day8": "Day 8", "methods": "Methods"}
+        }
+      ]
+    }
+  ]
+}

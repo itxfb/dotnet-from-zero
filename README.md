@@ -82,6 +82,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `day05` | Arrays | 48.6 s |
 | `day06` | foreach | 42.6 s |
 | `day07` | Lists | 37.6 s |
+| `day08` | Methods | 39.0 s |
 
 ## Make the next lesson (Day 4)
 

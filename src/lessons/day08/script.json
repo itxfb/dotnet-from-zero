@@ -1,0 +1,162 @@
+{
+  "id": "day08",
+  "series": ".NET FROM ZERO",
+  "day": 8,
+  "title": "Methods",
+  "next": {
+    "day": 9,
+    "title": "Parameters & Return Values"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 8
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 8": "Day eight",
+    "Day 9": "Day nine",
+    "&": "and"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "method": "dotnet",
+    "methods": "dotnet",
+    "Methods": "dotnet",
+    "call": "csharp",
+    "name": "api",
+    "Parameters": "dotnet",
+    "Return": "dotnet",
+    "Values": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Typing the same code again and again? There's a better way.",
+          "cues": {
+            "again": "again and again",
+            "better": "better way"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Meet Day 8: Methods!",
+          "cues": {
+            "day8": "Day 8",
+            "methods": "Methods"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "Think of a recipe card.",
+          "cues": {
+            "card": "recipe card"
+          }
+        },
+        {
+          "id": "once",
+          "text": "Write the steps once, then use the card whenever you like.",
+          "cues": {
+            "once": "once",
+            "use": "use the card"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "decl",
+          "text": "Give a block of code a name, and you've made a method.",
+          "cues": {
+            "declW": "name"
+          }
+        },
+        {
+          "id": "body",
+          "text": "The steps go inside the braces.",
+          "cues": {
+            "braces": "braces"
+          }
+        },
+        {
+          "id": "call1",
+          "text": "Now call it by its name.",
+          "cues": {
+            "callW": "call"
+          }
+        },
+        {
+          "id": "call2",
+          "text": "Call it again, and it runs again.",
+          "cues": {
+            "again2": "again"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it: two greetings!",
+          "cues": {
+            "n1": "Run",
+            "n2": "greetings"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: a method is a named block of code you can call anytime.",
+          "cues": {
+            "rMethod": "method",
+            "rCall": "call"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 8! See you in Day 9: Parameters & Return Values!",
+          "cues": {
+            "day8done": "Day 8",
+            "seeYou": "See you",
+            "day9": "Day 9",
+            "params": "Parameters"
+          }
+        }
+      ]
+    }
+  ]
+}

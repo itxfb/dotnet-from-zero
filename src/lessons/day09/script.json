@@ -1,0 +1,157 @@
+{
+  "id": "day09",
+  "series": ".NET FROM ZERO",
+  "day": 9,
+  "title": "Parameters & Return Values",
+  "next": {
+    "day": 10,
+    "title": "Classes & Objects"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 9
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 9": "Day nine",
+    "Day 10": "Day ten",
+    "&": "and"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "Parameters": "dotnet",
+    "parameters": "dotnet",
+    "Return": "dotnet",
+    "return": "dotnet",
+    "Values": "dotnet",
+    "value": "dotnet",
+    "Classes": "dotnet",
+    "in": "api",
+    "back": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Can a method take something in, and give something back?",
+          "cues": {
+            "in": "take something in",
+            "back": "give something back"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Meet Day 9: Parameters & Return Values!",
+          "cues": {
+            "day9": "Day 9",
+            "params": "Parameters"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "Think of a vending machine.",
+          "cues": {
+            "machine": "vending machine"
+          }
+        },
+        {
+          "id": "coins",
+          "text": "Coins go in, and a snack comes out.",
+          "cues": {
+            "coins": "Coins go in",
+            "snack": "a snack comes out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "sig",
+          "text": "Parameters go in the brackets: a and b.",
+          "cues": {
+            "paramW": "Parameters",
+            "ab": "a and b"
+          }
+        },
+        {
+          "id": "ret",
+          "text": "Return sends the answer back.",
+          "cues": {
+            "retW": "Return"
+          }
+        },
+        {
+          "id": "call",
+          "text": "Call it with 2 and 3.",
+          "cues": {
+            "callW": "Call"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it: five!",
+          "cues": {
+            "n1": "Run",
+            "n2": "five"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: parameters go in, a return value comes out.",
+          "cues": {
+            "rIn": "parameters go in",
+            "rOut": "return value"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 9! See you in Day 10: Classes & Objects!",
+          "cues": {
+            "day9done": "Day 9",
+            "seeYou": "See you",
+            "day10": "Day 10",
+            "classes": "Classes"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -73,5 +73,18 @@
       "publicStatsViewable": true,
       "selfDeclaredMadeForKids": false
     }
+  },
+  "day09": {
+    "videoId": "62bI1lb5Ca8",
+    "date": "2026-10-13",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
   }
 }

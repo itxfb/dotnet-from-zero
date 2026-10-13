@@ -1,0 +1,162 @@
+{
+  "id": "day10",
+  "series": ".NET FROM ZERO",
+  "day": 10,
+  "title": "Classes & Objects",
+  "next": {
+    "day": 1,
+    "title": "What Is an AI Coding Agent?"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 10
+  },
+  "pronounce": {
+    ".NET": "dot net",
+    "C#": "C sharp",
+    "Day 10": "Day ten",
+    "&": "and",
+    "AI": "A I"
+  },
+  "keywords": {
+    "C#": "csharp",
+    "Classes": "dotnet",
+    "class": "dotnet",
+    "Objects": "dotnet",
+    "object": "dotnet",
+    "blueprint": "api",
+    "design": "api",
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Can you design your own type, and make as many as you want?",
+          "cues": {
+            "design": "design your own type",
+            "many": "as many as you want"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Meet Day 10: Classes & Objects!",
+          "cues": {
+            "day10": "Day 10",
+            "classes": "Classes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "life",
+          "text": "Think of a house blueprint.",
+          "cues": {
+            "blueprint": "house blueprint"
+          }
+        },
+        {
+          "id": "houses",
+          "text": "One blueprint, many houses.",
+          "cues": {
+            "one": "One blueprint",
+            "houses": "many houses"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "new",
+          "text": "New makes an object from the Dog class.",
+          "cues": {
+            "newW": "New",
+            "objW": "object"
+          }
+        },
+        {
+          "id": "set",
+          "text": "Set its Name to Rex.",
+          "cues": {
+            "setW": "Set"
+          }
+        },
+        {
+          "id": "print",
+          "text": "Then print the name.",
+          "cues": {
+            "printW": "print"
+          }
+        },
+        {
+          "id": "bp",
+          "text": "The class below is the blueprint.",
+          "cues": {
+            "bpW": "blueprint"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Run it: Rex!",
+          "cues": {
+            "n1": "Run"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: a class is a blueprint, and an object is one thing built from it.",
+          "cues": {
+            "rClass": "a class",
+            "rObj": "an object"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's the end of .NET From Zero! Next up, a new series: AI Dev Tools!",
+          "cues": {
+            "end": "end",
+            "series": "new series",
+            "tools": "AI Dev Tools"
+          }
+        }
+      ]
+    }
+  ]
+}

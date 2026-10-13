@@ -1,0 +1,134 @@
+{
+  "id": "aitools-day01",
+  "series": "AI DEV TOOLS",
+  "day": 1,
+  "title": "What Is an AI Coding Agent?",
+  "next": {
+    "day": 2,
+    "title": "Slash Commands & Skills"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 11
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "&": "and",
+    "dotnet": "dot net"
+  },
+  "keywords": {
+    "agent": "api",
+    "Agent": "api",
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "Coding": "dotnet",
+    "reading": "csharp",
+    "edits": "dotnet",
+    "runs": "api",
+    "tests": "csharp",
+    "chef": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "What if your editor could write code, run it, and fix its own mistakes?",
+          "cues": {"write": "write code", "fix": "fix its own mistakes"}
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to AI Dev Tools, Day 1: What Is an AI Coding Agent?",
+          "cues": {"day1": "Day 1", "agentT": "AI Coding Agent"}
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "chat",
+          "text": "A chatbot is like a recipe book.",
+          "cues": {"book": "recipe book"}
+        },
+        {
+          "id": "chef",
+          "text": "An agent is the chef who cooks, tastes, and fixes it.",
+          "cues": {"chefW": "chef", "fixW": "fixes"}
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "notes",
+          "text": "An agent starts by reading your project notes.",
+          "cues": {"notesW": "reading"}
+        },
+        {
+          "id": "rule",
+          "text": "This one says: run dotnet test.",
+          "cues": {"ruleW": "run"}
+        },
+        {
+          "id": "ask",
+          "text": "Then you ask it to fix the failing test.",
+          "cues": {"askW": "fix"}
+        },
+        {
+          "id": "loop",
+          "text": "It edits code, runs the tests, and repeats.",
+          "cues": {"loopW": "edits"}
+        },
+        {
+          "id": "run",
+          "text": "Run it: tests pass!",
+          "cues": {"n1": "Run"}
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: an agent doesn't just chat. It reads, edits, and runs, in a loop.",
+          "cues": {"rRead": "reads", "rEdit": "edits", "rRun": "runs"}
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 1! See you in Day 2: Slash Commands & Skills!",
+          "cues": {"end": "Day 1", "tools": "Slash Commands"}
+        }
+      ]
+    }
+  ]
+}

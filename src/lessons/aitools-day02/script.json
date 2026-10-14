@@ -1,0 +1,139 @@
+{
+  "id": "aitools-day02",
+  "series": "AI DEV TOOLS",
+  "day": 2,
+  "title": "Slash Commands & Skills",
+  "next": {
+    "day": 3,
+    "title": "Plugins: Share Your AI Setup"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 12
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    "&": "and",
+    "dotnet": "dot net",
+    "/review": "slash review",
+    "Program.cs": "Program dot C S"
+  },
+  "keywords": {
+    "Slash": "api",
+    "Commands": "api",
+    "Skills": "dotnet",
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "speed": "api",
+    "dial": "api",
+    "folder": "dotnet",
+    "name": "csharp",
+    "description": "aspnet",
+    "instructions": "dotnet",
+    "Plugins": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "What if one short word could run your favorite AI routine?",
+          "cues": {"word": "one short word", "routine": "routine"}
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to AI Dev Tools, Day 2: Slash Commands & Skills.",
+          "cues": {"day2": "Day 2", "skillsT": "Skills"}
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "dial",
+          "text": "A slash command is like a speed dial button.",
+          "cues": {"dialW": "speed dial"}
+        },
+        {
+          "id": "tap",
+          "text": "One tap, and it runs the whole saved routine.",
+          "cues": {"tapW": "One tap"}
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "file",
+          "text": "A skill is just a folder with one file.",
+          "cues": {"fileW": "one file"}
+        },
+        {
+          "id": "name",
+          "text": "The name becomes your command.",
+          "cues": {"nameW": "name"}
+        },
+        {
+          "id": "desc",
+          "text": "The description tells the agent when it helps.",
+          "cues": {"descW": "description"}
+        },
+        {
+          "id": "body",
+          "text": "And the body holds your saved instructions.",
+          "cues": {"bodyW": "instructions"}
+        },
+        {
+          "id": "run",
+          "text": "Now type /review Program.cs, and it runs!",
+          "cues": {"n1": "type"}
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: a skill is a saved prompt, and a slash runs it.",
+          "cues": {"rSkill": "skill", "rSlash": "slash"}
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 2! See you in Day 3: Plugins: Share Your AI Setup!",
+          "cues": {"end": "Day 2", "plug": "Plugins"}
+        }
+      ]
+    }
+  ]
+}

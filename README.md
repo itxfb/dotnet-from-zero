@@ -86,6 +86,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `day09` | Parameters & Return Values | 34.2 s |
 | `day10` | Classes & Objects | 36.3 s |
 | `aitools-day01` | What Is an AI Coding Agent? | 44.2 s |
+| `aitools-day02` | Slash Commands & Skills | 43.5 s |
 
 ## Make the next lesson (Day 4)
 

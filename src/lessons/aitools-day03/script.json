@@ -1,0 +1,175 @@
+{
+  "id": "aitools-day03",
+  "series": "AI DEV TOOLS",
+  "day": 3,
+  "title": "Plugins: Share Your AI Setup",
+  "next": {
+    "day": 4,
+    "title": "MCP: Give AI New Tools"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 13
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    "&": "and",
+    "dotnet": "dot net",
+    "/review": "slash review",
+    "Program.cs": "Program dot C S",
+    "Day 4": "Day four",
+    "/team-kit:review": "slash team kit, colon, review",
+    "team-kit": "team kit",
+    "MCP": "M C P"
+  },
+  "keywords": {
+    "Slash": "api",
+    "Commands": "api",
+    "Skills": "dotnet",
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "speed": "api",
+    "dial": "api",
+    "folder": "dotnet",
+    "name": "csharp",
+    "description": "aspnet",
+    "instructions": "dotnet",
+    "Plugins": "dotnet",
+    "share": "api",
+    "toolbox": "api",
+    "manifest": "csharp",
+    "version": "dotnet",
+    "install": "api",
+    "MCP": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "What if you could share your whole AI setup in one folder?",
+          "cues": {
+            "word": "share",
+            "routine": "one folder"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to AI Dev Tools, Day 3: Plugins: Share Your AI Setup.",
+          "cues": {
+            "day3": "Day 3",
+            "skillsT": "Plugins"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "box",
+          "text": "A plugin is like a toolbox you hand to a teammate.",
+          "cues": {
+            "boxW": "toolbox"
+          }
+        },
+        {
+          "id": "all",
+          "text": "They get every tool at once.",
+          "cues": {
+            "allW": "every tool"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "file",
+          "text": "A plugin is a folder with a small manifest.",
+          "cues": {
+            "fileW": "manifest"
+          }
+        },
+        {
+          "id": "name",
+          "text": "The name becomes the prefix.",
+          "cues": {
+            "nameW": "name"
+          }
+        },
+        {
+          "id": "desc",
+          "text": "The description says what it holds.",
+          "cues": {
+            "descW": "description"
+          }
+        },
+        {
+          "id": "ver",
+          "text": "And the version lets you ship updates.",
+          "cues": {
+            "verW": "version"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Now run /team-kit:review, and it runs!",
+          "cues": {
+            "n1": "run"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: a plugin packs your setup, and one install shares it.",
+          "cues": {
+            "rPack": "plugin",
+            "rInst": "install"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 3! See you in Day 4: MCP: Give AI New Tools!",
+          "cues": {
+            "end": "Day 3",
+            "plug": "MCP"
+          }
+        }
+      ]
+    }
+  ]
+}

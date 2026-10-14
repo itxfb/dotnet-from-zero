@@ -1,0 +1,185 @@
+{
+  "id": "aitools-day04",
+  "series": "AI DEV TOOLS",
+  "day": 4,
+  "title": "MCP: Give AI New Tools",
+  "next": {
+    "day": 5,
+    "title": "Add Your First MCP Server"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 14
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    "&": "and",
+    "dotnet": "dot net",
+    "/review": "slash review",
+    "Program.cs": "Program dot C S",
+    "Day 4": "Day four",
+    "/team-kit:review": "slash team kit, colon, review",
+    "team-kit": "team kit",
+    "MCP": "M C P",
+    "Day 5": "Day five",
+    ".mcp.json": "dot M C P dot json",
+    "claude mcp list": "claude M C P list",
+    "url": "U R L",
+    "USB": "U S B"
+  },
+  "keywords": {
+    "Slash": "api",
+    "Commands": "api",
+    "Skills": "dotnet",
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "speed": "api",
+    "dial": "api",
+    "folder": "dotnet",
+    "name": "csharp",
+    "description": "aspnet",
+    "instructions": "dotnet",
+    "Plugins": "dotnet",
+    "share": "api",
+    "toolbox": "api",
+    "manifest": "csharp",
+    "version": "dotnet",
+    "install": "api",
+    "MCP": "dotnet",
+    "tools": "aspnet",
+    "server": "csharp",
+    "USB": "api",
+    "url": "aspnet",
+    "type": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "What if your AI could use any tool you give it?",
+          "cues": {
+            "word": "any tool",
+            "routine": "give"
+          }
+        },
+        {
+          "id": "welcome",
+          "text": "Welcome to AI Dev Tools, Day 4: MCP: Give AI New Tools.",
+          "cues": {
+            "day4": "Day 4",
+            "skillsT": "MCP"
+          }
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {
+          "id": "box",
+          "text": "MCP is like a USB port for your AI.",
+          "cues": {
+            "boxW": "USB port"
+          }
+        },
+        {
+          "id": "all",
+          "text": "Plug in a server, and it gets a new tool.",
+          "cues": {
+            "allW": "new tool"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "file",
+          "text": "MCP servers are listed in a file called .mcp.json.",
+          "cues": {
+            "fileW": ".mcp.json"
+          }
+        },
+        {
+          "id": "name",
+          "text": "Each server gets a name.",
+          "cues": {
+            "nameW": "name"
+          }
+        },
+        {
+          "id": "type",
+          "text": "The type says how to reach it.",
+          "cues": {
+            "typeW": "type"
+          }
+        },
+        {
+          "id": "url",
+          "text": "And the url says where it lives.",
+          "cues": {
+            "urlW": "url"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Now run claude mcp list, and it connects!",
+          "cues": {
+            "n1": "run"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "recap",
+          "text": "So remember: MCP is a port, and each server adds a tool.",
+          "cues": {
+            "rPack": "MCP",
+            "rInst": "server"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "bye",
+          "text": "That's Day 4! See you in Day 5: Add Your First MCP Server!",
+          "cues": {
+            "end": "Day 4",
+            "plug": "Add Your First"
+          }
+        }
+      ]
+    }
+  ]
+}

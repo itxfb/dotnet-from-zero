@@ -89,6 +89,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aitools-day02` | Slash Commands & Skills | 43.5 s |
 | `aitools-day03` | Plugins: Share Your AI Setup | 42.5 s |
 | `aitools-day04` | MCP: Give AI New Tools | 43.9 s |
+| `aitools-day05` | Add Your First MCP Server | 37.8 s |
 
 ## Make the next lesson (Day 4)
 

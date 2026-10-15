@@ -1,0 +1,103 @@
+{
+  "id": "aitools-day05",
+  "series": "AI DEV TOOLS",
+  "day": 5,
+  "title": "Add Your First MCP Server",
+  "next": {
+    "day": 6,
+    "title": "Subagents: Delegate the Work"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 15
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    "&": "and",
+    "dotnet": "dot net",
+    "Day 4": "Day four",
+    "MCP": "M C P",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "claude mcp add": "claude M C P add",
+    "claude mcp list": "claude M C P list",
+    "http": "H T T P",
+    "url": "U R L",
+    "Subagents": "Sub agents"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "MCP": "dotnet",
+    "add": "api",
+    "tool": "api",
+    "server": "csharp",
+    "app": "api",
+    "command": "csharp",
+    "http": "dotnet",
+    "name": "csharp",
+    "url": "aspnet",
+    "type": "dotnet",
+    "list": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "How do you add a new tool to your AI?", "cues": {"word": "add", "routine": "new tool"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 5: Add Your First MCP Server.", "cues": {"day5": "Day 5", "skillsT": "MCP"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "Adding a server is like installing an app.", "cues": {"boxW": "installing an app"}},
+        {"id": "all", "text": "One command, and your AI can use it.", "cues": {"allW": "One command"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "In your terminal, type claude mcp add.", "cues": {"fileW": "claude mcp add"}},
+        {"id": "type", "text": "Choose http as the type.", "cues": {"typeW": "http"}},
+        {"id": "name", "text": "Give it a name.", "cues": {"nameW": "name"}},
+        {"id": "url", "text": "Then paste its url.", "cues": {"urlW": "url"}},
+        {"id": "run", "text": "Now run claude mcp list, and it connects!", "cues": {"n1": "run"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: add a server, then list to check it.", "cues": {"rPack": "add", "rInst": "list"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 5! See you in Day 6: Subagents: Delegate the Work!", "cues": {"end": "Day 5", "plug": "Subagents"}}
+      ]
+    }
+  ]
+}

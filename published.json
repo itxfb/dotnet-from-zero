@@ -164,5 +164,18 @@
       "publicStatsViewable": true,
       "selfDeclaredMadeForKids": false
     }
+  },
+  "aitools-day06": {
+    "videoId": "J-0w2xtiSsk",
+    "date": "2026-10-15",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
   }
 }

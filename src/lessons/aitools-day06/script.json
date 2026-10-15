@@ -1,0 +1,97 @@
+{
+  "id": "aitools-day06",
+  "series": "AI DEV TOOLS",
+  "day": 6,
+  "title": "Subagents: Delegate the Work",
+  "next": {
+    "day": 7,
+    "title": "Hooks: Automate Every Step"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 16
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    "&": "and",
+    "dotnet": "dot net",
+    "Day 4": "Day four",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "Day 7": "Day seven",
+    "Subagents": "Sub agents",
+    "subagent": "sub agent",
+    ".claude/agents": "dot claude slash agents"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "Subagents": "dotnet",
+    "helper": "api",
+    "helpers": "api",
+    "name": "csharp",
+    "tools": "aspnet",
+    "file": "dotnet",
+    "delegates": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Why do every job yourself?", "cues": {"word": "every job", "routine": "yourself"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 6: Subagents: Delegate the Work.", "cues": {"day6": "Day 6", "skillsT": "Subagents"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A boss gives tasks to helpers.", "cues": {"boxW": "helpers"}},
+        {"id": "all", "text": "Each helper works alone, then reports back.", "cues": {"allW": "reports back"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Make a file in .claude/agents.", "cues": {"fileW": "file"}},
+        {"id": "name", "text": "Give your helper a name.", "cues": {"nameW": "name"}},
+        {"id": "desc", "text": "Say what it is for.", "cues": {"descW": "what it is for"}},
+        {"id": "tools", "text": "Then limit its tools.", "cues": {"toolsW": "tools"}},
+        {"id": "run", "text": "Now ask Claude, and the helper does the work!", "cues": {"n1": "ask"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: one file makes a helper, and Claude delegates.", "cues": {"rPack": "one file", "rInst": "delegates"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 6! See you in Day 7: Hooks: Automate Every Step!", "cues": {"end": "Day 6", "plug": "Hooks"}}
+      ]
+    }
+  ]
+}

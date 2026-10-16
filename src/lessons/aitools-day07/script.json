@@ -1,0 +1,89 @@
+{
+  "id": "aitools-day07",
+  "series": "AI DEV TOOLS",
+  "day": 7,
+  "title": "Hooks: Automate Every Step",
+  "next": {
+    "day": 8,
+    "title": "Run AI Agents in CI"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 17
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 7": "Day seven",
+    "Day 8": "Day eight",
+    "&": "and",
+    "CI": "C I",
+    ".claude/settings.json": "dot claude slash settings dot json"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "Hooks": "dotnet",
+    "hook": "api",
+    "hooks": "api",
+    "event": "csharp",
+    "command": "aspnet",
+    "automatically": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Tired of repeating the same step?", "cues": {"word": "repeating", "routine": "same step"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 7: Hooks: Automate Every Step.", "cues": {"day7": "Day 7", "skillsT": "Hooks"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A door sensor turns on the light by itself.", "cues": {"boxW": "door sensor"}},
+        {"id": "all", "text": "An event happens, and an action runs automatically.", "cues": {"allW": "action runs"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Open .claude/settings.json and add hooks.", "cues": {"fileW": "hooks"}},
+        {"id": "ev", "text": "Pick the event: after Claude uses a tool.", "cues": {"evW": "event"}},
+        {"id": "match", "text": "Match only edits and writes.", "cues": {"matchW": "edits"}},
+        {"id": "cmd", "text": "Then set the command to run.", "cues": {"cmdW": "command"}},
+        {"id": "run", "text": "Now Claude edits a file, and your hook formats it!", "cues": {"n1": "edits a file"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: an event triggers a hook, every time.", "cues": {"rPack": "event", "rInst": "hook"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 7! See you in Day 8: Run AI Agents in CI!", "cues": {"end": "Day 7", "plug": "Run AI Agents"}}
+      ]
+    }
+  ]
+}

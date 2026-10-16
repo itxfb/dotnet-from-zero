@@ -92,6 +92,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aitools-day05` | Add Your First MCP Server | 37.8 s |
 | `aitools-day06` | Subagents: Delegate the Work | 37.7 s |
 | `aitools-day07` | Hooks: Automate Every Step | 41.5 s |
+| `aitools-day08` | Run AI Agents in CI | 44.0 s |
 
 ## Make the next lesson (Day 4)
 

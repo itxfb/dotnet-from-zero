@@ -1,0 +1,92 @@
+{
+  "id": "aitools-day08",
+  "series": "AI DEV TOOLS",
+  "day": 8,
+  "title": "Run AI Agents in CI",
+  "next": {
+    "day": 9,
+    "title": "Parallel Agents with Worktrees"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 18
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 8": "Day eight",
+    "Day 9": "Day nine",
+    "CI": "C I",
+    "PR": "P R",
+    ".github/workflows": "dot github slash workflows"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "CI": "dotnet",
+    "pull": "api",
+    "request": "api",
+    "Trigger": "csharp",
+    "trigger": "csharp",
+    "secret": "dotnet",
+    "prompt": "aspnet",
+    "automatically": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Want AI to review every pull request?", "cues": {"word": "every pull request", "routine": "review"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 8: Run AI Agents in CI.", "cues": {"day8": "Day 8", "skillsT": "Run AI Agents"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A security guard checks every package at the door.", "cues": {"boxW": "security guard"}},
+        {"id": "all", "text": "A pull request arrives, and the agent checks it automatically.", "cues": {"allW": "agent checks"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Add a workflow file in .github/workflows.", "cues": {"fileW": "workflow file"}},
+        {"id": "ev", "text": "Trigger it on every pull request.", "cues": {"evW": "Trigger"}},
+        {"id": "act", "text": "Use the Claude Code action.", "cues": {"actW": "action"}},
+        {"id": "key", "text": "Keep your key in a secret.", "cues": {"keyW": "secret"}},
+        {"id": "pr", "text": "Then add a prompt: review this PR.", "cues": {"prW": "prompt"}},
+        {"id": "run", "text": "Now every pull request gets an AI review!", "cues": {"n1": "AI review"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: a trigger starts the agent, in CI.", "cues": {"rPack": "trigger", "rInst": "agent"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 8! See you in Day 9: Parallel Agents with Worktrees!", "cues": {"end": "Day 8", "plug": "Parallel Agents"}}
+      ]
+    }
+  ]
+}

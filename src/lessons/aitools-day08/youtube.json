@@ -1,0 +1,18 @@
+{
+  "title": "Run Claude Code in CI: Auto-Review Every Pull Request",
+  "description": "Want AI to review every pull request? 🤖\n\n✅ Add a workflow file in .github/workflows\n✅ Trigger it on every pull request and use the Claude Code action\n✅ Keep your key in a secret and add a review prompt\n\nDay 8 of AI Dev Tools! Next up: Day 9, Parallel Agents with Worktrees.\nFollow for a new short every day and learn AI dev tools from scratch.\n\n#shorts #claudecode #aicoding #githubactions #cicd #ai #programming",
+  "tags": [
+    "claude code github actions",
+    "run claude code in ci",
+    "claude code action",
+    "ai code review github",
+    "ai pull request review",
+    "claude code workflow yaml",
+    "github actions ai agent",
+    "automate pull request review",
+    "claude code tutorial",
+    "claude code for beginners",
+    "ai coding agents",
+    "ai dev tools"
+  ]
+}

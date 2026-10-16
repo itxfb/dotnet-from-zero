@@ -35,6 +35,8 @@ import {AitoolsDay06} from './aitools-day06/AitoolsDay06';
 import aitoolsDay06Timeline from './aitools-day06/timeline.json';
 import {AitoolsDay07} from './aitools-day07/AitoolsDay07';
 import aitoolsDay07Timeline from './aitools-day07/timeline.json';
+import {AitoolsDay08} from './aitools-day08/AitoolsDay08';
+import aitoolsDay08Timeline from './aitools-day08/timeline.json';
 
 /**
  * Lesson registry. To add a lesson: create src/lessons/dayNN/{script.json, DayNN.tsx},
@@ -62,6 +64,7 @@ export const LESSONS: Lesson[] = [
   lesson('aitools-day05', aitoolsDay05Timeline, AitoolsDay05),
   lesson('aitools-day06', aitoolsDay06Timeline, AitoolsDay06),
   lesson('aitools-day07', aitoolsDay07Timeline, AitoolsDay07),
+  lesson('aitools-day08', aitoolsDay08Timeline, AitoolsDay08),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

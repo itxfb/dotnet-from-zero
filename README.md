@@ -93,6 +93,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aitools-day06` | Subagents: Delegate the Work | 37.7 s |
 | `aitools-day07` | Hooks: Automate Every Step | 41.5 s |
 | `aitools-day08` | Run AI Agents in CI | 44.0 s |
+| `aitools-day09` | Parallel Agents with Worktrees | 42.6 s |
 
 ## Make the next lesson (Day 4)
 

@@ -1,0 +1,88 @@
+{
+  "id": "aitools-day09",
+  "series": "AI DEV TOOLS",
+  "day": 9,
+  "title": "Parallel Agents with Worktrees",
+  "next": {
+    "day": 10,
+    "title": "Build Your Own MCP Server"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 19
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 9": "Day nine",
+    "Day 10": "Day ten",
+    "worktrees": "work trees",
+    "worktree": "work tree"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "agents": "dotnet",
+    "worktree": "csharp",
+    "own": "api",
+    "branch": "csharp",
+    "parallel": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Can two AI agents edit one project at once?", "cues": {"word": "two AI agents", "routine": "at once"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 9: Parallel Agents with Worktrees.", "cues": {"day9": "Day 9", "skillsT": "Parallel Agents"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "Two cooks share one counter, and they bump elbows.", "cues": {"boxW": "Two cooks"}},
+        {"id": "all", "text": "Give each cook their own counter, and nobody collides.", "cues": {"allW": "own counter"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "A worktree is its own folder on its own branch.", "cues": {"fileW": "worktree"}},
+        {"id": "ev", "text": "Start one with claude --worktree and a name.", "cues": {"evW": "--worktree"}},
+        {"id": "act", "text": "Open a second terminal for the second agent.", "cues": {"actW": "second terminal"}},
+        {"id": "key", "text": "Give it another name.", "cues": {"keyW": "another name"}},
+        {"id": "pr", "text": "Check them with git branch.", "cues": {"prW": "branch"}},
+        {"id": "run", "text": "Now both agents work in parallel!", "cues": {"n1": "parallel"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: one agent, one worktree.", "cues": {"rPack": "one agent", "rInst": "one worktree"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 9! See you in Day 10: Build Your Own MCP Server!", "cues": {"end": "Day 9", "plug": "Build Your Own"}}
+      ]
+    }
+  ]
+}

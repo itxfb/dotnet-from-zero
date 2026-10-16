@@ -1,0 +1,18 @@
+{
+  "title": "Run Parallel Claude Code Agents with Git Worktrees",
+  "description": "Can two AI agents edit one project at once? 🤖\n\n✅ A worktree is its own folder on its own branch\n✅ Start each agent with claude --worktree and a name\n✅ Check the branches with git branch\n\nDay 9 of AI Dev Tools! Next up: Day 10, Build Your Own MCP Server.\nFollow for a new short every day and learn AI dev tools from scratch.\n\n#shorts #claudecode #gitworktree #aicoding #git #ai #programming",
+  "tags": [
+    "git worktree claude code",
+    "claude code worktree",
+    "parallel ai agents",
+    "run multiple claude code agents",
+    "git worktree tutorial",
+    "claude code --worktree",
+    "parallel claude code sessions",
+    "git worktree for beginners",
+    "ai coding agents",
+    "claude code tutorial",
+    "claude code for beginners",
+    "ai dev tools"
+  ]
+}

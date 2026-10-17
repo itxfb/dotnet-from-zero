@@ -1,0 +1,199 @@
+/** AI Dev Tools Day 10 storyboard: "Build Your Own MCP Server" (timed from cues in script.json). */
+import React from 'react';
+import {ChefHat, ListChecks, Code, Server} from 'lucide-react';
+import {Arrow} from '../../components/Arrow';
+import {Captions} from '../../components/Captions';
+import {Editor, editorKeyFrames, EdLine, SYN2} from '../../components/Editor';
+import {EndCard} from '../../components/EndCard';
+import {FloatingChips} from '../../components/FloatingChips';
+import {Direction} from '../../components/instructor/Instructor';
+import {Module, Tag} from '../../components/Module';
+import {SeriesBadge} from '../../components/SeriesBadge';
+import {Studio} from '../../components/Studio';
+import {Sfx, ShotKey, ShotProvider, Within} from '../../engine/direction';
+import {CueRef, getScene, resolveCue, useTimeline} from '../../engine/timeline';
+import {CONCEPT} from '../../theme';
+
+const useCues = () => {
+  const tl = useTimeline();
+  return {c: (r: CueRef) => resolveCue(tl, r), scene: (id: string) => getScene(tl, id)};
+};
+
+const tk = (t: string, c: string = SYN2.plain) => (t ? [{t, c}] : []);
+
+const Analogy: React.FC = () => {
+  const {c, scene} = useCues();
+  const life = scene('life');
+  return (
+    <>
+      <Module x={540} y={340} w={640} h={140} tone="api" label="a menu of dishes" labelSize={38} Icon={ListChecks} appear={c('boxW')} exit={life.to - 12} />
+      <Arrow pts={[[540, 420], [540, 570]]} at={c('allW') - 4} exit={life.to - 12} color={CONCEPT.api.main} />
+      <Module x={540} y={650} w={640} h={140} tone="str" label="a kitchen of tools" labelSize={40} Icon={ChefHat} appear={c('allW')} exit={life.to - 12} />
+      <Tag x={540} y={830} at={c('allW') + 10} exit={life.to - 12} text="each tool is a dish" color={CONCEPT.csharp.main} size={40} />
+    </>
+  );
+};
+
+const Recap: React.FC = () => {
+  const {c, scene} = useCues();
+  const recap = scene('recap');
+  return (
+    <>
+      <Module x={290} y={480} w={380} h={130} tone="dotnet" label="function" Icon={Code} appear={c('rPack')} exit={recap.to - 8} />
+      <Arrow pts={[[490, 480], [590, 480]]} at={c('rInst') - 2} exit={recap.to - 8} color={CONCEPT.neutral.main} />
+      <Module x={790} y={480} w={380} h={130} tone="api" label="server" Icon={Server} appear={c('rInst')} exit={recap.to - 8} />
+      <Tag x={540} y={700} at={c('rInst') + 8} exit={recap.to - 8} text="your own tool" color={CONCEPT.csharp.main} size={44} />
+    </>
+  );
+};
+
+export const AitoolsDay10: React.FC = () => {
+  const {c, scene} = useCues();
+  const life = scene('life');
+  const code = scene('code');
+  const recap = scene('recap');
+  const outro = scene('outro');
+
+  const shots: ShotKey[] = [
+    {at: 0, shot: 'hero'},
+    {at: life.from - 6, shot: 'teach', dur: 26},
+    {at: code.from - 6, shot: 'code', dur: 28},
+    {at: recap.from - 6, shot: 'teach', dur: 26},
+    {at: outro.from - 6, shot: 'outro', dur: 28},
+  ];
+
+  const k = SYN2.keyword;
+  const s = SYN2.string;
+  const cm = SYN2.comment;
+  const lines: EdLine[] = [
+    {tokens: [...tk('from', k), ...tk(' mcp.server '), ...tk('import', k), ...tk(' MCPServer')], typeAt: c('line:file') + 2, speed: 0.9},
+    {tokens: [...tk('mcp = MCPServer('), ...tk('"Demo"', s), ...tk(')')], typeAt: c('line:file:end') - 22, speed: 0.9},
+    {tokens: tk('@mcp.tool()', k), typeAt: c('line:ev') + 2, speed: 0.9},
+    {tokens: [...tk('def', k), ...tk(' add(a: int, b: int) -> int:')], typeAt: c('line:ev:end') - 14, speed: 0.9},
+    {tokens: [...tk('    '), ...tk('return', k), ...tk(' a + b')], typeAt: c('line:act') + 2, speed: 0.9},
+    {tokens: tk('# claude mcp add demo -- uv run mcp run server.py', cm), typeAt: c('line:key') + 2, speed: 1.4},
+  ];
+
+  const direction: Direction = {
+    gestures: [
+      {at: 0, pose: 'rest'},
+      {at: 'line:hook', pose: 'openToViewer'},
+      {at: 'word', pose: 'explain'},
+      {at: 'routine', pose: 'shrug'},
+      {at: 'day10', pose: 'wave'},
+      {at: life.from, pose: 'explain'},
+      {at: 'boxW', pose: {point: [540, 340]}},
+      {at: 'allW', pose: {point: [540, 650]}},
+      {at: 'line:all:end', pose: 'explain'},
+      {at: code.from, pose: 'explain'},
+      {at: 'fileW', pose: {point: [300, 340]}},
+      {at: 'evW', pose: {point: [300, 440]}},
+      {at: 'actW', pose: {point: [300, 540]}},
+      {at: 'keyW', pose: {point: [300, 590]}},
+      {at: 'n1', pose: {point: [200, 950]}},
+      {at: 'line:run:end', pose: 'openToViewer'},
+      {at: recap.from, pose: 'explain'},
+      {at: 'rPack', pose: {point: [290, 480]}},
+      {at: 'rInst', pose: {point: [790, 480]}},
+      {at: 'line:recap:end', pose: 'explain'},
+      {at: outro.from, pose: 'explain'},
+      {at: 'end', pose: 'openToViewer'},
+      {at: 'plug', pose: 'wave'},
+    ],
+    smile: [
+      {at: 0, v: 0.55},
+      {at: 'day10', v: 0.85},
+      {at: 'line:box', v: 0.55},
+      {at: 'allW', v: 0.8},
+      {at: 'line:file', v: 0.55},
+      {at: 'n1', v: 0.85},
+      {at: 'line:recap', v: 0.6},
+      {at: 'line:bye', v: 0.85},
+      {at: 'line:bye:end', v: 1},
+    ],
+    brows: [
+      {at: 'line:hook', v: 0.8, hold: 50},
+      {at: 'boxW', v: 0.6, hold: 24},
+      {at: 'keyW', v: 0.6, hold: 24},
+      {at: 'line:bye', v: 0.5, hold: 30},
+    ],
+  };
+
+  const keyFrames = editorKeyFrames(lines);
+
+  return (
+    <ShotProvider keys={shots}>
+      <Studio direction={direction} />
+
+      <Within from={0} to={life.from + 10}>
+        <FloatingChips
+          at={c('word') - 4}
+          until={c('day10') + 30}
+          items={[
+            {text: 'tool', tone: 'dotnet', x: 205, y: 905, at: c('word') - 4},
+            {text: 'for AI', tone: 'csharp', x: 875, y: 880, at: c('routine') + 2},
+            {text: 'MCP', tone: 'api', x: 195, y: 1160, at: c('skillsT') - 4},
+            {text: 'server', tone: 'aspnet', x: 885, y: 1150, at: c('skillsT') - 2},
+          ]}
+        />
+      </Within>
+
+      <Within from={life.from} to={life.to + 4}>
+        <Analogy />
+      </Within>
+
+      <Within from={code.from - 2} to={code.to + 6}>
+        <Editor
+          rect={{x: 56, y: 236, w: 968, h: 920}}
+          enter={code.from}
+          exit={code.to - 8}
+          filename="server.py"
+          lang="Python"
+          command="claude mcp add demo -- uv run mcp run server.py"
+          lines={lines}
+          fontSize={26}
+          lineHeight={50}
+          rows={6}
+          termHeight={310}
+          highlights={[
+            {at: c('fileW'), until: c('line:file:end') + 4, spans: [{row: 0, from: 0, to: 4}, {row: 1, from: 0, to: 3}], tone: 'dotnet'},
+            {at: c('evW'), until: c('line:ev:end') + 4, spans: [{row: 2, from: 5, to: 9}], tone: 'csharp'},
+            {at: c('actW'), until: c('line:act:end') + 4, spans: [{row: 4, from: 4, to: 16}], tone: 'api'},
+            {at: c('keyW'), until: c('line:key:end') + 4, spans: [{row: 5, from: 2, to: 16}], tone: 'dotnet'},
+          ]}
+          runs={[
+            {
+              at: c('n1') - 14,
+              output: 'Added stdio MCP server demo',
+              lineAt: [c('n1')],
+            },
+          ]}
+        />
+      </Within>
+
+      <Within from={recap.from} to={recap.to + 4}>
+        <Recap />
+      </Within>
+
+      <Within from={outro.from} to={outro.to + 1}>
+        <EndCard day={10} nextDay={1} nextTitle="What Is a Token?" doneAt={c('end')} nextAt={c('plug')} glowAt={c('plug') + 4} />
+      </Within>
+
+      <SeriesBadge pulseAt={c('day10')} />
+      <Captions />
+
+      {[life.from - 6, code.from - 6, recap.from - 6, outro.from - 6].map((f) => (
+        <Sfx key={`w${f}`} at={f} name="whoosh" volume={0.3} />
+      ))}
+      {['word', 'routine', 'boxW', 'allW', 'fileW', 'evW', 'actW', 'keyW', 'rPack', 'rInst', 'plug'].map((key) => (
+        <Sfx key={key} at={c(key)} name="pop" volume={0.22} />
+      ))}
+      <Sfx at={c('n1')} name="pop" volume={0.16} />
+      {keyFrames.map((f, i) => (
+        <Sfx key={`k${f}`} at={f} name={`key${(i % 4) + 1}`} volume={0.3} />
+      ))}
+      <Sfx at={c('n1') - 14} name="key2" volume={0.5} />
+      <Sfx at={c('end')} name="chime" volume={0.32} />
+    </ShotProvider>
+  );
+};

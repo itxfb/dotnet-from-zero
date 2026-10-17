@@ -1,0 +1,86 @@
+{
+  "id": "aitools-day10",
+  "series": "AI DEV TOOLS",
+  "day": 10,
+  "title": "Build Your Own MCP Server",
+  "next": {
+    "day": 1,
+    "title": "What Is a Token?"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 20
+  },
+  "pronounce": {
+    "AI": "A I",
+    "MCP": "M C P",
+    "mcp": "M C P",
+    "Day 10": "Day ten"
+  },
+  "keywords": {
+    "AI": "aspnet",
+    "Dev": "aspnet",
+    "Tools": "aspnet",
+    "MCP": "dotnet",
+    "Server": "csharp",
+    "tool": "api",
+    "own": "api",
+    "add": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Can you build your own tool for AI?", "cues": {"word": "your own tool", "routine": "for AI"}},
+        {"id": "welcome", "text": "Welcome to AI Dev Tools, Day 10: Build Your Own MCP Server.", "cues": {"day10": "Day 10", "skillsT": "Build Your Own"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A restaurant menu lists every dish you can order.", "cues": {"boxW": "menu"}},
+        {"id": "all", "text": "Your server is the kitchen, and each tool is a dish it cooks.", "cues": {"allW": "each tool"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Import the server class, and name your server.", "cues": {"fileW": "Import"}},
+        {"id": "ev", "text": "Mark a function with tool.", "cues": {"evW": "tool"}},
+        {"id": "act", "text": "This one adds two numbers.", "cues": {"actW": "adds"}},
+        {"id": "key", "text": "Then register it with claude mcp add.", "cues": {"keyW": "claude mcp add"}},
+        {"id": "run", "text": "Now Claude can call your tool!", "cues": {"n1": "call"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: a function, plus a tool mark, is a server.", "cues": {"rPack": "a function", "rInst": "tool mark"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's the end of AI Dev Tools! Next up, a new series: Token Saver!", "cues": {"end": "end", "plug": "Token Saver"}}
+      ]
+    }
+  ]
+}

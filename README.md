@@ -94,6 +94,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aitools-day07` | Hooks: Automate Every Step | 41.5 s |
 | `aitools-day08` | Run AI Agents in CI | 44.0 s |
 | `aitools-day09` | Parallel Agents with Worktrees | 42.6 s |
+| `aitools-day10` | Build Your Own MCP Server | 39.5 s |
 
 ## Make the next lesson (Day 4)
 

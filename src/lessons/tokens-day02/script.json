@@ -1,0 +1,87 @@
+{
+  "id": "tokens-day02",
+  "series": "TOKEN SAVER",
+  "day": 2,
+  "title": "The Context Window",
+  "next": {
+    "day": 3,
+    "title": "Rules Files That Save Tokens"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 22
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 2": "Day two",
+    "Day 3": "Day three"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "AI": "aspnet",
+    "context": "dotnet",
+    "window": "dotnet",
+    "desk": "api",
+    "full": "csharp",
+    "tokens": "api",
+    "forget": "csharp",
+    "fresh": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Why does AI forget the start of a long chat?", "cues": {"word": "forget", "routine": "long chat"}},
+        {"id": "welcome", "text": "Welcome to Token Saver, Day 2: The Context Window.", "cues": {"day2": "Day 2", "skillsT": "Context Window"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "The context window is your AI's desk.", "cues": {"boxW": "desk"}},
+        {"id": "all", "text": "Everything in the chat takes space, and a full desk pushes old things off.", "cues": {"allW": "full desk"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Say the window holds one hundred tokens,", "cues": {"fileW": "window"}},
+        {"id": "ev", "text": "and your chat already used eighty five.", "cues": {"evW": "eighty five"}},
+        {"id": "act", "text": "Subtract used from the window,", "cues": {"actW": "Subtract"}},
+        {"id": "key", "text": "then print what is left.", "cues": {"keyW": "print"}},
+        {"id": "run", "text": "Fifteen tokens left!", "cues": {"n1": "Fifteen"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: the window is limited, so start a fresh chat before it fills.", "cues": {"rPack": "window", "rInst": "fresh chat"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 2! See you in Day 3: Rules Files That Save Tokens!", "cues": {"end": "Day 2", "plug": "Day 3"}}
+      ]
+    }
+  ]
+}

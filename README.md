@@ -96,6 +96,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aitools-day09` | Parallel Agents with Worktrees | 42.6 s |
 | `aitools-day10` | Build Your Own MCP Server | 39.5 s |
 | `tokens-day01` | What Is a Token? | 37.9 s |
+| `tokens-day02` | The Context Window | 39.8 s |
 
 ## Make the next lesson (Day 4)
 

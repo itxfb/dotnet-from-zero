@@ -1,0 +1,87 @@
+{
+  "id": "tokens-day01",
+  "series": "TOKEN SAVER",
+  "day": 1,
+  "title": "What Is a Token?",
+  "next": {
+    "day": 2,
+    "title": "The Context Window"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 21
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "token": "dotnet",
+    "tokens": "dotnet",
+    "AI": "aspnet",
+    "pieces": "api",
+    "brick": "api",
+    "bricks": "api",
+    "four": "csharp",
+    "length": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Why does AI count your words in pieces?", "cues": {"word": "count", "routine": "pieces"}},
+        {"id": "welcome", "text": "Welcome to Token Saver, Day 1: What Is a Token?", "cues": {"day1": "Day 1", "skillsT": "What Is a Token"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A token is a small piece of text, like a Lego brick.", "cues": {"boxW": "Lego brick"}},
+        {"id": "all", "text": "Your message is built from bricks, and AI counts every brick.", "cues": {"allW": "counts every brick"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Store a prompt in a string.", "cues": {"fileW": "Store"}},
+        {"id": "ev", "text": "One token is about four letters,", "cues": {"evW": "four"}},
+        {"id": "act", "text": "so divide the length by four.", "cues": {"actW": "divide"}},
+        {"id": "key", "text": "Then print the estimate.", "cues": {"keyW": "print"}},
+        {"id": "run", "text": "About four tokens!", "cues": {"n1": "four tokens"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: your text becomes tokens, and tokens are what you spend.", "cues": {"rPack": "text", "rInst": "tokens are"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 1! See you in Day 2: The Context Window!", "cues": {"end": "Day 1", "plug": "Day 2"}}
+      ]
+    }
+  ]
+}

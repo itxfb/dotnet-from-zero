@@ -5,7 +5,7 @@ import {clamp01, pop, ramp} from '../engine/timeline';
 import {C, CONCEPT, FONT, hexA} from '../theme';
 
 /** "DAY n ✓" + "DAY n+1 → NEXT TITLE". */
-export const EndCard: React.FC<{day: number; nextDay: number; nextTitle: string; doneAt: number; nextAt: number; glowAt: number}> = (p) => {
+export const EndCard: React.FC<{day: number; nextDay: number; nextTitle: string; doneAt: number; nextAt: number; glowAt: number; compact?: boolean}> = (p) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (frame < p.doneAt - 2) return null;
@@ -64,8 +64,8 @@ export const EndCard: React.FC<{day: number; nextDay: number; nextTitle: string;
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 20,
-              padding: '22px 34px',
+              gap: p.compact ? 16 : 20,
+              padding: p.compact ? '22px 26px' : '22px 34px',
               borderRadius: 30,
               background: `linear-gradient(180deg, ${hexA(CONCEPT.dotnet.main, 0.28)}, ${hexA(CONCEPT.dotnet.main, 0.1)}), ${C.inkRaised}`,
               border: `2.5px solid ${hexA(CONCEPT.dotnet.main, 0.75)}`,
@@ -74,9 +74,9 @@ export const EndCard: React.FC<{day: number; nextDay: number; nextTitle: string;
               opacity: Math.min(1, b * 1.6),
             }}
           >
-            <div style={{fontFamily: FONT.display, fontWeight: 700, fontSize: 44, color: C.muted}}>DAY {p.nextDay}</div>
+            <div style={{fontFamily: FONT.display, fontWeight: 700, fontSize: 44, color: C.muted, whiteSpace: p.compact ? 'nowrap' : undefined}}>DAY {p.nextDay}</div>
             <ArrowRight size={52} color={C.paper} strokeWidth={2.6} />
-            <div style={{fontFamily: FONT.display, fontWeight: 800, fontSize: 60, color: CONCEPT.csharp.main, letterSpacing: '0.02em'}}>
+            <div style={{fontFamily: FONT.display, fontWeight: 800, fontSize: p.compact ? 46 : 60, color: CONCEPT.csharp.main, letterSpacing: '0.02em', whiteSpace: p.compact ? 'nowrap' : undefined}}>
               {p.nextTitle.toUpperCase()}
             </div>
           </div>

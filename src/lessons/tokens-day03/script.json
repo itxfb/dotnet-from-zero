@@ -1,0 +1,87 @@
+{
+  "id": "tokens-day03",
+  "series": "TOKEN SAVER",
+  "day": 3,
+  "title": "Rules Files That Save Tokens",
+  "next": {
+    "day": 4,
+    "title": "Memory: Teach It Once"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 23
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 3": "Day three",
+    "Day 4": "Day four",
+    "CLAUDE.md": "CLAUDE dot M D"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "retype": "csharp",
+    "rules": "dotnet",
+    "note": "api",
+    "once": "csharp",
+    "tokens": "api",
+    "short": "csharp",
+    "file": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Why retype the same rules in every chat?", "cues": {"word": "retype", "routine": "same rules"}},
+        {"id": "welcome", "text": "Welcome to Token Saver, Day 3: Rules Files That Save Tokens.", "cues": {"day3": "Day 3", "skillsT": "Rules Files"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "A rules file is a sticky note on the fridge.", "cues": {"boxW": "sticky note"}},
+        {"id": "all", "text": "Write it once, and nobody has to ask twice.", "cues": {"allW": "once"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Make a file called CLAUDE.md,", "cues": {"fileW": "CLAUDE.md"}},
+        {"id": "ev", "text": "add the test command,", "cues": {"evW": "test command"}},
+        {"id": "act", "text": "and a rule to keep answers short.", "cues": {"actW": "keep answers short"}},
+        {"id": "key", "text": "Now ask how to run the tests.", "cues": {"keyW": "ask"}},
+        {"id": "run", "text": "It already knows!", "cues": {"n1": "knows"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: write rules once, and keep them short, because they load every chat.", "cues": {"rPack": "write rules once", "rInst": "keep them short"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 3! See you in Day 4: Memory: Teach It Once!", "cues": {"end": "Day 3", "plug": "Day 4"}}
+      ]
+    }
+  ]
+}

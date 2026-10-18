@@ -98,6 +98,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `tokens-day01` | What Is a Token? | 37.9 s |
 | `tokens-day02` | The Context Window | 39.8 s |
 | `tokens-day03` | Rules Files That Save Tokens | 39.0 s |
+| `tokens-day04` | Memory: Teach It Once | 41.4 s |
 
 ## Make the next lesson (Day 4)
 

@@ -1,0 +1,88 @@
+{
+  "id": "tokens-day04",
+  "series": "TOKEN SAVER",
+  "day": 4,
+  "title": "Memory: Teach It Once",
+  "next": {
+    "day": 5,
+    "title": "Clear & Compact Your Chat"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 24
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 4": "Day four",
+    "Day 5": "Day five",
+    "MEMORY.md": "MEMORY dot M D",
+    "pnpm": "P N P M"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "Memory": "dotnet",
+    "forget": "csharp",
+    "once": "csharp",
+    "remember": "api",
+    "notebook": "api",
+    "pnpm": "csharp",
+    "tokens": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Does your AI forget everything you told it?", "cues": {"word": "forget", "routine": "everything"}},
+        {"id": "welcome", "text": "Welcome to Token Saver, Day 4: Memory: Teach It Once.", "cues": {"day4": "Day 4", "skillsT": "Memory"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "Memory is a notebook the AI keeps about you.", "cues": {"boxW": "notebook"}},
+        {"id": "all", "text": "Teach it once, and it remembers next time.", "cues": {"allW": "once"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Just say: remember, I use pnpm.", "cues": {"fileW": "remember"}},
+        {"id": "ev", "text": "It saves a note in MEMORY.md,", "cues": {"evW": "MEMORY.md"}},
+        {"id": "act", "text": "a short file loaded every session.", "cues": {"actW": "loaded every session"}},
+        {"id": "key", "text": "Now ask which package manager you use.", "cues": {"keyW": "ask"}},
+        {"id": "run", "text": "It remembers!", "cues": {"n1": "remembers"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: teach it once, and save tokens, because you never explain it again.", "cues": {"rPack": "teach it once", "rInst": "save tokens"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 4! See you in Day 5: Clear & Compact Your Chat!", "cues": {"end": "Day 4", "plug": "Day 5"}}
+      ]
+    }
+  ]
+}

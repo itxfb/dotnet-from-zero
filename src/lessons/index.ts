@@ -47,6 +47,8 @@ import {TokensDay02} from './tokens-day02/TokensDay02';
 import tokensDay02Timeline from './tokens-day02/timeline.json';
 import {TokensDay03} from './tokens-day03/TokensDay03';
 import tokensDay03Timeline from './tokens-day03/timeline.json';
+import {TokensDay04} from './tokens-day04/TokensDay04';
+import tokensDay04Timeline from './tokens-day04/timeline.json';
 
 /**
  * Lesson registry. To add a lesson: create src/lessons/dayNN/{script.json, DayNN.tsx},
@@ -80,6 +82,7 @@ export const LESSONS: Lesson[] = [
   lesson('tokens-day01', tokensDay01Timeline, TokensDay01),
   lesson('tokens-day02', tokensDay02Timeline, TokensDay02),
   lesson('tokens-day03', tokensDay03Timeline, TokensDay03),
+  lesson('tokens-day04', tokensDay04Timeline, TokensDay04),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

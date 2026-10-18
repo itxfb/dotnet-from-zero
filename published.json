@@ -281,5 +281,18 @@
       "publicStatsViewable": true,
       "selfDeclaredMadeForKids": false
     }
+  },
+  "tokens-day05": {
+    "videoId": "yce5iHjG1Ho",
+    "date": "2026-10-18",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    }
   }
 }

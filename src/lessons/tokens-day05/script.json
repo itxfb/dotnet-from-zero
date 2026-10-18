@@ -1,0 +1,89 @@
+{
+  "id": "tokens-day05",
+  "series": "TOKEN SAVER",
+  "day": 5,
+  "title": "Clear & Compact Your Chat",
+  "next": {
+    "day": 6,
+    "title": "Short Prompts, Short Answers"
+  },
+  "fps": 30,
+  "targetSeconds": 60,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 25
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "/clear": "slash clear",
+    "/compact": "slash compact"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "Clear": "dotnet",
+    "Compact": "csharp",
+    "long": "csharp",
+    "summary": "api",
+    "tokens": "api",
+    "fresh": "csharp",
+    "/clear": "dotnet",
+    "/compact": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Is your long chat quietly burning tokens?", "cues": {"word": "long chat", "routine": "burning"}},
+        {"id": "welcome", "text": "Welcome to Token Saver, Day 5: Clear & Compact Your Chat.", "cues": {"day5": "Day 5", "skillsT": "Clear"}}
+      ]
+    },
+    {
+      "id": "life",
+      "lines": [
+        {"id": "box", "text": "Clear is a wiped whiteboard.", "cues": {"boxW": "whiteboard"}},
+        {"id": "all", "text": "Compact is a short summary of old notes.", "cues": {"allW": "short summary"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "file", "text": "Say your chat is ninety tokens,", "cues": {"fileW": "chat"}},
+        {"id": "ev", "text": "but a summary is only ten.", "cues": {"evW": "ten"}},
+        {"id": "act", "text": "Subtract the summary from the chat,", "cues": {"actW": "Subtract"}},
+        {"id": "key", "text": "then print what you saved.", "cues": {"keyW": "print"}},
+        {"id": "run", "text": "Eighty tokens saved!", "cues": {"n1": "Eighty"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "recap", "text": "So remember: /clear starts fresh, /compact keeps a summary.", "cues": {"rPack": "/clear", "rInst": "/compact"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "bye", "text": "That's Day 5! See you in Day 6: Short Prompts, Short Answers!", "cues": {"end": "Day 5", "plug": "Day 6"}}
+      ]
+    }
+  ]
+}

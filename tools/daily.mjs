@@ -42,6 +42,13 @@ const fail = (m) => {
   say(`FAILED: ${m}`);
   process.exit(1);
 };
+const net = (url, opts, tries = 3) =>
+  fetch(url, opts).catch(async (e) => {
+    if (tries <= 1) throw e;
+    say(`network error, retrying: ${e.cause?.message ?? e.message}`);
+    await new Promise((r) => setTimeout(r, 10e3));
+    return net(url, opts, tries - 1);
+  });
 const sh = (cmd, args) => {
   say(`$ ${cmd} ${args.join(' ')}`);
   return spawnSync(cmd, args, {stdio: ['ignore', log, log], shell: win && cmd.endsWith('.cmd')}).status;
@@ -81,7 +88,7 @@ const auth = async () => {
       }
     }).listen(53682);
   });
-  const r = await fetch('https://oauth2.googleapis.com/token', {method: 'POST', body: new URLSearchParams({code, client_id, client_secret, redirect_uri: REDIRECT, grant_type: 'authorization_code'})});
+  const r = await net('https://oauth2.googleapis.com/token', {method: 'POST', body: new URLSearchParams({code, client_id, client_secret, redirect_uri: REDIRECT, grant_type: 'authorization_code'})});
   const t = await r.json();
   if (!t.refresh_token) fail(`token exchange: ${JSON.stringify(t)}`);
   writeFileSync('.secrets/token.json', JSON.stringify({refresh_token: t.refresh_token}));
@@ -94,7 +101,7 @@ const accessToken = async () => {
   if (!process.env.YT_REFRESH_TOKEN && !existsSync('.secrets/token.json')) fail('not signed in: run node tools/daily.mjs auth');
   const {client_id, client_secret} = client();
   const refresh_token = process.env.YT_REFRESH_TOKEN ?? json('.secrets/token.json').refresh_token;
-  const r = await fetch('https://oauth2.googleapis.com/token', {method: 'POST', body: new URLSearchParams({client_id, client_secret, refresh_token, grant_type: 'refresh_token'})});
+  const r = await net('https://oauth2.googleapis.com/token', {method: 'POST', body: new URLSearchParams({client_id, client_secret, refresh_token, grant_type: 'refresh_token'})});
   const t = await r.json();
   if (!r.ok) fail(`Google rejected the sign-in (${t.error}): run node tools/daily.mjs auth`);
   return (token = t.access_token);
@@ -120,13 +127,13 @@ const send = async (id, {title, description, tags}) => {
     status: {privacyStatus: 'public', selfDeclaredMadeForKids: false},
   };
   const authz = {Authorization: `Bearer ${await accessToken()}`};
-  const init = await fetch('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status', {
+  const init = await net('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status', {
     method: 'POST',
     headers: {...authz, 'Content-Type': 'application/json; charset=UTF-8', 'X-Upload-Content-Type': 'video/mp4', 'X-Upload-Content-Length': String(video.length)},
     body: JSON.stringify(body),
   });
   if (!init.ok) fail(`upload start ${init.status}: ${await init.text()}`);
-  const put = await fetch(init.headers.get('location'), {method: 'PUT', headers: {...authz, 'Content-Type': 'video/mp4'}, body: video});
+  const put = await net(init.headers.get('location'), {method: 'PUT', headers: {...authz, 'Content-Type': 'video/mp4'}, body: video});
   const v = await put.json();
   if (!put.ok) fail(`upload ${put.status}: ${JSON.stringify(v)}`);
   writeFileSync('published.json', JSON.stringify({...published(), [id]: {videoId: v.id, date: today(), channel: v.snippet.channelTitle, status: v.status}}, null, 2) + '\n');
@@ -134,7 +141,7 @@ const send = async (id, {title, description, tags}) => {
 };
 
 const yt = async (endpoint, body) => {
-  const r = await fetch(`https://www.googleapis.com/youtube/v3/${endpoint}`, {
+  const r = await net(`https://www.googleapis.com/youtube/v3/${endpoint}`, {
     method: body ? 'POST' : 'GET',
     headers: {Authorization: `Bearer ${await accessToken()}`, 'Content-Type': 'application/json; charset=UTF-8'},
     body: body && JSON.stringify(body),
@@ -269,5 +276,5 @@ const [cmd, arg] = process.argv.slice(2);
 try {
   await (cmd === 'auth' ? auth() : cmd === 'upload' ? upload(arg) : cmd === 'plan' ? plan() : cmd === 'compile' ? compile() : main(cmd !== 'prepare'));
 } catch (e) {
-  fail(e.stack ?? e);
+  fail(`${e.stack ?? e}${e.cause ? `\ncause: ${e.cause.stack ?? e.cause}` : ''}`);
 }

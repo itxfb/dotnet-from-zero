@@ -140,13 +140,17 @@ const send = async (id, {title, description, tags}) => {
   say(`uploaded ${id}: https://youtu.be/${v.id} on "${v.snippet.channelTitle}" (${v.status.privacyStatus}${v.status.publishAt ? `, public at ${v.status.publishAt}` : ''})`);
 };
 
-const yt = async (endpoint, body) => {
+const yt = async (endpoint, body, tries = 5) => {
   const r = await net(`https://www.googleapis.com/youtube/v3/${endpoint}`, {
     method: body ? 'POST' : 'GET',
     headers: {Authorization: `Bearer ${await accessToken()}`, 'Content-Type': 'application/json; charset=UTF-8'},
     body: body && JSON.stringify(body),
   });
   const j = await r.json();
+  if (r.status === 409 && tries > 1) {
+    await new Promise((res) => setTimeout(res, 5e3));
+    return yt(endpoint, body, tries - 1);
+  }
   if (!r.ok) throw new Error(`${endpoint.split('?')[0]} ${r.status}: ${j.error?.message}`);
   return j;
 };

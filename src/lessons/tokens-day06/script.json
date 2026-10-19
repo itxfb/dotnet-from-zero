@@ -1,0 +1,79 @@
+{
+  "id": "tokens-day06",
+  "series": "TOKEN SAVER",
+  "day": 6,
+  "title": "Short Prompts, Short Answers",
+  "next": {
+    "day": 7,
+    "title": "Point to Files, Don't Paste"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 26
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 6": "Day six",
+    "Day 7": "Day seven"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "Long": "dotnet",
+    "Short": "dotnet",
+    "prompt": "csharp",
+    "prompts": "csharp",
+    "answer": "api",
+    "answers": "api",
+    "tokens": "api",
+    "words": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Long prompts get long, costly answers.", "cues": {"longW": "Long prompts", "costW": "costly"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "task", "text": "Name the task in a few words.", "cues": {"taskW": "task"}},
+        {"id": "cap", "text": "Then cap the answer: reply in three lines.", "cues": {"capW": "reply in three lines"}},
+        {"id": "cnt", "text": "Count the words.", "cues": {"cntW": "Count"}},
+        {"id": "run", "text": "Six words, not twelve!", "cues": {"n1": "Six"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Short prompt, short answer, fewer tokens.", "cues": {"tkW": "Short prompt"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Short or long prompts: which do you write? Comment below!", "cues": {"qW": "Short or long"}},
+        {"id": "bye", "text": "Follow for Day 7: Point to Files, Don't Paste!", "cues": {"end": "Follow", "plug": "Day 7"}}
+      ]
+    }
+  ]
+}

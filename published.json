@@ -346,5 +346,20 @@
     },
     "playlist": "UExId0U5Q3ZCVFNlRS40NzZCMERDMjVEN0RFRThB",
     "comment": "UgzDWH3k-IliVmbEd5F4AaABAg"
+  },
+  "tokens-day06": {
+    "videoId": "hiQFZ6_GSJI",
+    "date": "2026-10-19",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExHWUoxNE9SeGtTVS4xMkVGQjNCMUM1N0RFNEUx",
+    "comment": "Ugy1v4xOey9FzcuBzxR4AaABAg"
   }
 }

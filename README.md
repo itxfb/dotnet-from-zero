@@ -100,6 +100,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `tokens-day03` | Rules Files That Save Tokens | 39.0 s |
 | `tokens-day04` | Memory: Teach It Once | 41.4 s |
 | `tokens-day05` | Clear & Compact Your Chat | 36.5 s |
+| `tokens-day06` | Short Prompts, Short Answers | 26.1 s |
 
 ## Make the next lesson (Day 4)
 

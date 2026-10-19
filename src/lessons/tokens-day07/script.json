@@ -1,0 +1,83 @@
+{
+  "id": "tokens-day07",
+  "series": "TOKEN SAVER",
+  "day": 7,
+  "title": "Point to Files, Don't Paste",
+  "next": {
+    "day": 8,
+    "title": "Switch to a Cheaper Model"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 27
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 7": "Day seven",
+    "Day 8": "Day eight",
+    "4000": "four thousand",
+    "26": "twenty six"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "pasting": "dotnet",
+    "pasted": "dotnet",
+    "files": "csharp",
+    "file": "csharp",
+    "path": "csharp",
+    "sign": "api",
+    "characters": "api",
+    "4000": "dotnet",
+    "26": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop pasting whole files into chat.", "cues": {"pasteW": "pasting whole files"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "big", "text": "A pasted file can be 4000 characters.", "cues": {"bigW": "4000 characters"}},
+        {"id": "ask", "text": "Instead, ask with the file's path.", "cues": {"askW": "file's path"}},
+        {"id": "at", "text": "Start it with an at sign.", "cues": {"atW": "at sign"}},
+        {"id": "cnt", "text": "Count the characters.", "cues": {"cntW": "Count"}},
+        {"id": "run", "text": "26 characters, not 4000!", "cues": {"n1": "26"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Point to the file, don't paste it.", "cues": {"tkW": "Point"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Paste or point: which do you do now? Comment below!", "cues": {"qW": "Paste or point"}},
+        {"id": "bye", "text": "Follow for Day 8: Switch to a Cheaper Model!", "cues": {"end": "Follow", "plug": "Day 8"}}
+      ]
+    }
+  ]
+}

@@ -126,31 +126,39 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 
 ## Daily automation (GitHub Actions)
 
-`.github/workflows/daily.yml` runs at 10:00, 15:00 and 20:00 Pakistan time (05/10/15:00 UTC) on GitHub, so no
-PC needs to be on. Each run makes and uploads **one** lesson, at most 3 a day (`MAX_PER_DAY` in `tools/daily.mjs`):
+`.github/workflows/daily.yml` runs at 10:00 and 20:00 Pakistan time (05/15:00 UTC) on GitHub, so no
+PC needs to be on. Each run makes and uploads **one** lesson, at most 2 a day (`MAX_PER_DAY` in `tools/daily.mjs`):
 
 1. `tools/curriculum.json` lists the series in order (.NET From Zero → AI Dev Tools → Token Saver → …).
    The next lesson is the first one not yet in `published.json`. Lesson ids are `<prefix><NN>`, e.g.
    `day07`, `aitools-day01`.
 2. When the list is about to run out, Claude researches current trends in AI-assisted development
-   (web search) and appends a new 10-lesson series, so it keeps going forever.
-3. Claude Code (`claude -p`) writes the lesson, checks stills, verifies commands against official docs
-   and proves any C# output with `dotnet run`.
-4. Claude also writes `youtube.json` (hook title, short description, trending hashtags, search tags).
+   (web search) and appends a new 10-lesson series of hands-on "do / build X" topics, so it keeps going forever.
+3. Claude Code (`claude -p`) writes the lesson (at most 40 s, `MAX_SECONDS`): frame 0 shows the payoff with a
+   hook line, then the demo, a takeaway, and an outro that asks a comment question. It checks stills, verifies
+   commands against official docs and proves any C# output with `dotnet run`.
+4. Claude also writes `youtube.json` (hook title, short description, trending hashtags, search tags, first comment).
 5. It renders, uploads to YouTube as **public** with that metadata, and records the upload in `published.json`.
+6. Every uploaded video is added to its series playlist (created if missing) and gets its first comment.
+   Older uploads are added on the next run, so the playlists fill in by themselves.
+
+Every Sunday at 12:00 Pakistan time (07:00 UTC) the workflow runs `compile`: each finished series that
+has no long video yet is rendered, joined into one video with chapters (`<prefix>-all`), uploaded and
+added to the series playlist.
 
 The workflow then commits the new lesson back to this repo and attaches the mp4 + log to the run.
 A lesson that fails its checks is not uploaded; the next run finishes it.
 
 **Run it by hand:** Actions → *Daily lesson* → *Run workflow*, with mode `run` (make + upload today's),
-`prepare` (make the next lesson without uploading) or `check` (test the Claude login).
+`prepare` (make the next lesson without uploading), `compile` (long videos for finished series) or `check` (test the Claude login).
 To change what comes next, edit `tools/curriculum.json` (add, remove or reorder series and topics).
 
 **Secrets** (Settings → Secrets and variables → Actions): `CLAUDE_CODE_OAUTH_TOKEN` (from `claude setup-token`),
 `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (from `node tools/daily.mjs auth`, which saves
-`.secrets/token.json` locally).
+`.secrets/token.json` locally). The sign-in asks for `youtube.upload` and `youtube.force-ssl`, which playlists
+and comments need: after changing scopes, run `auth` again and paste the new token into `YT_REFRESH_TOKEN`.
 
-Locally the same script still works: `node tools/daily.mjs [prepare | plan | upload <id> | auth]` (log: `out/daily.log`).
+Locally the same script still works: `node tools/daily.mjs [prepare | plan | compile | upload <id> | auth]` (log: `out/daily.log`).
 The consent screen's home page and privacy policy are served by GitHub Pages from `docs/`.
 
 ## Tuning

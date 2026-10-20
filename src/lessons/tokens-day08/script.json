@@ -1,0 +1,82 @@
+{
+  "id": "tokens-day08",
+  "series": "TOKEN SAVER",
+  "day": 8,
+  "title": "Switch to a Cheaper Model",
+  "next": {
+    "day": 9,
+    "title": "Cut Costs with Prompt Caching"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 28
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 8": "Day eight",
+    "Day 9": "Day nine",
+    "/model": "slash model",
+    "haiku": "high koo",
+    "Haiku": "high koo"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "cheaper": "dotnet",
+    "model": "csharp",
+    "haiku": "api",
+    "Haiku": "api",
+    "/model": "csharp",
+    "bill": "dotnet",
+    "lower": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Simple task? Use a cheaper model.", "cues": {"cheapW": "cheaper model"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "small", "text": "Smaller models cost less per token.", "cues": {"smallW": "cost less"}},
+        {"id": "set", "text": "Add a model setting.", "cues": {"setW": "model setting"}},
+        {"id": "hk", "text": "Set it to haiku.", "cues": {"hkW": "haiku"}},
+        {"id": "cmd", "text": "Or type /model haiku in chat.", "cues": {"cmdW": "/model haiku"}},
+        {"id": "run", "text": "Same chat, lower bill!", "cues": {"n1": "lower bill"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Easy job? Pick the cheaper model.", "cues": {"tkW": "cheaper model"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Haiku or Sonnet: which do you pick for easy jobs? Comment below!", "cues": {"qW": "Haiku or Sonnet"}},
+        {"id": "bye", "text": "Follow for Day 9: Cut Costs with Prompt Caching!", "cues": {"end": "Follow", "plug": "Day 9"}}
+      ]
+    }
+  ]
+}

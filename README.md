@@ -103,6 +103,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `tokens-day06` | Short Prompts, Short Answers | 26.1 s |
 | `tokens-day07` | Point to Files, Don't Paste | 27.9 s |
 | `tokens-day08` | Switch to a Cheaper Model | 29.1 s |
+| `tokens-day09` | Cut Costs with Prompt Caching | 29.4 s |
 
 ## Make the next lesson (Day 4)
 

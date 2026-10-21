@@ -1,0 +1,19 @@
+{
+  "title": "Prompt Caching: Stop Paying Full Price for Repeats",
+  "description": "Sending the same long prompt again and again? Stop paying full price for it. 💸\n\n✅ Caching reuses the unchanged start of your prompt\n✅ Mark the big, stable part with cache_control, type ephemeral\n✅ Cached reads cost far less than normal input\n\nDay 9 of Token Saver! Next up, Day 10: Use Subagents to Keep Context Clean.\nFollow for a new short every day and learn to spend fewer tokens with AI.\n\n#shorts #ai #claude #aicoding #promptengineering #aitools #coding #learntocode",
+  "tags": [
+    "prompt caching",
+    "claude prompt caching",
+    "how to save tokens",
+    "reduce ai token usage",
+    "cache_control ephemeral",
+    "anthropic api caching",
+    "cheaper ai api costs",
+    "save money on claude api",
+    "ai coding for beginners",
+    "use fewer tokens with ai",
+    "llm cost optimization",
+    "token saver"
+  ],
+  "comment": "Cache or no cache: which do you try first? Tell me in a word! Extra tip: put the big unchanging text at the start of your prompt and the changing question last, so the cached part stays the same."
+}

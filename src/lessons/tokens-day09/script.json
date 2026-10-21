@@ -1,0 +1,81 @@
+{
+  "id": "tokens-day09",
+  "series": "TOKEN SAVER",
+  "day": 9,
+  "title": "Cut Costs with Prompt Caching",
+  "next": {
+    "day": 10,
+    "title": "Use Subagents to Keep Context Clean"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 29
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 9": "Day nine",
+    "Day 10": "Day ten",
+    "ephemeral": "eh femm ural",
+    "cache_control": "cache control"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "Caching": "csharp",
+    "cache": "csharp",
+    "cache_control": "api",
+    "ephemeral": "api",
+    "full": "dotnet",
+    "far": "dotnet",
+    "less": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop paying full price for repeats.", "cues": {"fullW": "full price"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Caching reuses the start of your prompt.", "cues": {"ideaW": "reuses"}},
+        {"id": "mark", "text": "Mark the big, unchanging part.", "cues": {"markW": "unchanging part"}},
+        {"id": "cc", "text": "Add cache_control, type ephemeral.", "cues": {"ccW": "cache_control", "ephW": "ephemeral"}},
+        {"id": "run", "text": "Next call reads it from cache.", "cues": {"n1": "from cache"}},
+        {"id": "far", "text": "Cached reads cost far less!", "cues": {"farW": "far less"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Same start? Cache it.", "cues": {"tkW": "Cache it"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Cache or no cache: which do you try first? Comment below!", "cues": {"qW": "Cache or no cache"}},
+        {"id": "bye", "text": "Follow for Day 10: Use Subagents to Keep Context Clean!", "cues": {"end": "Follow", "plug": "Day 10"}}
+      ]
+    }
+  ]
+}

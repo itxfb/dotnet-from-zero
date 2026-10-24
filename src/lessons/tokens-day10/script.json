@@ -1,0 +1,80 @@
+{
+  "id": "tokens-day10",
+  "series": "TOKEN SAVER",
+  "day": 10,
+  "title": "Use Subagents to Keep Context Clean",
+  "next": {
+    "day": 1,
+    "title": "Set Allow and Deny Permission Rules"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 30
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 10": "Day ten",
+    ".claude/agents": "dot claude slash agents"
+  },
+  "keywords": {
+    "Token": "dotnet",
+    "Saver": "aspnet",
+    "subagent": "csharp",
+    "Subagents": "csharp",
+    "own": "dotnet",
+    "context": "dotnet",
+    "summary": "api",
+    "Safe": "dotnet",
+    "Agents": "aspnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop filling your chat with search noise.", "cues": {"noiseW": "search noise"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "A subagent works in its own context.", "cues": {"ideaW": "own context"}},
+        {"id": "file", "text": "Save it in .claude/agents.", "cues": {"fileW": ".claude/agents"}},
+        {"id": "name", "text": "Give it a name and read-only tools.", "cues": {"nameW": "name", "toolsW": "read-only tools"}},
+        {"id": "body", "text": "Tell it to reply in three lines.", "cues": {"bodyW": "three lines"}},
+        {"id": "run", "text": "Now ask Claude to use it.", "cues": {"runW": "use it"}},
+        {"id": "res", "text": "Only the short summary comes back!", "cues": {"resW": "short summary"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Big search? Send a subagent.", "cues": {"tkW": "Send a subagent"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Subagents or Compact: which would you use first? Comment below!", "cues": {"qW": "Subagents or Compact"}},
+        {"id": "bye", "text": "Follow for the new series: Safe AI Agents!", "cues": {"end": "Follow", "plug": "Safe AI Agents"}}
+      ]
+    }
+  ]
+}

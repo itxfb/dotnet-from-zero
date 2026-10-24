@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code Subagents: Keep Your Context Clean",
+  "description": "Big searches flooding your AI chat? Send a subagent instead. 🧹\n\n✅ A subagent works in its own context\n✅ Save it as a file in .claude/agents with a name and read-only tools\n✅ Only its short summary comes back to your chat\n\nDay 10 of Token Saver, the last one! Next up: the new series Safe AI Agents, Day 1: Set Allow and Deny Permission Rules.\nFollow for a new short every day and learn to spend fewer tokens with AI.\n\n#shorts #claudecode #aicoding #aiagents #ai #programming #coding #learntocode",
+  "tags": [
+    "claude code subagents",
+    "how to use subagents",
+    "claude code sub agents tutorial",
+    ".claude/agents",
+    "keep context clean",
+    "save tokens claude code",
+    "reduce ai token usage",
+    "claude code tips",
+    "ai coding for beginners",
+    "use fewer tokens with ai",
+    "claude code context window",
+    "token saver"
+  ],
+  "comment": "Subagents or Compact: which would you use first? Tell me in a word! Extra tip: give a subagent only the tools it needs, like Read, Grep and Glob, so it can search but not change your files."
+}

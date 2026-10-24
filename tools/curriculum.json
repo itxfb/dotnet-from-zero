@@ -58,5 +58,25 @@
       "Cut Costs with Prompt Caching",
       "Use Subagents to Keep Context Clean"
     ]
+  },
+  {
+    "name": "Safe AI Agents",
+    "badge": "SAFE AI AGENTS",
+    "prefix": "safeagents-day",
+    "about": "lock down AI coding agents: permissions, sandboxes, secrets and prompt injection defenses",
+    "tags": ["AI", "AI security", "prompt injection", "Claude Code", "MCP", "sandboxing", "AI agents"],
+    "hashtags": "#ai #aisecurity #aicoding #mcp",
+    "topics": [
+      "Set Allow and Deny Permission Rules",
+      "Keep Secrets Out of AI Context",
+      "Block Dangerous Commands with a Hook",
+      "Run Your Agent in a Sandbox",
+      "Review Every Diff Before You Commit",
+      "Spot Prompt Injection in a Repo File",
+      "Vet an MCP Server Before You Install",
+      "Give Agents Least-Privilege Tokens",
+      "Run Agents in a Dev Container",
+      "Audit Agent Actions with Hook Logs"
+    ]
   }
 ]

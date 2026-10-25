@@ -1,0 +1,80 @@
+{
+  "id": "safeagents-day01",
+  "series": "SAFE AI AGENTS",
+  "day": 1,
+  "title": "Set Allow and Deny Permission Rules",
+  "next": {
+    "day": 2,
+    "title": "Keep Secrets Out of AI Context"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 31
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 1": "Day one",
+    "Day 2": "Day two",
+    ".claude/settings.json": "dot claude slash settings dot json",
+    ".env": "dot env"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "Allow": "csharp",
+    "deny": "api",
+    "Deny": "api",
+    "Denied": "api",
+    "rules": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop approving every single AI command.", "cues": {"hookW": "every single"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Set rules once in your settings.", "cues": {"ideaW": "rules"}},
+        {"id": "file", "text": "Open .claude/settings.json.", "cues": {"fileW": ".claude/settings.json"}},
+        {"id": "allow", "text": "Allow the safe command: npm test.", "cues": {"allowW": "npm test"}},
+        {"id": "deny", "text": "Deny reading your .env file.", "cues": {"denyW": ".env file"}},
+        {"id": "run", "text": "Now ask Claude to read it.", "cues": {"runW": "read it"}},
+        {"id": "res", "text": "Denied! Deny always wins.", "cues": {"resW": "Deny always wins"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Allow the safe, deny the secret.", "cues": {"tkW": "deny the secret"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Allow or Deny: which rule would you write first? Comment below!", "cues": {"qW": "Allow or Deny"}},
+        {"id": "bye", "text": "Follow for Day 2: Keep Secrets Out of AI Context!", "cues": {"end": "Follow", "plug": "Keep Secrets"}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Claude Code Permissions: Stop Approving Every Command",
+  "description": "Tired of approving every AI command? Set the rules once. 🔒\n\n✅ Open .claude/settings.json\n✅ Allow safe commands like npm test\n✅ Deny reading your .env file, and deny always wins\n\nDay 1 of Safe AI Agents! Next up, Day 2: Keep Secrets Out of AI Context.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #claudecode #aicoding #aiagents #aisecurity #ai #programming #coding",
+  "tags": [
+    "claude code permissions",
+    "claude code allow deny rules",
+    "claude code settings.json",
+    "claude code deny .env",
+    "how to secure claude code",
+    "claude code security",
+    "ai coding agent safety",
+    "claude code tips",
+    "claude code for beginners",
+    "stop claude reading env file",
+    "safe ai agents"
+  ],
+  "comment": "Allow or Deny: which rule would you write first? Tell me in a word! Extra tip: you can also share rules with your team by committing .claude/settings.json to your project."
+}

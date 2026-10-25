@@ -1,0 +1,81 @@
+{
+  "id": "safeagents-day02",
+  "series": "SAFE AI AGENTS",
+  "day": 2,
+  "title": "Keep Secrets Out of AI Context",
+  "next": {
+    "day": 3,
+    "title": "Block Dangerous Commands with a Hook"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 32
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 2": "Day two",
+    "Day 3": "Day three",
+    ".claude/settings.json": "dot claude slash settings dot json",
+    ".env": "dot env"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "secrets": "api",
+    "Secrets": "api",
+    "Deny": "api",
+    "Denied": "api",
+    "leak": "api",
+    "read": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop your AI from reading secrets.", "cues": {"hookW": "reading secrets"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Deny whole folders, not just files.", "cues": {"ideaW": "whole folders"}},
+        {"id": "file", "text": "Open .claude/settings.json.", "cues": {"fileW": ".claude/settings.json"}},
+        {"id": "sec", "text": "Deny the secrets folder.", "cues": {"secW": "secrets folder"}},
+        {"id": "env", "text": "And every .env variant.", "cues": {"envW": ".env variant"}},
+        {"id": "run", "text": "Now ask Claude to read a key.", "cues": {"runW": "read a key"}},
+        {"id": "res", "text": "Denied! It never enters context.", "cues": {"resW": "never enters context"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "What AI can't read, it can't leak.", "cues": {"tkW": "can't leak"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Secrets folder or .env files: which would you hide first? Comment below!", "cues": {"qW": "Secrets folder"}},
+        {"id": "bye", "text": "Follow for Day 3: Block Dangerous Commands with a Hook!", "cues": {"end": "Follow", "plug": "Block Dangerous"}}
+      ]
+    }
+  ]
+}

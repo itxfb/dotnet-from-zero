@@ -106,6 +106,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `tokens-day09` | Cut Costs with Prompt Caching | 29.4 s |
 | `tokens-day10` | Use Subagents to Keep Context Clean | 31.3 s |
 | `safeagents-day01` | Set Allow and Deny Permission Rules | 33.3 s |
+| `safeagents-day02` | Keep Secrets Out of AI Context | 32.9 s |
 
 ## Make the next lesson (Day 4)
 

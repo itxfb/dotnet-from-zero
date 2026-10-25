@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code Deny Rules: Hide Your Secrets From AI",
+  "description": "Your AI agent can read your secrets unless you say no. 🔐\n\n✅ Open .claude/settings.json\n✅ Deny Read(./secrets/**) to hide a whole folder\n✅ Deny Read(./.env.*) to hide every .env variant\n\nDay 2 of Safe AI Agents! Next up, Day 3: Block Dangerous Commands with a Hook.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #claudecode #aicoding #aiagents #aisecurity #cybersecurity #devsecops #programming",
+  "tags": [
+    "claude code deny rules",
+    "claude code secrets",
+    "claude code settings.json",
+    "hide .env from claude code",
+    "stop claude code reading env file",
+    "keep secrets out of ai context",
+    "claude code permissions deny read",
+    "how to secure claude code",
+    "ai coding agent security",
+    "protect api keys from ai",
+    "claude code for beginners",
+    "safe ai agents"
+  ],
+  "comment": "Secrets folder or .env files: which would you hide first? Tell me in a word! Extra tip: Read deny rules are for file reads, so keep real keys out of the project folder when you can."
+}

@@ -1,0 +1,80 @@
+{
+  "id": "safeagents-day04",
+  "series": "SAFE AI AGENTS",
+  "day": 4,
+  "title": "Run Your Agent in a Sandbox",
+  "next": {
+    "day": 5,
+    "title": "Review Every Diff Before You Commit"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 34
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 4": "Day four",
+    "Day 5": "Day five",
+    "SSH": "S S H",
+    "settings.json": "settings dot json"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "sandbox": "csharp",
+    "Sandbox": "csharp",
+    "SSH keys": "api",
+    "Operation not permitted": "api",
+    "whole disk": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Your AI agent can read your whole disk.", "cues": {"hookW": "whole disk"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "A sandbox walls it in.", "cues": {"ideaW": "sandbox"}},
+        {"id": "en", "text": "Turn it on in settings.json.", "cues": {"enW": "settings.json"}},
+        {"id": "rt", "text": "Block retries outside the sandbox.", "cues": {"rtW": "retries"}},
+        {"id": "deny", "text": "Deny reading your SSH keys.", "cues": {"dnW": "SSH keys"}},
+        {"id": "run", "text": "Now the agent tries to read them.", "cues": {"runW": "tries"}},
+        {"id": "res", "text": "Operation not permitted!", "cues": {"resW": "Operation not permitted"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "A sandbox sets hard limits.", "cues": {"tkW": "hard limits"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Sandbox or hooks: which would you turn on first? Comment below!", "cues": {"qW": "Sandbox"}},
+        {"id": "bye", "text": "Follow for Day 5: Review Every Diff Before You Commit!", "cues": {"end": "Follow", "plug": "Review Every Diff"}}
+      ]
+    }
+  ]
+}

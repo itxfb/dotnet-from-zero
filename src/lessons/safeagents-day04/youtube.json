@@ -1,0 +1,18 @@
+{
+  "title": "Claude Code Sandbox: Stop It Reading Your SSH Keys",
+  "description": "Your AI agent can read your whole disk, unless you wall it in. 🔒\n\n✅ Turn on the sandbox in settings.json\n✅ Block retries outside the sandbox\n✅ Deny reading your SSH keys\n\nDay 4 of Safe AI Agents! Next up, Day 5: Review Every Diff Before You Commit.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #claudecode #aicoding #aiagents #aisecurity #sandbox #programming",
+  "tags": [
+    "claude code sandbox",
+    "claude code sandbox settings",
+    "claude code /sandbox",
+    "sandbox ai coding agent",
+    "claude code denyRead",
+    "protect ssh keys from ai",
+    "claude code settings.json",
+    "ai coding agent security",
+    "claude code for beginners",
+    "run ai agent safely",
+    "safe ai agents"
+  ],
+  "comment": "Sandbox or hooks: which would you turn on first? Tell me in a word! Extra tip: on Linux and WSL2 the sandbox needs bubblewrap and socat installed, and native Windows is not supported."
+}

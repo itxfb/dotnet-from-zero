@@ -1,0 +1,88 @@
+{
+  "id": "safeagents-day03",
+  "series": "SAFE AI AGENTS",
+  "day": 3,
+  "title": "Block Dangerous Commands with a Hook",
+  "next": {
+    "day": 4,
+    "title": "Run Your Agent in a Sandbox"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 33
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 3": "Day three",
+    "Day 4": "Day four",
+    "rm -rf": "r m dash r f",
+    "PreToolUse": "pre tool use",
+    "block.sh": "block dot S H",
+    "exit 2": "exit two"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "rm -rf": "api",
+    "Blocked": "api",
+    "hook": "csharp",
+    "Hooks": "csharp",
+    "PreToolUse": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop your AI from running rm -rf.", "cues": {"hookW": "rm -rf"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "A hook checks every command first.", "cues": {"ideaW": "hook"}},
+        {"id": "file", "text": "Save block.sh.", "cues": {"fileW": "block.sh"}},
+        {"id": "rd", "text": "Read the command from the JSON.", "cues": {"rdW": "command"}},
+        {"id": "if", "text": "If it matches rm -rf, exit 2.", "cues": {"ifW": "rm -rf", "exW": "exit 2"}},
+        {"id": "run", "text": "Test it with a risky command.", "cues": {"runW": "risky command"}},
+        {"id": "res", "text": "Blocked! Claude sees why.", "cues": {"resW": "Blocked"}}
+      ]
+    },
+    {
+      "id": "reg",
+      "lines": [
+        {"id": "reg", "text": "Register it as a PreToolUse hook on Bash.", "cues": {"regW": "PreToolUse", "bashW": "on Bash"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "A hook says no, every time.", "cues": {"tkW": "no, every time"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Hooks or deny rules: which would you set first? Comment below!", "cues": {"qW": "Hooks"}},
+        {"id": "bye", "text": "Follow for Day 4: Run Your Agent in a Sandbox!", "cues": {"end": "Follow", "plug": "Run Your Agent"}}
+      ]
+    }
+  ]
+}

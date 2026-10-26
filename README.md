@@ -107,6 +107,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `tokens-day10` | Use Subagents to Keep Context Clean | 31.3 s |
 | `safeagents-day01` | Set Allow and Deny Permission Rules | 33.3 s |
 | `safeagents-day02` | Keep Secrets Out of AI Context | 32.9 s |
+| `safeagents-day03` | Block Dangerous Commands with a Hook | 34.3 s |
 
 ## Make the next lesson (Day 4)
 

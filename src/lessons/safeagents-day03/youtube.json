@@ -1,0 +1,18 @@
+{
+  "title": "Claude Code Hooks: Block rm -rf Before It Runs",
+  "description": "Your AI agent can run any command, unless a hook says no. 🛑\n\n✅ Write a short block.sh script that checks the command\n✅ Exit 2 to block rm -rf and show Claude why\n✅ Register it as a PreToolUse hook on Bash\n\nDay 3 of Safe AI Agents! Next up, Day 4: Run Your Agent in a Sandbox.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #claudecode #aicoding #aiagents #aisecurity #anthropic #programming",
+  "tags": [
+    "claude code hooks",
+    "claude code pretooluse hook",
+    "block dangerous commands claude code",
+    "claude code block rm -rf",
+    "claude code hooks tutorial",
+    "claude code settings.json hooks",
+    "stop ai agent running commands",
+    "ai coding agent security",
+    "claude code for beginners",
+    "claude code exit code 2",
+    "safe ai agents"
+  ],
+  "comment": "Hooks or deny rules: which would you set first? Tell me in a word! Extra tip: a hook script must be executable (chmod +x), and the jq tool must be installed for the script to read the command."
+}

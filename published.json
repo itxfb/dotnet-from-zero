@@ -496,5 +496,20 @@
     },
     "playlist": "UExJN1NMOVJhT09oMC41MjE1MkI0OTQ2QzJGNzNG",
     "comment": "Ugy55aIm5tHsQoKWrRN4AaABAg"
+  },
+  "safeagents-day05": {
+    "videoId": "x2BYQyo9Cvk",
+    "date": "2026-10-27",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExJN1NMOVJhT09oMC4wOTA3OTZBNzVEMTUzOTMy",
+    "comment": "UgzMQQY5WPAviACIV2l4AaABAg"
   }
 }

@@ -1,0 +1,81 @@
+{
+  "id": "safeagents-day05",
+  "series": "SAFE AI AGENTS",
+  "day": 5,
+  "title": "Review Every Diff Before You Commit",
+  "next": {
+    "day": 6,
+    "title": "Spot Prompt Injection in a Repo File"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 35
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 5": "Day five",
+    "Day 6": "Day six",
+    "--name-only": "dash dash name only",
+    "git add -p": "git add dash p",
+    "deploy.sh": "deploy dot S H"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "diff": "csharp",
+    "git diff": "csharp",
+    "git add -p": "csharp",
+    "deploy.sh": "api",
+    "never read": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop committing code you never read.", "cues": {"hookW": "never read"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "First, list what the agent changed.", "cues": {"ideaW": "changed"}},
+        {"id": "l1", "text": "Run git diff --name-only.", "cues": {"nmW": "--name-only"}},
+        {"id": "l2", "text": "Then git add -p shows each chunk.", "cues": {"apW": "git add -p"}},
+        {"id": "l3", "text": "Commit only what you approve.", "cues": {"cmW": "approve"}},
+        {"id": "run", "text": "You asked for a typo fix. Run it.", "cues": {"runW": "Run it"}},
+        {"id": "res", "text": "Why did deploy.sh change?", "cues": {"resW": "deploy.sh"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Read the diff, then commit.", "cues": {"tkW": "diff"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Diff first or tests first: which would you run? Comment below!", "cues": {"qW": "Diff"}},
+        {"id": "bye", "text": "Follow for Day 6: Spot Prompt Injection in a Repo File!", "cues": {"end": "Follow", "plug": "Spot Prompt"}}
+      ]
+    }
+  ]
+}

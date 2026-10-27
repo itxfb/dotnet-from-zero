@@ -109,6 +109,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `safeagents-day02` | Keep Secrets Out of AI Context | 32.9 s |
 | `safeagents-day03` | Block Dangerous Commands with a Hook | 34.3 s |
 | `safeagents-day04` | Run Your Agent in a Sandbox | 30.6 s |
+| `safeagents-day05` | Review Every Diff Before You Commit | 32.0 s |
 
 ## Make the next lesson (Day 4)
 

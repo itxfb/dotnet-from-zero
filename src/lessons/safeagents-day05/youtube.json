@@ -1,0 +1,18 @@
+{
+  "title": "Git Diff Check: Catch What Your AI Agent Really Changed",
+  "description": "Your AI agent said it fixed a typo. What else did it touch? 🔍\n\n✅ List changed files with git diff --name-only\n✅ Approve each chunk with git add -p\n✅ Commit only what you read\n\nDay 5 of Safe AI Agents! Next up, Day 6: Spot Prompt Injection in a Repo File.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #git #aicoding #aiagents #aisecurity #claudecode #programming",
+  "tags": [
+    "git diff",
+    "git diff name only",
+    "git add -p",
+    "git add patch",
+    "review ai code changes",
+    "review ai generated code",
+    "check ai agent changes before commit",
+    "claude code git diff",
+    "ai coding agent security",
+    "git for beginners",
+    "safe ai agents"
+  ],
+  "comment": "Diff first or tests first: which would you run? Tell me in a word! Extra tip: git diff --staged shows exactly what is about to be committed, so run it right before git commit."
+}

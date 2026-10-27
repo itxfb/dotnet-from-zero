@@ -1,0 +1,19 @@
+{
+  "title": "Prompt Injection: Spot the Hidden Order in Your Repo Files",
+  "description": "Your README can give orders to your AI agent, and you'd never see them. 🕵️\n\n✅ Why agents obey text hidden in repo files\n✅ Scan with grep for ignore previous and comment tags\n✅ Treat file text as data, never as orders\n\nDay 6 of Safe AI Agents! Next up, Day 7: Vet an MCP Server Before You Install.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #promptinjection #aisecurity #aiagents #aicoding #claudecode #grep",
+  "tags": [
+    "prompt injection",
+    "prompt injection example",
+    "what is prompt injection",
+    "indirect prompt injection",
+    "prompt injection in readme",
+    "hidden instructions in code",
+    "grep for beginners",
+    "grep recursive search",
+    "ai coding agent security",
+    "claude code security",
+    "ai agent safety",
+    "safe ai agents"
+  ],
+  "comment": "Grep or eyeball: which would you try first? Tell me in a word! Extra tip: grep -o prints only the matching part, so the hit is easy to spot even in a huge file."
+}

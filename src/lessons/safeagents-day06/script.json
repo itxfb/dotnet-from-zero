@@ -1,0 +1,77 @@
+{
+  "id": "safeagents-day06",
+  "series": "SAFE AI AGENTS",
+  "day": 6,
+  "title": "Spot Prompt Injection in a Repo File",
+  "next": {
+    "day": 7,
+    "title": "Vet an MCP Server Before You Install"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 36
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 6": "Day six",
+    "Day 7": "Day seven",
+    "README": "read me",
+    "MCP": "M C P"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "ignore previous": "csharp",
+    "hidden": "api",
+    "never orders": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Your README can hijack your agent.", "cues": {"hookW": "hijack"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Agents obey text hidden in files.", "cues": {"ideaW": "hidden"}},
+        {"id": "l1", "text": "Grep for the phrase ignore previous.", "cues": {"igW": "ignore previous"}},
+        {"id": "l2", "text": "And for hidden comment tags.", "cues": {"cmW": "comment tags"}},
+        {"id": "run", "text": "Run it.", "cues": {"runW": "Run it"}},
+        {"id": "res", "text": "A secret order, found!", "cues": {"resW": "order"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "File text is data, never orders.", "cues": {"tkW": "never orders"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Grep or eyeball: which would you try first? Comment below!", "cues": {"qW": "Grep"}},
+        {"id": "bye", "text": "Follow for Day 7: Vet an MCP Server Before You Install!", "cues": {"end": "Follow", "plug": "Vet an"}}
+      ]
+    }
+  ]
+}

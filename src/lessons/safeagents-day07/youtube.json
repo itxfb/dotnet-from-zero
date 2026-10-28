@@ -1,0 +1,19 @@
+{
+  "title": "MCP Server Security: Vet It Before You Install",
+  "description": "That MCP server runs with your permissions, so check it before you install. 🔍\n\n✅ Why MCP servers deserve a security check\n✅ Grep your config for latest tags and curl or shell calls\n✅ Pin the version, read it, then install\n\nDay 7 of Safe AI Agents! Next up, Day 8: Give Agents Least-Privilege Tokens.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #mcp #aiagents #aitools #aisecurity #aicoding #claudecode",
+  "tags": [
+    "mcp server security",
+    "is mcp server safe",
+    "how to vet an mcp server",
+    "mcp server tutorial",
+    "model context protocol",
+    "mcp.json",
+    "claude code mcp",
+    "pin npm package version",
+    "grep for beginners",
+    "ai coding agent security",
+    "ai agent safety",
+    "safe ai agents"
+  ],
+  "comment": "Pin the version or skip the server: which would you pick? Tell me in a word! Extra tip: npx with latest can pull new code every run, so a pinned version means you only trust code you checked."
+}

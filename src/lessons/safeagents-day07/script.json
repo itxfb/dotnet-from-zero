@@ -1,0 +1,77 @@
+{
+  "id": "safeagents-day07",
+  "series": "SAFE AI AGENTS",
+  "day": 7,
+  "title": "Vet an MCP Server Before You Install",
+  "next": {
+    "day": 8,
+    "title": "Give Agents Least-Privilege Tokens"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 37
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 7": "Day seven",
+    "Day 8": "Day eight",
+    "MCP": "M C P"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "latest": "csharp",
+    "curl": "csharp",
+    "Unpinned": "api",
+    "Pin it": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Check an MCP server before installing.", "cues": {"hookW": "Check"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Servers run with your permissions.", "cues": {"ideaW": "permissions"}},
+        {"id": "l1", "text": "Grep the config for latest tags.", "cues": {"igW": "latest"}},
+        {"id": "l2", "text": "And for curl or shell calls.", "cues": {"cmW": "curl"}},
+        {"id": "run", "text": "Run it.", "cues": {"runW": "Run it"}},
+        {"id": "res", "text": "Unpinned version, flagged!", "cues": {"resW": "Unpinned"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Pin it, read it, then install.", "cues": {"tkW": "Pin it"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Pin the version or skip the server: which would you pick? Comment below!", "cues": {"qW": "Pin"}},
+        {"id": "bye", "text": "Follow for Day 8: Give Agents Least-Privilege Tokens!", "cues": {"end": "Follow", "plug": "Give Agents"}}
+      ]
+    }
+  ]
+}

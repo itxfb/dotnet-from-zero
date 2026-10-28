@@ -111,6 +111,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `safeagents-day04` | Run Your Agent in a Sandbox | 30.6 s |
 | `safeagents-day05` | Review Every Diff Before You Commit | 32.0 s |
 | `safeagents-day06` | Spot Prompt Injection in a Repo File | 27.7 s |
+| `safeagents-day07` | Vet an MCP Server Before You Install | 27.1 s |
 
 ## Make the next lesson (Day 4)
 

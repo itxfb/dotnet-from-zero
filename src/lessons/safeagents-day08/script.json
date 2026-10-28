@@ -1,0 +1,77 @@
+{
+  "id": "safeagents-day08",
+  "series": "SAFE AI AGENTS",
+  "day": 8,
+  "title": "Give Agents Least-Privilege Tokens",
+  "next": {
+    "day": 9,
+    "title": "Run Agents in a Dev Container"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 38
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 8": "Day eight",
+    "Day 9": "Day nine",
+    "GitHub": "Git Hub"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "fine-grained": "csharp",
+    "read-only": "csharp",
+    "blocked": "api",
+    "Least": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Never hand agents your full token.", "cues": {"hookW": "Never"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Make a fine-grained GitHub token.", "cues": {"ideaW": "fine-grained"}},
+        {"id": "l1", "text": "One repo, read-only contents.", "cues": {"roW": "read-only"}},
+        {"id": "l2", "text": "Give the agent just that token.", "cues": {"tokW": "token"}},
+        {"id": "run", "text": "Now try to write.", "cues": {"runW": "try"}},
+        {"id": "res", "text": "Write blocked!", "cues": {"resW": "blocked"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Least access means least damage.", "cues": {"tkW": "Least"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Read-only or write access: which would you grant first? Comment below!", "cues": {"qW": "Read-only"}},
+        {"id": "bye", "text": "Follow for Day 9: Run Agents in a Dev Container!", "cues": {"end": "Follow", "plug": "Run Agents"}}
+      ]
+    }
+  ]
+}

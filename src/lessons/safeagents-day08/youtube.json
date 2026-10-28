@@ -1,0 +1,18 @@
+{
+  "title": "GitHub Token Permissions: Give Your AI Agent Less",
+  "description": "Your AI agent doesn't need your full GitHub token. 🔑\n\n✅ Make a fine-grained token for one repo, read-only\n✅ Hand the agent only that token\n✅ Watch a write attempt get blocked with a 403\n\nDay 8 of Safe AI Agents! Next up, Day 9: Run Agents in a Dev Container.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #aiagents #aicoding #aitools #cybersecurity #github #claudecode",
+  "tags": [
+    "github fine-grained token",
+    "github personal access token permissions",
+    "least privilege token",
+    "ai agent security",
+    "ai coding agent safety",
+    "github token read only",
+    "claude code security",
+    "gh api command",
+    "safe ai agents",
+    "principle of least privilege",
+    "github token for ai agent"
+  ],
+  "comment": "Read-only or write access: which would you grant first? Tell me in a word! Extra tip: set an expiry date on the token so it stops working on its own."
+}

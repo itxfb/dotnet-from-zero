@@ -1,0 +1,18 @@
+{
+  "title": "Dev Container for AI Agents: Keep Your SSH Keys Safe",
+  "description": "Your AI agent doesn't need to live on your laptop. 📦\n\n✅ Add a devcontainer.json with a base image\n✅ Run as a normal user, not root\n✅ Reopen in the container and see your SSH keys are not found\n\nDay 9 of Safe AI Agents! Next up, Day 10: Audit Agent Actions with Hook Logs.\nFollow for a new short every day and learn to lock down your AI coding agents.\n\n#shorts #aiagents #devcontainer #docker #aicoding #cybersecurity #claudecode",
+  "tags": [
+    "dev container ai agent",
+    "devcontainer.json example",
+    "run ai agent in docker",
+    "vscode dev containers",
+    "ai coding agent security",
+    "claude code dev container",
+    "keep ssh keys safe",
+    "ai agent sandbox",
+    "safe ai agents",
+    "devcontainer remoteUser",
+    "isolate ai coding agent"
+  ],
+  "comment": "Dev container or sandbox: which would you use first? Tell me in a word! Extra tip: commit .devcontainer to your repo so your whole team gets the same safe setup."
+}

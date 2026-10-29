@@ -77,6 +77,8 @@ import {SafeagentsDay07} from './safeagents-day07/SafeagentsDay07';
 import safeagentsDay07Timeline from './safeagents-day07/timeline.json';
 import {SafeagentsDay08} from './safeagents-day08/SafeagentsDay08';
 import safeagentsDay08Timeline from './safeagents-day08/timeline.json';
+import {SafeagentsDay09} from './safeagents-day09/SafeagentsDay09';
+import safeagentsDay09Timeline from './safeagents-day09/timeline.json';
 
 /**
  * Lesson registry. To add a lesson: create src/lessons/dayNN/{script.json, DayNN.tsx},
@@ -125,6 +127,7 @@ export const LESSONS: Lesson[] = [
   lesson('safeagents-day06', safeagentsDay06Timeline, SafeagentsDay06),
   lesson('safeagents-day07', safeagentsDay07Timeline, SafeagentsDay07),
   lesson('safeagents-day08', safeagentsDay08Timeline, SafeagentsDay08),
+  lesson('safeagents-day09', safeagentsDay09Timeline, SafeagentsDay09),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

@@ -1,0 +1,78 @@
+{
+  "id": "safeagents-day09",
+  "series": "SAFE AI AGENTS",
+  "day": 9,
+  "title": "Run Agents in a Dev Container",
+  "next": {
+    "day": 10,
+    "title": "Audit Agent Actions with Hook Logs"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 39
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 9": "Day nine",
+    "Day 10": "Day ten",
+    "SSH": "S S H"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "dev container": "csharp",
+    "image": "csharp",
+    "normal user": "csharp",
+    "Not found": "api",
+    "only": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Don't run agents on your laptop.", "cues": {"hookW": "laptop"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Add a dev container file.", "cues": {"ideaW": "dev container"}},
+        {"id": "l1", "text": "Pick a base image.", "cues": {"imgW": "image"}},
+        {"id": "l2", "text": "Run as a normal user.", "cues": {"userW": "normal user"}},
+        {"id": "run", "text": "Reopen in container, then look for keys.", "cues": {"runW": "look"}},
+        {"id": "res", "text": "Not found!", "cues": {"resW": "Not found"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "The agent only sees the project.", "cues": {"tkW": "only"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Dev container or sandbox: which would you use first? Comment below!", "cues": {"qW": "Dev container"}},
+        {"id": "bye", "text": "Follow for Day 10: Audit Agent Actions with Hook Logs!", "cues": {"end": "Follow", "plug": "Audit Agent"}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "safeagents-day10",
+  "series": "SAFE AI AGENTS",
+  "day": 10,
+  "title": "Audit Agent Actions with Hook Logs",
+  "next": {
+    "day": 1,
+    "title": "Write a Spec Your Agent Can Follow"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 40
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 10": "Day ten",
+    "PostToolUse": "post tool use",
+    "audit.log": "audit dot log",
+    "jq": "J Q"
+  },
+  "keywords": {
+    "Safe": "dotnet",
+    "Agents": "aspnet",
+    "log": "csharp",
+    "audit.log": "csharp",
+    "PostToolUse": "csharp",
+    "recorded": "api",
+    "Spec-Driven": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Know what your agent just did.", "cues": {"hookW": "agent"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "A hook can log every command.", "cues": {"ideaW": "log"}},
+        {"id": "l1", "text": "Read the tool and command.", "cues": {"l1W": "tool"}},
+        {"id": "l2", "text": "Append it to audit.log.", "cues": {"l2W": "audit.log"}},
+        {"id": "run", "text": "Run it, then read the log.", "cues": {"runW": "read"}},
+        {"id": "res", "text": "Every action recorded!", "cues": {"resW": "recorded"}}
+      ]
+    },
+    {
+      "id": "reg",
+      "lines": [
+        {"id": "reg", "text": "Register it on PostToolUse.", "cues": {"regW": "PostToolUse"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Logs show what really happened.", "cues": {"tkW": "really"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Hook logs or diff review: which first? Comment below!", "cues": {"qW": "Hook logs"}},
+        {"id": "bye", "text": "Follow for the new series: Spec-Driven AI!", "cues": {"end": "Follow", "plug": "Spec-Driven"}}
+      ]
+    }
+  ]
+}

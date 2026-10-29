@@ -78,5 +78,25 @@
       "Run Agents in a Dev Container",
       "Audit Agent Actions with Hook Logs"
     ]
+  },
+  {
+    "name": "Spec-Driven AI",
+    "badge": "SPEC-DRIVEN AI",
+    "prefix": "specai-day",
+    "about": "write specs, tests and evals so AI coding agents build what you actually meant",
+    "tags": ["AI", "spec-driven development", "AGENTS.md", "TDD", "AI evals", "Claude Code", "AI agents"],
+    "hashtags": "#ai #specdriven #aicoding #testing",
+    "topics": [
+      "Write a Spec Your Agent Can Follow",
+      "Write an AGENTS.md in 10 Lines",
+      "Turn a Spec into a Task Checklist",
+      "Make AI Plan Before It Codes",
+      "Write the Test First, Let AI Pass It",
+      "Add Acceptance Criteria to Every Prompt",
+      "Make AI Run Tests and Fix Failures",
+      "Build a Mini Eval for Your Prompt",
+      "Gate Spec Changes with a CI Eval",
+      "Version Your Specs Like Code"
+    ]
   }
 ]

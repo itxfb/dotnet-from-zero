@@ -1,0 +1,18 @@
+{
+  "title": "AI Agent Audit Log: See Every Command It Ran",
+  "description": "What did your AI agent just run? Log it and find out. 🔍\n\n✅ Write a small hook script with jq\n✅ Append every tool and command to audit.log\n✅ Register it on PostToolUse and read the log\n\nDay 10 of Safe AI Agents, the last one! Next up: a new series, Spec-Driven AI, starting with Day 1: Write a Spec Your Agent Can Follow.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #aiagents #aicoding #claudecode #cybersecurity #tech #ai",
+  "tags": [
+    "ai agent audit log",
+    "claude code hooks",
+    "PostToolUse hook",
+    "log ai agent commands",
+    "claude code hook log",
+    "audit ai coding agent",
+    "ai agent security",
+    "jq hook script",
+    "safe ai agents",
+    "claude code settings.json hooks",
+    "monitor ai agent actions"
+  ],
+  "comment": "Hook logs or diff review: which first? Tell me in a word! Extra tip: add .claude/audit.log to .gitignore so your log stays on your machine."
+}

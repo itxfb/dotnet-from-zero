@@ -601,5 +601,20 @@
     },
     "playlist": "UExaRVQweDhjNHVJby41NkI0NEY2RDEwNTU3Q0M2",
     "comment": "UgzXX1LaGXAFKa8qmxB4AaABAg"
+  },
+  "specai-day02": {
+    "videoId": "ZstNYZrVMjU",
+    "date": "2026-11-01",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExaRVQweDhjNHVJby4yODlGNEE0NkRGMEEzMEQy",
+    "comment": "Ugw_cEn9nqjxepFuTR54AaABAg"
   }
 }

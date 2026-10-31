@@ -1,0 +1,78 @@
+{
+  "id": "specai-day02",
+  "series": "SPEC-DRIVEN AI",
+  "day": 2,
+  "title": "Write an AGENTS.md in 10 Lines",
+  "next": {
+    "day": 3,
+    "title": "Turn a Spec into a Task Checklist"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 42
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 3": "Day three",
+    "AGENTS.md": "agents dot M D"
+  },
+  "keywords": {
+    "guessing": "api",
+    "AGENTS.md": "csharp",
+    "build": "csharp",
+    "test": "csharp",
+    "never": "api",
+    "Five": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Your agent keeps guessing your commands.", "cues": {"hookW": "guessing"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Create AGENTS.md.", "cues": {"ideaW": "Create"}},
+        {"id": "l1", "text": "Add your build command.", "cues": {"l1W": "build"}},
+        {"id": "l2", "text": "Add your test command.", "cues": {"l2W": "test"}},
+        {"id": "l3", "text": "Add one style rule.", "cues": {"l3W": "style"}},
+        {"id": "l4", "text": "Add one never rule.", "cues": {"l4W": "never"}},
+        {"id": "run", "text": "Count the lines.", "cues": {"runW": "Count"}},
+        {"id": "res", "text": "Five lines, under ten!", "cues": {"resW": "Five"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Short rules get followed.", "cues": {"tkW": "Short"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Build command or style rule: which goes first? Comment below!", "cues": {"qW": "Build"}},
+        {"id": "bye", "text": "Follow for Day 3: Turn a Spec into a Task Checklist!", "cues": {"end": "Follow", "plug": "Turn"}}
+      ]
+    }
+  ]
+}

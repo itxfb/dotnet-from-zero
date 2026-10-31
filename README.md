@@ -116,6 +116,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `safeagents-day09` | Run Agents in a Dev Container | 26.5 s |
 | `safeagents-day10` | Audit Agent Actions with Hook Logs | 27.7 s |
 | `specai-day01` | Write a Spec Your Agent Can Follow | 31.8 s |
+| `specai-day02` | Write an AGENTS.md in 10 Lines | 29.1 s |
 
 ## Make the next lesson (Day 4)
 

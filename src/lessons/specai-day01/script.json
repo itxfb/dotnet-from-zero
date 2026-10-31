@@ -1,0 +1,85 @@
+{
+  "id": "specai-day01",
+  "series": "SPEC-DRIVEN AI",
+  "day": 1,
+  "title": "Write a Spec Your Agent Can Follow",
+  "next": {
+    "day": 2,
+    "title": "Write an AGENTS.md in 10 Lines"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 41
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 2": "Day two",
+    "SPEC.md": "spec dot M D",
+    "AGENTS.md": "agents dot M D"
+  },
+  "keywords": {
+    "Spec-Driven": "dotnet",
+    "Vague": "api",
+    "goal": "csharp",
+    "checkbox": "csharp",
+    "testable": "csharp",
+    "Three": "api",
+    "AGENTS.md": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Vague prompts get vague code.", "cues": {"hookW": "Vague"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Start with one goal line.", "cues": {"ideaW": "goal"}},
+        {"id": "l1", "text": "Add a checkbox per rule.", "cues": {"l1W": "checkbox"}},
+        {"id": "l2", "text": "Keep every rule testable.", "cues": {"l2W": "testable"}},
+        {"id": "l3", "text": "Name the test file.", "cues": {"l3W": "test"}},
+        {"id": "run", "text": "Count your checks.", "cues": {"runW": "Count"}},
+        {"id": "res", "text": "Three rules to verify!", "cues": {"resW": "Three"}}
+      ]
+    },
+    {
+      "id": "reg",
+      "lines": [
+        {"id": "reg", "text": "Then prompt: build SPEC.md.", "cues": {"regW": "build"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Clear checks beat vague wishes.", "cues": {"tkW": "Clear"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Spec first or tests first: which would you try? Comment below!", "cues": {"qW": "Spec first"}},
+        {"id": "bye", "text": "Follow for Day 2: Write an AGENTS.md in 10 Lines!", "cues": {"end": "Follow", "plug": "Write"}}
+      ]
+    }
+  ]
+}

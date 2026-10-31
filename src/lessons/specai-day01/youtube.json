@@ -1,0 +1,18 @@
+{
+  "title": "AI Coding Agent Spec: Write One It Can Follow",
+  "description": "Vague prompts get vague code. Write a spec your AI agent can actually check. ✅\n\n✅ Start a SPEC.md with one goal line\n✅ Add a checkbox for every testable rule\n✅ Count your checks with one grep command\n\nDay 1 of Spec-Driven AI! Next up, Day 2: Write an AGENTS.md in 10 Lines.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #aicoding #aiagents #claudecode #coding #programming #tech",
+  "tags": [
+    "ai coding agent spec",
+    "spec driven development",
+    "write a spec for ai agent",
+    "spec driven ai",
+    "claude code spec",
+    "how to prompt ai coding agent",
+    "SPEC.md for ai agent",
+    "ai coding for beginners",
+    "vibe coding spec",
+    "acceptance criteria for ai",
+    "ai agent checklist"
+  ],
+  "comment": "Spec first or tests first: which would you try? Tell me in a word! Extra tip: start every rule in your spec with a verb like Add, Return or Test, so the agent knows exactly what to check."
+}

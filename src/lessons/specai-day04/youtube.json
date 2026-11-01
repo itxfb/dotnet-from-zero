@@ -1,0 +1,18 @@
+{
+  "title": "Claude Code Plan Mode: Make AI Plan Before It Codes",
+  "description": "AI that codes first breaks things. Make it plan first! 🧠\n\n✅ Write a short planning prompt: what to read, files, steps\n✅ Tell the agent not to edit code yet\n✅ Start Claude Code in plan mode with one command\n\nDay 4 of Spec-Driven AI! Next up, Day 5: Write the Test First, Let AI Pass It.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #aicoding #claudecode #vibecoding #aiagents #codingagents #specdrivendevelopment #programming",
+  "tags": [
+    "claude code plan mode",
+    "make ai plan before coding",
+    "ai coding agent plan first",
+    "claude permission-mode plan",
+    "spec driven development",
+    "spec driven ai",
+    "planning prompt for ai",
+    "ai coding for beginners",
+    "vibe coding tips",
+    "plan mode vs code",
+    "ai agent best practices"
+  ],
+  "comment": "Plan mode or checklist: which would you use first? Tell me in a word! Extra tip: in plan mode Claude proposes a plan and waits, so read it and say no if the file list looks wrong."
+}

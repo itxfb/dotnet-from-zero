@@ -1,0 +1,78 @@
+{
+  "id": "specai-day04",
+  "series": "SPEC-DRIVEN AI",
+  "day": 4,
+  "title": "Make AI Plan Before It Codes",
+  "next": {
+    "day": 5,
+    "title": "Write the Test First, Let AI Pass It"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 44
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 5": "Day five",
+    "SPEC.md": "spec dot M D",
+    "TASKS.md": "tasks dot M D"
+  },
+  "keywords": {
+    "breaks": "api",
+    "read": "csharp",
+    "files": "csharp",
+    "Forbid": "csharp",
+    "Plan": "api",
+    "plan": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "AI that codes first breaks things.", "cues": {"hookW": "breaks"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Write a planning prompt.", "cues": {"ideaW": "planning"}},
+        {"id": "l1", "text": "Tell it what to read.", "cues": {"l1W": "read"}},
+        {"id": "l2", "text": "Ask for files, then steps.", "cues": {"l2W": "files"}},
+        {"id": "l3", "text": "Forbid edits for now.", "cues": {"l3W": "Forbid"}},
+        {"id": "run", "text": "Start it in plan mode.", "cues": {"runW": "Start"}},
+        {"id": "res", "text": "Plan first, no edits!", "cues": {"resW": "Plan"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Approve the plan, then code.", "cues": {"tkW": "Approve"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Plan mode or checklist: which would you use first? Comment below!", "cues": {"qW": "Plan"}},
+        {"id": "bye", "text": "Follow for Day 5: Write the Test First, Let AI Pass It!", "cues": {"end": "Follow", "plug": "Write"}}
+      ]
+    }
+  ]
+}

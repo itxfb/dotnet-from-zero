@@ -117,6 +117,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `safeagents-day10` | Audit Agent Actions with Hook Logs | 27.7 s |
 | `specai-day01` | Write a Spec Your Agent Can Follow | 31.8 s |
 | `specai-day02` | Write an AGENTS.md in 10 Lines | 29.1 s |
+| `specai-day03` | Turn a Spec into a Task Checklist | 28.9 s |
 
 ## Make the next lesson (Day 4)
 

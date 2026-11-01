@@ -1,0 +1,145 @@
+{
+  "id": "specai-day03",
+  "series": "SPEC-DRIVEN AI",
+  "day": 3,
+  "title": "Turn a Spec into a Task Checklist",
+  "next": {
+    "day": 4,
+    "title": "Make AI Plan Before It Codes"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 43
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 4": "Day four",
+    "TASKS.md": "tasks dot M D"
+  },
+  "keywords": {
+    "overwhelm": "api",
+    "TASKS.md": "csharp",
+    "small": "csharp",
+    "checkbox": "csharp",
+    "testable": "csharp",
+    "Four": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {
+          "id": "hook",
+          "text": "Big specs overwhelm your AI agent.",
+          "cues": {
+            "hookW": "overwhelm"
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {
+          "id": "idea",
+          "text": "Create TASKS.md.",
+          "cues": {
+            "ideaW": "Create"
+          }
+        },
+        {
+          "id": "l1",
+          "text": "Add one small task.",
+          "cues": {
+            "l1W": "small"
+          }
+        },
+        {
+          "id": "l2",
+          "text": "Give it a checkbox.",
+          "cues": {
+            "l2W": "checkbox"
+          }
+        },
+        {
+          "id": "l3",
+          "text": "Make each task testable.",
+          "cues": {
+            "l3W": "testable"
+          }
+        },
+        {
+          "id": "l4",
+          "text": "Repeat for every rule.",
+          "cues": {
+            "l4W": "Repeat"
+          }
+        },
+        {
+          "id": "run",
+          "text": "Count the open tasks.",
+          "cues": {
+            "runW": "Count"
+          }
+        },
+        {
+          "id": "res",
+          "text": "Four small tasks!",
+          "cues": {
+            "resW": "Four"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {
+          "id": "tk",
+          "text": "Small tasks, small diffs.",
+          "cues": {
+            "tkW": "Small"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {
+          "id": "q",
+          "text": "Spec or checklist: which do you write first? Comment below!",
+          "cues": {
+            "qW": "Spec"
+          }
+        },
+        {
+          "id": "bye",
+          "text": "Follow for Day 4: Make AI Plan Before It Codes!",
+          "cues": {
+            "end": "Follow",
+            "plug": "Make"
+          }
+        }
+      ]
+    }
+  ]
+}

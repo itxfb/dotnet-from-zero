@@ -1,0 +1,77 @@
+{
+  "id": "specai-day05",
+  "series": "SPEC-DRIVEN AI",
+  "day": 5,
+  "title": "Write the Test First, Let AI Pass It",
+  "next": {
+    "day": 6,
+    "title": "Add Acceptance Criteria to Every Prompt"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 45
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 6": "Day six",
+    "Pytest": "pie test",
+    "xUnit": "ex unit"
+  },
+  "keywords": {
+    "test": "csharp",
+    "Assert": "csharp",
+    "red": "api",
+    "green": "dotnet",
+    "pass": "dotnet",
+    "Tell": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Don't let AI grade its own work.", "cues": {"hookW": "grade"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Write the test first.", "cues": {"ideaW": "test"}},
+        {"id": "l1", "text": "Assert what it must return.", "cues": {"l1W": "Assert"}},
+        {"id": "run", "text": "Run it: red, as expected.", "cues": {"runW": "Run", "redW": "red"}},
+        {"id": "ask", "text": "Tell AI: make it pass.", "cues": {"askW": "Tell"}},
+        {"id": "res", "text": "Run again: green!", "cues": {"resW": "green"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Red test in, passing code out.", "cues": {"tkW": "Red"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Pytest or xUnit: which would you use first? Comment below!", "cues": {"qW": "Pytest"}},
+        {"id": "bye", "text": "Follow for Day 6: Add Acceptance Criteria to Every Prompt!", "cues": {"end": "Follow", "plug": "Add"}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Test-Driven AI Coding: Stop AI Grading Itself",
+  "description": "Don't let AI grade its own work. Write the test first! ✅\n\n✅ Write a short pytest test that says what the code must return\n✅ Run it and watch it fail (red) before any code exists\n✅ Tell the AI to make it pass without editing the test\n\nDay 5 of Spec-Driven AI! Next up, Day 6: Add Acceptance Criteria to Every Prompt.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #coding #programming #python #ai #aicoding #tdd #vibecoding",
+  "tags": [
+    "test driven development with ai",
+    "tdd with ai coding agent",
+    "write tests first ai",
+    "pytest for beginners",
+    "pytest tutorial",
+    "ai coding for beginners",
+    "spec driven development",
+    "spec driven ai",
+    "claude code tests",
+    "vibe coding tips",
+    "ai agent best practices",
+    "red green testing"
+  ],
+  "comment": "Pytest or xUnit: which would you use first? Tell me in a word! Extra tip: tell the AI not to edit the test, so it has to fix the code instead of changing the test to pass."
+}

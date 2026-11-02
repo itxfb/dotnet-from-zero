@@ -1,0 +1,18 @@
+{
+  "title": "AI Acceptance Criteria: Tell AI When It's Done",
+  "description": "Tell AI when it's done, or it will guess! ✅\n\n✅ Add a \"Done when:\" list to your prompt\n✅ Write one checkable example per line\n✅ Run pytest and see all 3 pass\n\nDay 6 of Spec-Driven AI! Next up, Day 7: Make AI Run Tests and Fix Failures.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #vibecoding #coding #programming #python #promptengineering",
+  "tags": [
+    "acceptance criteria for ai prompts",
+    "acceptance criteria examples",
+    "how to write better ai prompts",
+    "prompt engineering for coding",
+    "ai coding for beginners",
+    "spec driven development",
+    "spec driven ai",
+    "vibe coding tips",
+    "ai coding agent best practices",
+    "pytest for beginners",
+    "definition of done ai"
+  ],
+  "comment": "Examples or tests: which do you write first? Tell me in a word! Extra tip: make every line in your Done when list something you can check by running it, not a feeling like 'works well'."
+}

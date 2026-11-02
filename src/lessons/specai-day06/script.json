@@ -1,0 +1,75 @@
+{
+  "id": "specai-day06",
+  "series": "SPEC-DRIVEN AI",
+  "day": 6,
+  "title": "Add Acceptance Criteria to Every Prompt",
+  "next": {
+    "day": 7,
+    "title": "Make AI Run Tests and Fix Failures"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 46
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 7": "Day seven",
+    "pytest": "pie test"
+  },
+  "keywords": {
+    "Done": "dotnet",
+    "done": "dotnet",
+    "example": "csharp",
+    "pytest": "api",
+    "Three": "dotnet",
+    "passed": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Tell AI when it's done.", "cues": {"hookW": "done"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Add a Done when list.", "cues": {"ideaW": "Done"}},
+        {"id": "l1", "text": "One checkable example per line.", "cues": {"l1W": "example"}},
+        {"id": "run", "text": "Now run pytest.", "cues": {"runW": "run"}},
+        {"id": "res", "text": "Three passed!", "cues": {"resW": "Three"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Criteria turn wishes into checks.", "cues": {"tkW": "Criteria"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Examples or tests: which do you write first? Comment below!", "cues": {"qW": "Examples"}},
+        {"id": "bye", "text": "Follow for Day 7: Make AI Run Tests and Fix Failures!", "cues": {"end": "Follow", "plug": "Make"}}
+      ]
+    }
+  ]
+}

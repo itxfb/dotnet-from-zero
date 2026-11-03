@@ -1,0 +1,76 @@
+{
+  "id": "specai-day07",
+  "series": "SPEC-DRIVEN AI",
+  "day": 7,
+  "title": "Make AI Run Tests and Fix Failures",
+  "next": {
+    "day": 8,
+    "title": "Build a Mini Eval for Your Prompt"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 47
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 8": "Day eight",
+    "pytest": "pie test"
+  },
+  "keywords": {
+    "fix": "dotnet",
+    "Fix": "dotnet",
+    "pytest": "api",
+    "passed": "dotnet",
+    "failed": "csharp",
+    "code": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Make AI fix its own failures.", "cues": {"hookW": "fix"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Tell it to run pytest.", "cues": {"ideaW": "run"}},
+        {"id": "l1", "text": "Fix the code, not the tests.", "cues": {"l1W": "code"}},
+        {"id": "l2", "text": "Repeat until all pass.", "cues": {"l2W": "Repeat"}},
+        {"id": "run", "text": "First run: one failed.", "cues": {"runW": "First", "redW": "failed"}},
+        {"id": "res", "text": "After the fix: three passed!", "cues": {"resW": "three"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "A failing test is AI's to-do list.", "cues": {"tkW": "failing"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Fix code or fix tests: which does your AI do wrong? Comment below!", "cues": {"qW": "Fix"}},
+        {"id": "bye", "text": "Follow for Day 8: Build a Mini Eval for Your Prompt!", "cues": {"end": "Follow", "plug": "Build"}}
+      ]
+    }
+  ]
+}

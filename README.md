@@ -121,6 +121,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `specai-day04` | Make AI Plan Before It Codes | 27.6 s |
 | `specai-day05` | Write the Test First, Let AI Pass It | 29.2 s |
 | `specai-day06` | Add Acceptance Criteria to Every Prompt | 23.7 s |
+| `specai-day07` | Make AI Run Tests and Fix Failures | 28.6 s |
 
 ## Make the next lesson (Day 4)
 

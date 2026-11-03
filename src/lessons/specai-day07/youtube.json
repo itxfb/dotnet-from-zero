@@ -1,0 +1,18 @@
+{
+  "title": "Make AI Run Tests and Fix Failures Itself",
+  "description": "Stop fixing AI's failing tests by hand! 🔁\n\n✅ Tell AI to run pytest and read each failure\n✅ Say: fix the code, not the tests\n✅ Repeat until all tests pass\n\nDay 7 of Spec-Driven AI! Next up, Day 8: Build a Mini Eval for Your Prompt.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #vibecoding #coding #programming #python #pytest",
+  "tags": [
+    "make ai run tests",
+    "ai fix failing tests",
+    "ai coding agent run tests",
+    "fix the code not the tests",
+    "pytest for beginners",
+    "ai coding for beginners",
+    "spec driven development",
+    "spec driven ai",
+    "vibe coding tips",
+    "test driven development with ai",
+    "prompt for ai coding agent"
+  ],
+  "comment": "Fix code or fix tests: which does your AI do wrong? Tell me in a word! Extra tip: put \"Fix the code, not the tests\" in your prompt so the AI doesn't just edit a test to make it pass."
+}

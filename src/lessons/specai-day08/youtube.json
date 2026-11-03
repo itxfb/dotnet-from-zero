@@ -1,0 +1,19 @@
+{
+  "title": "Build a Mini Eval to Test Your AI Prompt",
+  "description": "Does your prompt actually work? Test it! 🧪\n\n✅ List a few test cases\n✅ Ask the model each one and count the right answers\n✅ Tighten the prompt until the score goes up\n\nDay 8 of Spec-Driven AI! Next up, Day 9: Gate Spec Changes with a CI Eval.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #promptengineering #coding #programming #python #aitools",
+  "tags": [
+    "build a mini eval for your prompt",
+    "how to test an ai prompt",
+    "prompt eval for beginners",
+    "llm eval python",
+    "prompt engineering for beginners",
+    "test prompts with test cases",
+    "claude -p python",
+    "spec driven development",
+    "spec driven ai",
+    "ai coding for beginners",
+    "vibe coding tips",
+    "evals for ai coding agents"
+  ],
+  "comment": "Cases first or prompt first: which do you write? Tell me in a word! Extra tip: rerun the eval after every prompt change, so you see right away if the score drops."
+}

@@ -1,0 +1,78 @@
+{
+  "id": "specai-day08",
+  "series": "SPEC-DRIVEN AI",
+  "day": 8,
+  "title": "Build a Mini Eval for Your Prompt",
+  "next": {
+    "day": 9,
+    "title": "Gate Spec Changes with a CI Eval"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 48
+  },
+  "pronounce": {
+    "AI": "A I",
+    "CI": "C I",
+    "eval": "e val",
+    "Eval": "e val",
+    "Day 9": "Day nine"
+  },
+  "keywords": {
+    "eval": "dotnet",
+    "Eval": "dotnet",
+    "prompt": "api",
+    "cases": "csharp",
+    "three": "dotnet",
+    "one": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Does your prompt actually work?", "cues": {"hookW": "actually"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "List a few test cases.", "cues": {"ideaW": "cases"}},
+        {"id": "l1", "text": "Ask the model each one.", "cues": {"l1W": "Ask"}},
+        {"id": "l2", "text": "Count the right answers.", "cues": {"l2W": "Count"}},
+        {"id": "run", "text": "Vague prompt: one of three.", "cues": {"runW": "Vague", "redW": "one"}},
+        {"id": "res", "text": "Tighter prompt: three of three!", "cues": {"fixW": "Tighter", "resW": "three"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "An eval is a test for your prompt.", "cues": {"tkW": "eval"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Cases first or prompt first: which do you write? Comment below!", "cues": {"qW": "Cases"}},
+        {"id": "bye", "text": "Follow for Day 9: Gate Spec Changes with a CI Eval!", "cues": {"end": "Follow", "plug": "Gate"}}
+      ]
+    }
+  ]
+}

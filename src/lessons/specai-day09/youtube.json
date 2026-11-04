@@ -1,0 +1,19 @@
+{
+  "title": "CI Eval: Block Bad Spec Changes Automatically",
+  "description": "Stop bad spec changes before they merge! 🚦\n\n✅ Run your eval in a GitHub Actions workflow on every pull request\n✅ Fail the job when the score is not full\n✅ Make the check required so a red eval blocks the merge\n\nDay 9 of Spec-Driven AI! Next up, Day 10: Version Your Specs Like Code.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #githubactions #coding #programming #cicd #aitools",
+  "tags": [
+    "ci eval for specs",
+    "github actions ai eval",
+    "run prompt eval in ci",
+    "gate pull requests with eval",
+    "required status check github",
+    "github actions for beginners",
+    "claude code in github actions",
+    "spec driven development",
+    "spec driven ai",
+    "ai coding for beginners",
+    "evals for ai coding agents",
+    "block merge failing check"
+  ],
+  "comment": "Required check or warning only: which do you pick? Tell me in a word! Extra tip: store your API key as a repository secret, never in the workflow file."
+}

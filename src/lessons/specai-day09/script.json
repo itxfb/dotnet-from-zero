@@ -1,0 +1,79 @@
+{
+  "id": "specai-day09",
+  "series": "SPEC-DRIVEN AI",
+  "day": 9,
+  "title": "Gate Spec Changes with a CI Eval",
+  "next": {
+    "day": 10,
+    "title": "Version Your Specs Like Code"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 49
+  },
+  "pronounce": {
+    "AI": "A I",
+    "CI": "C I",
+    "eval": "e val",
+    "Eval": "e val",
+    "Day 9": "Day nine",
+    "Day 10": "Day ten"
+  },
+  "keywords": {
+    "eval": "dotnet",
+    "Eval": "dotnet",
+    "CI": "api",
+    "pull": "api",
+    "required": "csharp",
+    "red": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Block bad spec changes automatically.", "cues": {"hookW": "Block"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Run your eval on every pull request.", "cues": {"ideaW": "eval"}},
+        {"id": "l1", "text": "Install the agent, then run it.", "cues": {"l1W": "Install"}},
+        {"id": "l2", "text": "No full score? The job fails.", "cues": {"l2W": "fails"}},
+        {"id": "run", "text": "Spec broke it: red.", "cues": {"runW": "Spec", "redW": "red"}},
+        {"id": "res", "text": "Fix the spec: green!", "cues": {"fixW": "Fix", "resW": "green"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Make it required, and bad specs can't merge.", "cues": {"tkW": "required"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Required check or warning only: which do you pick? Comment below!", "cues": {"qW": "Required"}},
+        {"id": "bye", "text": "Follow for Day 10: Version Your Specs Like Code!", "cues": {"end": "Follow", "plug": "Version"}}
+      ]
+    }
+  ]
+}

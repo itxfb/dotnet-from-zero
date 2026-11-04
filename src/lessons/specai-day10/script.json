@@ -1,0 +1,75 @@
+{
+  "id": "specai-day10",
+  "series": "SPEC-DRIVEN AI",
+  "day": 10,
+  "title": "Version Your Specs Like Code",
+  "next": {
+    "day": 1,
+    "title": "Paste the Stack Trace, Get the Fix"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 50
+  },
+  "pronounce": {
+    "AI": "A I",
+    "SPEC.md": "spec dot M D",
+    "Day 10": "Day ten"
+  },
+  "keywords": {
+    "git": "dotnet",
+    "commit": "api",
+    "spec": "csharp",
+    "log": "api",
+    "Revert": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Your spec needs a git history.", "cues": {"hookW": "git"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Keep SPEC.md in git, like code.", "cues": {"ideaW": "SPEC.md"}},
+        {"id": "l1", "text": "Change one rule, make one commit.", "cues": {"l1W": "one commit"}},
+        {"id": "l2", "text": "Start each message with spec.", "cues": {"l2W": "spec"}},
+        {"id": "run", "text": "Now the log shows every change.", "cues": {"runW": "log"}},
+        {"id": "res", "text": "Bad rule? Revert that commit.", "cues": {"resW": "Revert"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Versioned specs mean you can always go back.", "cues": {"tkW": "Versioned"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "One commit per rule or one big commit: which do you pick? Comment below!", "cues": {"qW": "One"}},
+        {"id": "bye", "text": "Follow for the new series: AI Debugging!", "cues": {"end": "Follow", "plug": "AI Debugging"}}
+      ]
+    }
+  ]
+}

@@ -124,6 +124,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `specai-day07` | Make AI Run Tests and Fix Failures | 28.6 s |
 | `specai-day08` | Build a Mini Eval for Your Prompt | 28.9 s |
 | `specai-day09` | Gate Spec Changes with a CI Eval | 31.2 s |
+| `specai-day10` | Version Your Specs Like Code | 29.3 s |
 
 ## Make the next lesson (Day 4)
 

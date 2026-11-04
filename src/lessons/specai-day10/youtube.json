@@ -1,0 +1,19 @@
+{
+  "title": "Version Your Specs Like Code: Never Lose a Change",
+  "description": "Your AI spec deserves a git history! 🕰️\n\n✅ Keep SPEC.md in git like any code file\n✅ One rule change = one commit, with a spec: prefix\n✅ Read the history with git log and undo a bad rule with git revert\n\nDay 10 of Spec-Driven AI, the last one in this series! Next up: the new series AI Debugging, Day 1: Paste the Stack Trace, Get the Fix.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #git #coding #programming #aitools",
+  "tags": [
+    "version control for specs",
+    "version your specs like code",
+    "git for beginners",
+    "git log oneline",
+    "git revert commit",
+    "spec driven development",
+    "spec driven ai",
+    "ai coding for beginners",
+    "spec md in git",
+    "git commit message convention",
+    "ai coding agent specs",
+    "git history tutorial"
+  ],
+  "comment": "One commit per rule or one big commit: which do you pick? Tell me in a word! Extra tip: git revert makes a new commit that undoes an old one, so your history stays intact."
+}

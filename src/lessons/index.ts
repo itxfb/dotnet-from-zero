@@ -99,6 +99,8 @@ import {SpecaiDay08} from './specai-day08/SpecaiDay08';
 import specaiDay08Timeline from './specai-day08/timeline.json';
 import {SpecaiDay09} from './specai-day09/SpecaiDay09';
 import specaiDay09Timeline from './specai-day09/timeline.json';
+import {SpecaiDay10} from './specai-day10/SpecaiDay10';
+import specaiDay10Timeline from './specai-day10/timeline.json';
 
 /**
  * Lesson registry. To add a lesson: create src/lessons/dayNN/{script.json, DayNN.tsx},
@@ -158,6 +160,7 @@ export const LESSONS: Lesson[] = [
   lesson('specai-day07', specaiDay07Timeline, SpecaiDay07),
   lesson('specai-day08', specaiDay08Timeline, SpecaiDay08),
   lesson('specai-day09', specaiDay09Timeline, SpecaiDay09),
+  lesson('specai-day10', specaiDay10Timeline, SpecaiDay10),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

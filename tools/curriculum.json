@@ -98,5 +98,25 @@
       "Gate Spec Changes with a CI Eval",
       "Version Your Specs Like Code"
     ]
+  },
+  {
+    "name": "AI Debugging",
+    "badge": "AI DEBUGGING",
+    "prefix": "aidebug-day",
+    "about": "debug, review and fix AI-written code with prompts, tests and terminal tricks",
+    "tags": ["AI", "debugging", "code review", "AI coding", "Claude Code", "AI agents", "testing", "developer tools"],
+    "hashtags": "#ai #debugging #aicoding #codereview",
+    "topics": [
+      "Paste the Stack Trace, Get the Fix",
+      "Make AI Reproduce the Bug First",
+      "Bisect a Regression with Git and AI",
+      "Add Logging That Finds the Bug",
+      "Make AI Review Every Pull Request",
+      "Catch Hallucinated APIs and Packages",
+      "Fix a Flaky Test with AI",
+      "Debug a Failing CI Run from Logs",
+      "Stop the AI Fix-Break-Fix Loop",
+      "Write a Postmortem Prompt for Bugs"
+    ]
   }
 ]

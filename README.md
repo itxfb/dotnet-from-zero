@@ -126,6 +126,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `specai-day09` | Gate Spec Changes with a CI Eval | 31.2 s |
 | `specai-day10` | Version Your Specs Like Code | 29.3 s |
 | `aidebug-day01` | Paste the Stack Trace, Get the Fix | 32.5 s |
+| `aidebug-day02` | Make AI Reproduce the Bug First | 34.2 s |
 
 ## Make the next lesson (Day 4)
 

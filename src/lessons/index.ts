@@ -101,6 +101,8 @@ import {SpecaiDay09} from './specai-day09/SpecaiDay09';
 import specaiDay09Timeline from './specai-day09/timeline.json';
 import {AidebugDay01} from './aidebug-day01/AidebugDay01';
 import aidebugDay01Timeline from './aidebug-day01/timeline.json';
+import {AidebugDay02} from './aidebug-day02/AidebugDay02';
+import aidebugDay02Timeline from './aidebug-day02/timeline.json';
 import {SpecaiDay10} from './specai-day10/SpecaiDay10';
 import specaiDay10Timeline from './specai-day10/timeline.json';
 
@@ -164,6 +166,7 @@ export const LESSONS: Lesson[] = [
   lesson('specai-day09', specaiDay09Timeline, SpecaiDay09),
   lesson('specai-day10', specaiDay10Timeline, SpecaiDay10),
   lesson('aidebug-day01', aidebugDay01Timeline, AidebugDay01),
+  lesson('aidebug-day02', aidebugDay02Timeline, AidebugDay02),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

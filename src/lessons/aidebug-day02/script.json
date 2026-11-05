@@ -1,0 +1,75 @@
+{
+  "id": "aidebug-day02",
+  "series": "AI DEBUGGING",
+  "day": 2,
+  "title": "Make AI Reproduce the Bug First",
+  "next": {
+    "day": 3,
+    "title": "Bisect a Regression with Git and AI"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 52
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 3": "Day three",
+    "repro": "ree pro"
+  },
+  "keywords": {
+    "repro": "api",
+    "False": "csharp",
+    "True": "dotnet",
+    "Proven": "dotnet",
+    "unproven": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Never let AI fix an unproven bug.", "cues": {"hookW": "unproven"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Add should give five, not minus.", "cues": {"ideaW": "Add"}},
+        {"id": "l1", "text": "Prompt: write a one-line repro first.", "cues": {"l1W": "repro"}},
+        {"id": "run", "text": "Run it. False! Bug reproduced.", "cues": {"runW": "Run", "falW": "False"}},
+        {"id": "l2", "text": "Now AI fixes it: plus, not minus.", "cues": {"l2W": "plus"}},
+        {"id": "res", "text": "Run again. True! Proven fixed.", "cues": {"fixW": "Run again", "resW": "True"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "No repro, no proof of the fix.", "cues": {"tkW": "repro"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Repro first or fix first: which would you ask? Comment below!", "cues": {"qW": "Repro"}},
+        {"id": "bye", "text": "Follow for Day 3: Bisect a Regression with Git and AI!", "cues": {"end": "Follow", "plug": "Bisect"}}
+      ]
+    }
+  ]
+}

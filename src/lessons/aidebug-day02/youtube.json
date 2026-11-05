@@ -1,0 +1,19 @@
+{
+  "title": "Make AI Reproduce the Bug First (Then Fix It)",
+  "description": "Never let AI fix a bug it hasn't proven! 🐛\n\n✅ Ask AI for a one-line repro before any fix\n✅ Run it and see False: the bug is reproduced\n✅ Fix it, run again, and see True: proven fixed\n\nDay 2 of AI Debugging. Next up: Day 3, Bisect a Regression with Git and AI.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #coding #programming #debugging #csharp",
+  "tags": [
+    "make ai reproduce the bug",
+    "reproduce a bug first",
+    "ai debugging for beginners",
+    "how to debug with chatgpt",
+    "debug code with ai",
+    "bug reproduction steps",
+    "write a repro for a bug",
+    "fix bugs with ai",
+    "ai coding for beginners",
+    "debugging prompts",
+    "c# debugging basics",
+    "verify ai code fix"
+  ],
+  "comment": "Repro first or fix first: which would you ask AI for? Tell me in a word! Extra tip: keep the repro line in your project, then rerun it after every fix to prove the bug stays gone."
+}

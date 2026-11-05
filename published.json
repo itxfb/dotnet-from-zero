@@ -751,5 +751,20 @@
     },
     "playlist": "UExaRVQweDhjNHVJby5GNjNDRDREMDQxOThCMDQ2",
     "comment": "UgwsfJllzBC9jb4DNIJ4AaABAg"
+  },
+  "aidebug-day01": {
+    "videoId": "0sXj9xK12Ig",
+    "date": "2026-11-05",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExLN182bkI2WkZvay41NkI0NEY2RDEwNTU3Q0M2",
+    "comment": "UgzLYJz6Jo9JWaim08F4AaABAg"
   }
 }

@@ -1,0 +1,74 @@
+{
+  "id": "aidebug-day01",
+  "series": "AI DEBUGGING",
+  "day": 1,
+  "title": "Paste the Stack Trace, Get the Fix",
+  "next": {
+    "day": 2,
+    "title": "Make AI Reproduce the Bug First"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 51
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 2": "Day two"
+  },
+  "keywords": {
+    "crash": "api",
+    "trace": "csharp",
+    "Paste": "csharp",
+    "three": "api",
+    "Fixed": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Stop describing your crash to AI.", "cues": {"hookW": "crash"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "This code reads item three.", "cues": {"ideaW": "code"}},
+        {"id": "run", "text": "Run it. Crash! That's a stack trace.", "cues": {"runW": "Run", "trcW": "stack trace"}},
+        {"id": "l1", "text": "Paste all of it into your prompt.", "cues": {"l1W": "Paste"}},
+        {"id": "l2", "text": "AI sees line three: index three is too big.", "cues": {"l2W": "line three"}},
+        {"id": "res", "text": "Change it to two. Fixed!", "cues": {"fixW": "Change", "resW": "Fixed"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "The trace tells AI exactly where to look.", "cues": {"tkW": "trace"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Whole trace or just the error line: which do you paste? Comment below!", "cues": {"qW": "Whole"}},
+        {"id": "bye", "text": "Follow for Day 2: Make AI Reproduce the Bug First!", "cues": {"end": "Follow", "plug": "Make AI"}}
+      ]
+    }
+  ]
+}

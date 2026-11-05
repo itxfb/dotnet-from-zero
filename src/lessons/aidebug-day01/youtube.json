@@ -1,0 +1,19 @@
+{
+  "title": "Paste the Stack Trace, Get the Fix from AI in Seconds",
+  "description": "Stop describing your crash to AI. Paste the stack trace instead! 🐛\n\n✅ Run your code and copy the whole stack trace\n✅ Paste it into your prompt with Fix this crash\n✅ See how the line number points AI straight at the bug\n\nDay 1 of AI Debugging. Next up: Day 2, Make AI Reproduce the Bug First.\nFollow for a new short every day and learn to build with AI the right way.\n\n#shorts #ai #aicoding #coding #programming #debugging #csharp",
+  "tags": [
+    "paste stack trace into ai",
+    "fix errors with ai",
+    "ai debugging for beginners",
+    "how to debug with chatgpt",
+    "debug code with ai",
+    "what is a stack trace",
+    "read a stack trace",
+    "IndexOutOfRangeException fix",
+    "c# index out of range",
+    "ai coding for beginners",
+    "fix crash with ai prompt",
+    "debugging prompts"
+  ],
+  "comment": "Whole trace or just the error line: which do you paste? Tell me in a word! Extra tip: the line number in the trace (Program.cs:line 3) tells AI exactly where the crash happened, so keep it in your prompt."
+}

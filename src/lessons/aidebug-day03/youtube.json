@@ -1,0 +1,19 @@
+{
+  "title": "Git Bisect: Find the Commit That Broke Your Code",
+  "description": "Which commit broke your code? Let git find it for you! 🔍\n\n✅ Mark HEAD as bad and v1.0 as good with git bisect start\n✅ Run git bisect run dotnet test to test every step automatically\n✅ Paste the bad commit's diff to AI and ask why it broke\n\nDay 3 of AI Debugging. Next up: Day 4, Add Logging That Finds the Bug.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #git #ai #debugging",
+  "tags": [
+    "git bisect",
+    "git bisect run",
+    "git bisect tutorial",
+    "find the commit that broke the code",
+    "find regression with git",
+    "git bisect for beginners",
+    "ai debugging for beginners",
+    "debug code with ai",
+    "how to find a bug in git history",
+    "git bisect dotnet test",
+    "ask ai why a commit broke code",
+    "git tips for beginners"
+  ],
+  "comment": "Bisect or guessing: which would you try first? Tell me in a word! Extra tip: when you finish, run git bisect reset to get back to your original branch."
+}

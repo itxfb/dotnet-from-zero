@@ -1,0 +1,76 @@
+{
+  "id": "aidebug-day03",
+  "series": "AI DEBUGGING",
+  "day": 3,
+  "title": "Bisect a Regression with Git and AI",
+  "next": {
+    "day": 4,
+    "title": "Add Logging That Finds the Bug"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 53
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 4": "Day four",
+    "Bisect": "bye sect",
+    "HEAD": "head",
+    "v1.0": "v one point oh"
+  },
+  "keywords": {
+    "Bisect": "api",
+    "bad": "csharp",
+    "good": "dotnet",
+    "commit": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Find the commit that broke your code.", "cues": {"hookW": "commit"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Tests passed in v1.0, fail now.", "cues": {"ideaW": "v1.0"}},
+        {"id": "l1", "text": "Bisect start: bad is HEAD, good is v1.0.", "cues": {"l1W": "bad"}},
+        {"id": "l2", "text": "Then let git run your tests.", "cues": {"l2W": "run"}},
+        {"id": "run", "text": "Run it. First bad commit found!", "cues": {"runW": "Run", "resW": "found"}},
+        {"id": "ai", "text": "Paste that diff to AI: why did it break?", "cues": {"aiW": "Paste"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Git finds the commit, AI explains it.", "cues": {"tkW": "Git"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Bisect or guessing: which would you try first? Comment below!", "cues": {"qW": "Bisect"}},
+        {"id": "bye", "text": "Follow for Day 4: Add Logging That Finds the Bug!", "cues": {"end": "Follow", "plug": "Logging"}}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Debug with Console.WriteLine: Log Inputs, Find the Bug",
+  "description": "Code prints 23 instead of 60? One log line shows you why! 🔍\n\n✅ Log your inputs with Console.WriteLine\n✅ Run it and see whether the values are right\n✅ Fix the wrong operator and run again\n\nDay 4 of AI Debugging. Next up: Day 5, Make AI Review Every Pull Request.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #debugging #csharp #ai",
+  "tags": [
+    "debug with console writeline",
+    "console writeline debugging",
+    "logging for beginners",
+    "how to debug code",
+    "debugging for beginners",
+    "print debugging",
+    "c# debugging tutorial",
+    "find a bug with logging",
+    "ai debugging for beginners",
+    "dotnet run",
+    "c# for beginners",
+    "ask ai to add logging"
+  ],
+  "comment": "Logs or breakpoints: which would you use first? Tell me in a word! Extra tip: log the inputs before the result, so you can tell wrong data from wrong math."
+}

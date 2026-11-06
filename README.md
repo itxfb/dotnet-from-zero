@@ -128,6 +128,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aidebug-day01` | Paste the Stack Trace, Get the Fix | 32.5 s |
 | `aidebug-day02` | Make AI Reproduce the Bug First | 34.2 s |
 | `aidebug-day03` | Bisect a Regression with Git and AI | 32.3 s |
+| `aidebug-day04` | Add Logging That Finds the Bug | 32.9 s |
 
 ## Make the next lesson (Day 4)
 

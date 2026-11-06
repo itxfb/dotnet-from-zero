@@ -1,0 +1,75 @@
+{
+  "id": "aidebug-day04",
+  "series": "AI DEBUGGING",
+  "day": 4,
+  "title": "Add Logging That Finds the Bug",
+  "next": {
+    "day": 5,
+    "title": "Make AI Review Every Pull Request"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 54
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 5": "Day five",
+    "Console.WriteLine": "console write line"
+  },
+  "keywords": {
+    "Log": "api",
+    "inputs": "csharp",
+    "plus": "dotnet",
+    "times": "dotnet"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Print your values to find bugs.", "cues": {"hookW": "Print"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "idea", "text": "Total should be sixty, not twenty-three.", "cues": {"ideaW": "sixty"}},
+        {"id": "l1", "text": "Log the inputs with Console.WriteLine.", "cues": {"l1W": "inputs"}},
+        {"id": "run", "text": "Run it. Inputs are right!", "cues": {"runW": "Run", "resW": "right"}},
+        {"id": "l2", "text": "So the plus is wrong. Use times.", "cues": {"l2W": "plus"}},
+        {"id": "run2", "text": "Run again: sixty!", "cues": {"run2W": "again", "res2W": "sixty"}},
+        {"id": "ai", "text": "Ask AI to add those logs for you.", "cues": {"aiW": "Ask"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Logs show what your code really did.", "cues": {"tkW": "Logs"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Logs or breakpoints: which would you use first? Comment below!", "cues": {"qW": "Logs"}},
+        {"id": "bye", "text": "Follow for Day 5: Make AI Review Every Pull Request!", "cues": {"end": "Follow", "plug": "Review"}}
+      ]
+    }
+  ]
+}

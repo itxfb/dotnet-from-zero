@@ -130,6 +130,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aidebug-day03` | Bisect a Regression with Git and AI | 32.3 s |
 | `aidebug-day04` | Add Logging That Finds the Bug | 32.9 s |
 | `aidebug-day05` | Make AI Review Every Pull Request | 29.0 s |
+| `aidebug-day06` | Catch Hallucinated APIs and Packages | 27.5 s |
 
 ## Make the next lesson (Day 4)
 

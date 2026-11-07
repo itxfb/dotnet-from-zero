@@ -1,0 +1,19 @@
+{
+  "title": "Hallucinated Packages: Catch AI's Fake npm Imports",
+  "description": "AI just imported a package that doesn't exist! 😱\n\n✅ Spot an import you don't recognize\n✅ Run npm view to check the package name\n✅ A 404 means the name is hallucinated\n\nDay 6 of AI Debugging. Next up: Day 7, Fix a Flaky Test with AI.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #npm #javascript",
+  "tags": [
+    "ai hallucinated packages",
+    "hallucinated package",
+    "slopsquatting",
+    "ai fake npm package",
+    "npm view",
+    "check npm package exists",
+    "ai code hallucination",
+    "chatgpt fake library",
+    "ai debugging for beginners",
+    "verify ai generated code",
+    "npm 404 not found",
+    "ai coding tips"
+  ],
+  "comment": "npm or pip: which would you check first? Tell me in a word! Extra tip: before installing anything AI suggests, run npm view name. If it prints a 404, the package was made up."
+}

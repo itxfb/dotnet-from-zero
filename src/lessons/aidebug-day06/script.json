@@ -1,0 +1,74 @@
+{
+  "id": "aidebug-day06",
+  "series": "AI DEBUGGING",
+  "day": 6,
+  "title": "Catch Hallucinated APIs and Packages",
+  "next": {
+    "day": 7,
+    "title": "Fix a Flaky Test with AI"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 56
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 7": "Day seven",
+    "npm": "N P M",
+    "pip": "pip"
+  },
+  "keywords": {
+    "package": "dotnet",
+    "npm": "api",
+    "404": "csharp",
+    "hallucinated": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "AI just invented a fake package.", "cues": {"hookW": "fake"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "imp", "text": "It imported a package. Does it exist?", "cues": {"impW": "package"}},
+        {"id": "ask", "text": "Ask npm before you install.", "cues": {"askW": "npm"}},
+        {"id": "run", "text": "Run it. Error 404, not found!", "cues": {"runW": "Run", "resW": "404"}},
+        {"id": "fk", "text": "That name is hallucinated.", "cues": {"fkW": "hallucinated"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Verify every package AI picks.", "cues": {"tkW": "Verify"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "npm or pip: which would you check first? Comment below!", "cues": {"qW": "npm"}},
+        {"id": "bye", "text": "Follow for Day 7: Fix a Flaky Test with AI!", "cues": {"end": "Follow", "plug": "Fix"}}
+      ]
+    }
+  ]
+}

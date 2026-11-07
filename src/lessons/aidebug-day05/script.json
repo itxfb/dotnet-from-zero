@@ -1,0 +1,75 @@
+{
+  "id": "aidebug-day05",
+  "series": "AI DEBUGGING",
+  "day": 5,
+  "title": "Make AI Review Every Pull Request",
+  "next": {
+    "day": 6,
+    "title": "Catch Hallucinated APIs and Packages"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 55
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 6": "Day six",
+    "PR": "P R"
+  },
+  "keywords": {
+    "review": "api",
+    "pull": "dotnet",
+    "request": "dotnet",
+    "secret": "csharp",
+    "check": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Let AI review every pull request.", "cues": {"hookW": "review"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "on", "text": "Run it when a pull request opens.", "cues": {"onW": "pull request"}},
+        {"id": "act", "text": "Use the Claude action.", "cues": {"actW": "Claude"}},
+        {"id": "key", "text": "Keep your key in a secret.", "cues": {"keyW": "secret"}},
+        {"id": "pr", "text": "Tell it what to check.", "cues": {"prW": "check"}},
+        {"id": "run", "text": "Push. The review lands on the PR!", "cues": {"runW": "Push", "resW": "lands"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Every PR gets a free second pair of eyes.", "cues": {"tkW": "free"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Bugs or style: what should AI check first? Comment below!", "cues": {"qW": "Bugs"}},
+        {"id": "bye", "text": "Follow for Day 6: Catch Hallucinated APIs and Packages!", "cues": {"end": "Follow", "plug": "Catch"}}
+      ]
+    }
+  ]
+}

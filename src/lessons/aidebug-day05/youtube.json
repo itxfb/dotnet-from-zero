@@ -1,0 +1,19 @@
+{
+  "title": "AI Code Review on Every Pull Request in One File",
+  "description": "Want AI to review every pull request for you? One YAML file does it! 🤖\n\n✅ Trigger a workflow when a pull request opens\n✅ Add the Claude action with your key as a secret\n✅ Tell it what to check and push\n\nDay 5 of AI Debugging. Next up: Day 6, Catch Hallucinated APIs and Packages.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #codereview #github",
+  "tags": [
+    "ai code review",
+    "ai code review github",
+    "github actions code review",
+    "claude code github action",
+    "automate pull request review",
+    "ai pull request review",
+    "github actions for beginners",
+    "claude code action",
+    "ai debugging for beginners",
+    "review pull requests with ai",
+    "github workflow yaml",
+    "ai coding tips"
+  ],
+  "comment": "Bugs or style: what should AI check first? Tell me in a word! Extra tip: keep the prompt short and specific, like Review this PR for bugs, so every review stays focused."
+}

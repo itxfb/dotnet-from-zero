@@ -1,0 +1,19 @@
+{
+  "title": "Debug a Failing CI Run from Logs in 30 Seconds",
+  "description": "Your CI run just went red? Read the log first! 🔴\n\n✅ Get only the failed log with gh run view --log-failed\n✅ Paste it to AI and ask what broke\n✅ Fix the typo in the test step and watch CI go green\n\nDay 8 of AI Debugging. Next up: Day 9, Stop the AI Fix-Break-Fix Loop.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #githubactions #devops #cicd",
+  "tags": [
+    "debug failing ci",
+    "github actions failed",
+    "github actions debug",
+    "gh run view log-failed",
+    "ci pipeline failed fix",
+    "how to read ci logs",
+    "debug ci with ai",
+    "ai debugging for beginners",
+    "github actions tutorial",
+    "npm unknown command",
+    "fix failing build",
+    "ai coding tips"
+  ],
+  "comment": "Typo or version: which breaks your CI more? Tell me in a word! Extra tip: gh run view --log-failed prints only the logs of the steps that failed, so you can paste just that into your AI chat."
+}

@@ -1,0 +1,73 @@
+{
+  "id": "aidebug-day08",
+  "series": "AI DEBUGGING",
+  "day": 8,
+  "title": "Debug a Failing CI Run from Logs",
+  "next": {
+    "day": 9,
+    "title": "Stop the AI Fix-Break-Fix Loop"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 58
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 9": "Day nine",
+    "CI": "C I"
+  },
+  "keywords": {
+    "red": "csharp",
+    "log": "api",
+    "typo": "dotnet",
+    "green": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "Your CI run just went red.", "cues": {"hookW": "red"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "run", "text": "Get only the failed log.", "cues": {"runW": "Get", "logW": "log"}},
+        {"id": "ask", "text": "Paste it to AI: what broke?", "cues": {"askW": "Paste"}},
+        {"id": "fk", "text": "A typo in the test step.", "cues": {"typoW": "typo"}},
+        {"id": "fix", "text": "Fix it. Now it is green!", "cues": {"fixW": "Fix", "okW": "green"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "The log already names the culprit.", "cues": {"tkW": "log"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Typo or version: which breaks your CI more? Comment below!", "cues": {"qW": "Typo"}},
+        {"id": "bye", "text": "Follow for Day 9: Stop the AI Fix-Break-Fix Loop!", "cues": {"end": "Follow", "plug": "Stop"}}
+      ]
+    }
+  ]
+}

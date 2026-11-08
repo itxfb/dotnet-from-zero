@@ -1,0 +1,19 @@
+{
+  "title": "Fix a Flaky Test with AI: Why It Passes, Then Fails",
+  "description": "This test passes, then fails. Here's the fix! 🎯\n\n✅ Run a test 20 times to expose a flaky failure\n✅ Ask AI what is random in the test\n✅ Pin the seed so every run gives the same result\n\nDay 7 of AI Debugging. Next up: Day 8, Debug a Failing CI Run from Logs.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #python #pytest #softwaretesting",
+  "tags": [
+    "fix flaky test",
+    "flaky test",
+    "flaky tests pytest",
+    "pytest flaky test fix",
+    "test passes sometimes fails sometimes",
+    "pytest repeat tests",
+    "pytest-repeat count",
+    "random.seed python test",
+    "fix flaky test with ai",
+    "ai debugging for beginners",
+    "intermittent test failure",
+    "ai coding tips"
+  ],
+  "comment": "Seed or mock: which would you try first? Tell me in a word! Extra tip: to repeat a test 20 times, install the pytest-repeat plugin, then run pytest --count=20. One failure means it is flaky."
+}

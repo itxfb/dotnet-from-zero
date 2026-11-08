@@ -1,0 +1,73 @@
+{
+  "id": "aidebug-day07",
+  "series": "AI DEBUGGING",
+  "day": 7,
+  "title": "Fix a Flaky Test with AI",
+  "next": {
+    "day": 8,
+    "title": "Debug a Failing CI Run from Logs"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 57
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 8": "Day eight",
+    "CI": "C I"
+  },
+  "keywords": {
+    "flaky": "csharp",
+    "twenty": "api",
+    "random": "dotnet",
+    "seed": "csharp"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "This test passes, then fails.", "cues": {"hookW": "fails"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "run", "text": "Run it twenty times.", "cues": {"runW": "Run", "resW": "twenty"}},
+        {"id": "fk", "text": "Some runs fail. That is flaky.", "cues": {"fkW": "flaky"}},
+        {"id": "ask", "text": "Ask AI: what is random here?", "cues": {"askW": "random"}},
+        {"id": "fix", "text": "Pin the seed. Twenty passes!", "cues": {"fixW": "seed", "okW": "passes"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Remove the randomness, not the test.", "cues": {"tkW": "Remove"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Seed or mock: which would you try first? Comment below!", "cues": {"qW": "Seed"}},
+        {"id": "bye", "text": "Follow for Day 8: Debug a Failing CI Run from Logs!", "cues": {"end": "Follow", "plug": "Debug"}}
+      ]
+    }
+  ]
+}

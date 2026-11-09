@@ -1,0 +1,19 @@
+{
+  "title": "Write a Postmortem Prompt So AI Bugs Never Return",
+  "description": "Fixed a bug? Make sure it never comes back! 🔍\n\n✅ Ask AI for a postmortem of the bug\n✅ Get the root cause in one sentence\n✅ Ask why your tests missed it, then add a test\n\nDay 10 of AI Debugging, the last one in the series. Next up: the new series Agent Harness, Day 1: Give Your Agent a One-Command Check.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #chatgpt #debugging #aitools",
+  "tags": [
+    "postmortem prompt",
+    "bug postmortem",
+    "ai debugging for beginners",
+    "debug with ai",
+    "chatgpt debugging prompt",
+    "ai coding tips",
+    "root cause analysis bug",
+    "prevent bugs coming back",
+    "add regression test with ai",
+    "ai generated code bugs",
+    "vibe coding bugs",
+    "ai coding prompts"
+  ],
+  "comment": "Root cause or new test: which would you ask AI for first? Tell me in a word! Extra tip: keep the postmortem prompt in a file, so you paste the same four lines after every bug you fix."
+}

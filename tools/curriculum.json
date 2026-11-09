@@ -118,5 +118,25 @@
       "Stop the AI Fix-Break-Fix Loop",
       "Write a Postmortem Prompt for Bugs"
     ]
+  },
+  {
+    "name": "Agent Harness",
+    "badge": "AGENT HARNESS",
+    "prefix": "harness-day",
+    "about": "build the checks, limits and feedback loops that make AI coding agents reliable",
+    "tags": ["AI", "harness engineering", "AI agents", "Claude Code", "AI coding", "developer tools", "automation", "reliability"],
+    "hashtags": "#ai #aiagents #harnessengineering #aicoding",
+    "topics": [
+      "Give Your Agent a One-Command Check",
+      "Block Bad Commits with a Pre-Commit Gate",
+      "Enforce Architecture with a Custom Lint",
+      "Write Error Messages Agents Can Fix",
+      "Keep a Progress File for Long Tasks",
+      "Make the Agent Verify Its Own Work",
+      "Record a Trace of Every Agent Run",
+      "Cap Agent Loops with Step Limits",
+      "Hand Off Work Between Context Windows",
+      "Score Harness Changes on a Benchmark"
+    ]
   }
 ]

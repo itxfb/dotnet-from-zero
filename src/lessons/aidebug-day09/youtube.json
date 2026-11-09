@@ -1,0 +1,19 @@
+{
+  "title": "Stop the AI Fix-Break-Fix Loop with 3 Rules",
+  "description": "AI fixes one bug and breaks another? Give it three rules! 🔁\n\n✅ Tell AI to fix only the failing test\n✅ Run all tests after each change\n✅ Revert the fix if a new test fails\n\nDay 9 of AI Debugging. Next up: Day 10, Write a Postmortem Prompt for Bugs.\nFollow for a new short every day and learn to debug with AI the right way.\n\n#shorts #coding #programming #ai #chatgpt #softwaredevelopment #debugging",
+  "tags": [
+    "ai fix break loop",
+    "ai breaks my code",
+    "chatgpt keeps breaking code",
+    "stop ai from breaking code",
+    "ai debugging for beginners",
+    "ai coding tips",
+    "debug with ai",
+    "ai coding prompt rules",
+    "run tests after ai changes",
+    "ai generated code bugs",
+    "vibe coding bugs",
+    "ai coding mistakes"
+  ],
+  "comment": "Revert or tests: which rule would you add first? Tell me in a word! Extra tip: paste all three rules at the top of your AI chat, so every fix starts with the same guardrails."
+}

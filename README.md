@@ -133,6 +133,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aidebug-day06` | Catch Hallucinated APIs and Packages | 27.5 s |
 | `aidebug-day07` | Fix a Flaky Test with AI | 27.3 s |
 | `aidebug-day08` | Debug a Failing CI Run from Logs | 25.8 s |
+| `aidebug-day09` | Stop the AI Fix-Break-Fix Loop | 28.1 s |
 
 ## Make the next lesson (Day 4)
 

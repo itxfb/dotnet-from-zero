@@ -1,0 +1,73 @@
+{
+  "id": "aidebug-day09",
+  "series": "AI DEBUGGING",
+  "day": 9,
+  "title": "Stop the AI Fix-Break-Fix Loop",
+  "next": {
+    "day": 10,
+    "title": "Write a Postmortem Prompt for Bugs"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {
+    "engine": "kokoro",
+    "name": "am_puck",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "music": {
+    "enabled": true,
+    "bpm": 100,
+    "seed": 59
+  },
+  "pronounce": {
+    "AI": "A I",
+    "Day 10": "Day ten"
+  },
+  "keywords": {
+    "breaks": "csharp",
+    "only": "api",
+    "revert": "dotnet",
+    "green": "api"
+  },
+  "timing": {
+    "leadIn": 0.35,
+    "sentenceGap": 0.3,
+    "colonGap": 0.38,
+    "lineGap": 0.42,
+    "sceneGap": 0.6,
+    "sceneLead": 0.35,
+    "tail": 1.25
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "lines": [
+        {"id": "hook", "text": "AI fixes one bug, breaks another?", "cues": {"hookW": "breaks"}}
+      ]
+    },
+    {
+      "id": "code",
+      "lines": [
+        {"id": "run", "text": "Give it three rules.", "cues": {"runW": "three"}},
+        {"id": "one", "text": "Fix only the failing test.", "cues": {"oneW": "only"}},
+        {"id": "two", "text": "Run all tests after each change.", "cues": {"twoW": "Run"}},
+        {"id": "three", "text": "New failure? Revert it.", "cues": {"revW": "Revert"}},
+        {"id": "fix", "text": "Now it stays green!", "cues": {"okW": "green"}}
+      ]
+    },
+    {
+      "id": "recap",
+      "lines": [
+        {"id": "tk", "text": "Small fixes, full test run, every time.", "cues": {"tkW": "Small"}}
+      ]
+    },
+    {
+      "id": "outro",
+      "lines": [
+        {"id": "q", "text": "Revert or tests: which rule would you add first? Comment below!", "cues": {"qW": "Revert"}},
+        {"id": "bye", "text": "Follow for Day 10: Write a Postmortem Prompt for Bugs!", "cues": {"end": "Follow", "plug": "Write"}}
+      ]
+    }
+  ]
+}

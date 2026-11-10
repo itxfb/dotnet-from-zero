@@ -135,6 +135,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aidebug-day08` | Debug a Failing CI Run from Logs | 25.8 s |
 | `aidebug-day09` | Stop the AI Fix-Break-Fix Loop | 28.1 s |
 | `aidebug-day10` | Write a Postmortem Prompt for Bugs | 25.5 s |
+| `harness-day01` | Give Your Agent a One-Command Check | 23.8 s |
 
 ## Make the next lesson (Day 4)
 

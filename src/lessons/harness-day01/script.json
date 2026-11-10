@@ -1,0 +1,35 @@
+{
+  "id": "harness-day01",
+  "series": "AGENT HARNESS",
+  "day": 1,
+  "title": "Give Your Agent a One-Command Check",
+  "next": {
+    "day": 2,
+    "title": "Block Bad Commits with a Pre-Commit Gate"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 61},
+  "pronounce": {"AI": "A I", "tsc": "T S C"},
+  "keywords": {"check": "csharp", "types": "api", "tests": "dotnet", "green": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Your agent can't tell if it worked.", "cues": {"hookW": "agent"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "run", "text": "Add one script: check.", "cues": {"runW": "check"}},
+      {"id": "one", "text": "Types first.", "cues": {"oneW": "Types"}},
+      {"id": "two", "text": "Then tests.", "cues": {"twoW": "tests"}},
+      {"id": "fix", "text": "Green means done!", "cues": {"okW": "Green"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "One command, one honest answer.", "cues": {"tkW": "One"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Types or tests: which would you check first? Comment below!", "cues": {"qW": "Types"}},
+      {"id": "bye", "text": "Follow for Day 2: Block Bad Commits with a Pre-Commit Gate!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

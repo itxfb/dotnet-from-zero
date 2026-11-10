@@ -1,0 +1,19 @@
+{
+  "title": "One Command Check for AI Coding Agents (Copy It)",
+  "description": "Your AI agent can't tell if its code works. Give it one command that can! 🔍\n\n✅ Add a check script to package.json\n✅ Run the type check first, then the tests\n✅ Green output means the agent is done\n\nDay 1 of Agent Harness. Next up: Day 2, Block Bad Commits with a Pre-Commit Gate.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #programming #aicoding #aiagents #claudecode",
+  "tags": [
+    "ai coding agent check",
+    "npm run check script",
+    "package.json scripts",
+    "make ai agent verify its code",
+    "ai agent reliability",
+    "ai coding agent tips",
+    "claude code tips",
+    "run tests automatically ai",
+    "tsc noEmit npm test",
+    "ai agent harness",
+    "vibe coding best practices",
+    "ai coding for beginners"
+  ],
+  "comment": "Types or tests: which would you check first? Tell me in a word! Extra tip: add the check command to your agent's instructions file (like AGENTS.md) so it runs it before saying it is done."
+}

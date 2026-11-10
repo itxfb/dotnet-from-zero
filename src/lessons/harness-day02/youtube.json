@@ -1,0 +1,19 @@
+{
+  "title": "Pre-Commit Hook That Blocks Bad AI Commits (Husky)",
+  "description": "Stop your AI agent from committing broken code! 🚫\n\n✅ Install husky and run husky init\n✅ Put your check command in the pre-commit file\n✅ A failing check now blocks the commit\n\nDay 2 of Agent Harness. Next up: Day 3, Enforce Architecture with a Custom Lint.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #programming #aicoding #aiagents #claudecode #git",
+  "tags": [
+    "pre-commit hook",
+    "husky pre-commit",
+    "husky git hooks tutorial",
+    "block bad commits",
+    "git hooks for beginners",
+    "ai coding agent git hooks",
+    "stop ai from committing broken code",
+    "npm run check pre-commit",
+    "claude code tips",
+    "ai agent reliability",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Husky or plain git hooks: which would you try first? Tell me in a word! Extra tip: keep your pre-commit check fast, so it runs every time instead of getting skipped."
+}

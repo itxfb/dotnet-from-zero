@@ -931,5 +931,20 @@
     },
     "playlist": "UExmMGpKamhhakZnVS41NkI0NEY2RDEwNTU3Q0M2",
     "comment": "UgxH-EWRi9W32GAg3aZ4AaABAg"
+  },
+  "harness-day02": {
+    "videoId": "XuPD03yyKZA",
+    "date": "2026-11-11",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExmMGpKamhhakZnVS4yODlGNEE0NkRGMEEzMEQy",
+    "comment": "UgyC631eCXt5BzRPZod4AaABAg"
   }
 }

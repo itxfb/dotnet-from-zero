@@ -1,0 +1,34 @@
+{
+  "id": "harness-day03",
+  "series": "AGENT HARNESS",
+  "day": 3,
+  "title": "Enforce Architecture with a Custom Lint",
+  "next": {
+    "day": 4,
+    "title": "Write Error Messages Agents Can Fix"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 63},
+  "pronounce": {"AI": "A I", "npx": "N P X", "UI": "U I", "ESLint": "E S lint"},
+  "keywords": {"lint": "csharp", "Ban": "dotnet", "caught": "api", "architecture": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop agents breaking your architecture.", "cues": {"hookW": "breaking"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a lint rule.", "cues": {"initW": "lint"}},
+      {"id": "add", "text": "Ban db imports inside the UI.", "cues": {"addW": "Ban"}},
+      {"id": "fail", "text": "Run it. Violation caught!", "cues": {"okW": "caught"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Rules the agent cannot ignore.", "cues": {"tkW": "Rules"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Lint rule or code review: which catches more? Comment below!", "cues": {"qW": "Lint"}},
+      {"id": "bye", "text": "Follow for Day 4: Write Error Messages Agents Can Fix!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

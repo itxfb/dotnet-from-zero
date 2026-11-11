@@ -1,0 +1,19 @@
+{
+  "title": "ESLint Rule That Enforces Architecture for AI Agents",
+  "description": "Your AI agent keeps breaking your architecture? One lint rule stops it. 🧱\n\n✅ Add no-restricted-imports to eslint.config.js\n✅ Ban db imports inside your src/ui folder\n✅ Run npx eslint and the violation is caught\n\nDay 3 of Agent Harness. Next up: Day 4, Write Error Messages Agents Can Fix.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #programming #aicoding #aiagents #eslint #javascript",
+  "tags": [
+    "eslint custom rule",
+    "eslint no-restricted-imports",
+    "enforce architecture with eslint",
+    "eslint flat config tutorial",
+    "eslint for beginners",
+    "ai coding agent guardrails",
+    "stop ai from breaking architecture",
+    "lint rules for ai agents",
+    "claude code tips",
+    "ai agent reliability",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Lint rule or code review: which catches more? Tell me in a word! Extra tip: add a message to each restricted pattern so the error tells the agent exactly what to do instead."
+}

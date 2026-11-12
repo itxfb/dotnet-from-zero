@@ -1,0 +1,19 @@
+{
+  "title": "ESLint Custom Error Message That AI Agents Can Fix",
+  "description": "Vague lint errors leave your AI agent guessing. One line fixes that. 🛠️\n\n✅ Add a message to no-restricted-imports\n✅ Tell the agent exactly what to use instead\n✅ Run npx eslint and see the fix in the error\n\nDay 4 of Agent Harness. Next up: Day 5, Keep a Progress File for Long Tasks.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #aicoding #aiagents #eslint #claudecode #programming",
+  "tags": [
+    "eslint custom error message",
+    "eslint no-restricted-imports message",
+    "eslint flat config tutorial",
+    "eslint for beginners",
+    "write good error messages",
+    "error messages for ai agents",
+    "ai coding agent guardrails",
+    "lint rules for ai agents",
+    "claude code tips",
+    "ai agent reliability",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Fix hint or docs link: which helps agents more? Tell me in a word! Extra tip: name the exact folder or function to use instead, so the agent can fix it in one step."
+}

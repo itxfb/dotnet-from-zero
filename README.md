@@ -138,6 +138,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `harness-day01` | Give Your Agent a One-Command Check | 23.8 s |
 | `harness-day02` | Block Bad Commits with a Pre-Commit Gate | 22.8 s |
 | `harness-day03` | Enforce Architecture with a Custom Lint | 24.1 s |
+| `harness-day04` | Write Error Messages Agents Can Fix | 23.4 s |
 
 ## Make the next lesson (Day 4)
 

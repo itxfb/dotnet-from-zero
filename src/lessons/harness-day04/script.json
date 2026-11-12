@@ -1,0 +1,34 @@
+{
+  "id": "harness-day04",
+  "series": "AGENT HARNESS",
+  "day": 4,
+  "title": "Write Error Messages Agents Can Fix",
+  "next": {
+    "day": 5,
+    "title": "Keep a Progress File for Long Tasks"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 64},
+  "pronounce": {"AI": "A I", "src/api": "source slash A P I"},
+  "keywords": {"message": "csharp", "fix": "dotnet", "Vague": "api", "instructions": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Vague errors leave agents guessing.", "cues": {"hookW": "guessing"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a message to the rule.", "cues": {"initW": "message"}},
+      {"id": "add", "text": "Tell the agent the fix.", "cues": {"addW": "fix"}},
+      {"id": "fail", "text": "Run it. The error says what to do!", "cues": {"okW": "error"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Good errors are instructions.", "cues": {"tkW": "instructions"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Fix hint or docs link: which helps agents more? Comment below!", "cues": {"qW": "Fix"}},
+      {"id": "bye", "text": "Follow for Day 5: Keep a Progress File for Long Tasks!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

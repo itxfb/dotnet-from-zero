@@ -1,0 +1,34 @@
+{
+  "id": "harness-day05",
+  "series": "AGENT HARNESS",
+  "day": 5,
+  "title": "Keep a Progress File for Long Tasks",
+  "next": {
+    "day": 6,
+    "title": "Make the Agent Verify Its Own Work"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 65},
+  "pronounce": {"AI": "A I", "grep": "grep"},
+  "keywords": {"progress": "csharp", "next": "dotnet", "memory": "api", "Checklist": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Long tasks make agents forget.", "cues": {"hookW": "forget"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Keep a progress file.", "cues": {"initW": "progress"}},
+      {"id": "add", "text": "Tick off tasks, note what's next.", "cues": {"addW": "next"}},
+      {"id": "fail", "text": "Run grep. A fresh agent finds its next step!", "cues": {"okW": "grep"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "A progress file is agent memory.", "cues": {"tkW": "memory"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Checklist or notes: which would you keep first? Comment below!", "cues": {"qW": "Checklist"}},
+      {"id": "bye", "text": "Follow for Day 6: Make the Agent Verify Its Own Work!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

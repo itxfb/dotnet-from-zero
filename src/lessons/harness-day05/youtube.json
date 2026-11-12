@@ -1,0 +1,18 @@
+{
+  "title": "Progress File for AI Agents: Never Lose Your Place",
+  "description": "Long tasks make AI agents forget where they were. A tiny file fixes that. 📝\n\n✅ Write a PROGRESS.md checklist\n✅ Tick off tasks and note what's next\n✅ Run grep to find the next open task\n\nDay 5 of Agent Harness. Next up: Day 6, Make the Agent Verify Its Own Work.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #aicoding #aiagents #claudecode #programming",
+  "tags": [
+    "progress file for ai agents",
+    "progress.md for ai coding",
+    "ai agent long tasks",
+    "ai agent forgets context",
+    "claude code tips",
+    "claude code for beginners",
+    "ai coding agent memory",
+    "agent handoff between sessions",
+    "ai agent reliability",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Checklist or notes: which would you keep first? Tell me in a word! Extra tip: end every session by updating the Next line, so a fresh agent knows exactly where to start."
+}

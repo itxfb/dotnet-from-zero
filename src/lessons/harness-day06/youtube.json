@@ -1,0 +1,18 @@
+{
+  "title": "Make AI Agents Verify Their Own Work (Copy This)",
+  "description": "\"It should work\" is not proof. Make your AI agent show it. ✅\n\n✅ Add a \"Done means\" rule to CLAUDE.md\n✅ Make the agent run your one-command check\n✅ Require the passing output as proof\n\nDay 6 of Agent Harness. Next up: Day 7, Record a Trace of Every Agent Run.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #aicoding #aiagents #claudecode #programming",
+  "tags": [
+    "make ai agent verify its work",
+    "ai agent verify its own work",
+    "claude.md tips",
+    "claude code tips",
+    "claude code for beginners",
+    "ai coding agent testing",
+    "ai agent run tests before done",
+    "definition of done for ai agents",
+    "ai agent reliability",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Rule or hook: which would you add first? Tell me in a word! Extra tip: keep the Done means rule to three short lines, so the agent actually follows it every time."
+}

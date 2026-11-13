@@ -140,6 +140,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `harness-day03` | Enforce Architecture with a Custom Lint | 24.1 s |
 | `harness-day04` | Write Error Messages Agents Can Fix | 23.4 s |
 | `harness-day05` | Keep a Progress File for Long Tasks | 24.5 s |
+| `harness-day06` | Make the Agent Verify Its Own Work | 23.6 s |
 
 ## Make the next lesson (Day 4)
 

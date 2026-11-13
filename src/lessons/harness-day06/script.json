@@ -1,0 +1,34 @@
+{
+  "id": "harness-day06",
+  "series": "AGENT HARNESS",
+  "day": 6,
+  "title": "Make the Agent Verify Its Own Work",
+  "next": {
+    "day": 7,
+    "title": "Record a Trace of Every Agent Run"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 66},
+  "pronounce": {"AI": "A I", "CLAUDE.md": "CLAUDE dot M D"},
+  "keywords": {"check": "csharp", "proof": "dotnet", "Rule": "api", "Trust": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop trusting \"it should work\".", "cues": {"hookW": "trusting"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a done rule to CLAUDE.md.", "cues": {"initW": "rule"}},
+      {"id": "add", "text": "Run the check, then show proof.", "cues": {"addW": "proof"}},
+      {"id": "fail", "text": "Now it runs the check itself. Green!", "cues": {"okW": "Green"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Trust the check, not the claim.", "cues": {"tkW": "check"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Rule or hook: which would you add first? Comment below!", "cues": {"qW": "Rule"}},
+      {"id": "bye", "text": "Follow for Day 7: Record a Trace of Every Agent Run!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

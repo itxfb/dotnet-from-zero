@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code Hooks: Log a Trace of Every Agent Run",
+  "description": "Your AI agent says \"I fixed it\". Can you prove what it did? ✅\n\n✅ Add a PostToolUse hook in .claude/settings.json\n✅ Append every tool call to trace.jsonl\n✅ List the tools it used with one jq command\n\nDay 7 of Agent Harness. Next up: Day 8, Cap Agent Loops with Step Limits.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #coding #aicoding #aiagents #claudecode #programming",
+  "tags": [
+    "claude code hooks",
+    "claude code posttooluse hook",
+    "log ai agent tool calls",
+    "ai agent trace",
+    "record ai agent run",
+    "claude code settings.json",
+    "claude code tips",
+    "claude code for beginners",
+    "ai agent observability",
+    "jq tutorial",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Bash or Edit: which tool would you trace first? Tell me in a word! Extra tip: add trace.jsonl to .gitignore so your logs never end up in a commit."
+}

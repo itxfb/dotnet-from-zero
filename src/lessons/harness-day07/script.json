@@ -1,0 +1,34 @@
+{
+  "id": "harness-day07",
+  "series": "AGENT HARNESS",
+  "day": 7,
+  "title": "Record a Trace of Every Agent Run",
+  "next": {
+    "day": 8,
+    "title": "Cap Agent Loops with Step Limits"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 67},
+  "pronounce": {"AI": "A I", "jq": "J Q"},
+  "keywords": {"hook": "csharp", "trace": "dotnet", "log": "api", "evidence": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop guessing what your agent did.", "cues": {"hookW": "guessing"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a hook after every tool call.", "cues": {"initW": "hook"}},
+      {"id": "add", "text": "It appends each event to a log.", "cues": {"addW": "log"}},
+      {"id": "fail", "text": "Now every run leaves a trace.", "cues": {"okW": "trace"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "A trace turns guesses into evidence.", "cues": {"tkW": "evidence"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Bash or Edit: which tool would you trace first? Comment below!", "cues": {"qW": "Bash"}},
+      {"id": "bye", "text": "Follow for Day 8: Cap Agent Loops with Step Limits!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

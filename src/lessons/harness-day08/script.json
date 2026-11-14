@@ -1,0 +1,34 @@
+{
+  "id": "harness-day08",
+  "series": "AGENT HARNESS",
+  "day": 8,
+  "title": "Cap Agent Loops with Step Limits",
+  "next": {
+    "day": 9,
+    "title": "Hand Off Work Between Context Windows"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 68},
+  "pronounce": {"AI": "A I", "jq": "J Q"},
+  "keywords": {"hook": "csharp", "turns": "dotnet", "budget": "api", "stops": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop agents that loop forever.", "cues": {"hookW": "loop"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a max turns flag.", "cues": {"initW": "max turns"}},
+      {"id": "add", "text": "Then a budget cap.", "cues": {"addW": "budget"}},
+      {"id": "fail", "text": "Now a runaway loop stops itself.", "cues": {"okW": "stops"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Limits turn endless loops into clean stops.", "cues": {"tkW": "clean stops"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Turns or dollars: which cap would you set first? Comment below!", "cues": {"qW": "Turns"}},
+      {"id": "bye", "text": "Follow for Day 9: Hand Off Work Between Context Windows!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

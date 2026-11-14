@@ -142,6 +142,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `harness-day05` | Keep a Progress File for Long Tasks | 24.5 s |
 | `harness-day06` | Make the Agent Verify Its Own Work | 23.6 s |
 | `harness-day07` | Record a Trace of Every Agent Run | 23.6 s |
+| `harness-day08` | Cap Agent Loops with Step Limits | 23.5 s |
 
 ## Make the next lesson (Day 4)
 

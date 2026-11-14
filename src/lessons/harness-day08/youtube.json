@@ -1,0 +1,19 @@
+{
+  "title": "Claude Code --max-turns: Stop Agents Looping Forever",
+  "description": "Is your AI agent stuck in an endless loop? 🔁\n\n✅ Cap agent turns with the --max-turns flag\n✅ Add a spend limit with --max-budget-usd\n✅ Read why it stopped with jq -r .subtype\n\nDay 8 of Agent Harness. Next up: Day 9, Hand Off Work Between Context Windows.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #claudecode #aicoding #aiagents #aitools #coding #programming",
+  "tags": [
+    "claude code max turns",
+    "claude code --max-turns",
+    "claude code max budget usd",
+    "stop ai agent infinite loop",
+    "limit ai agent steps",
+    "claude code headless mode",
+    "claude -p tutorial",
+    "claude code tips",
+    "claude code for beginners",
+    "ai agent guardrails",
+    "ai agent harness",
+    "ai coding for beginners"
+  ],
+  "comment": "Turns or dollars: which cap would you set first? Tell me in a word! Extra tip: --max-turns only works in print mode (claude -p), so use it in scripts and CI runs."
+}

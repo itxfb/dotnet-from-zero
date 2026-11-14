@@ -1,0 +1,34 @@
+{
+  "id": "harness-day09",
+  "series": "AGENT HARNESS",
+  "day": 9,
+  "title": "Hand Off Work Between Context Windows",
+  "next": {
+    "day": 10,
+    "title": "Score Harness Changes on a Benchmark"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 69},
+  "pronounce": {"AI": "A I", "HANDOFF.md": "handoff dot M D"},
+  "keywords": {"context": "csharp", "handoff": "dotnet", "fresh": "api", "exactly": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Don't lose work when context fills.", "cues": {"hookW": "context"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Save a handoff note.", "cues": {"initW": "handoff"}},
+      {"id": "add", "text": "Then start fresh and read it.", "cues": {"addW": "fresh"}},
+      {"id": "fail", "text": "The new window continues exactly there.", "cues": {"okW": "exactly"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "A handoff note carries work across windows.", "cues": {"tkW": "handoff note"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Handoff file or resume: which would you try first? Comment below!", "cues": {"qW": "Handoff"}},
+      {"id": "bye", "text": "Follow for Day 10: Score Harness Changes on a Benchmark!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

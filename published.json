@@ -1066,5 +1066,35 @@
     },
     "playlist": "UExmMGpKamhhakZnVS5GNjNDRDREMDQxOThCMDQ2",
     "comment": "UgzA-_8rO_6lr2_AKj94AaABAg"
+  },
+  "aidebug-day-all": {
+    "videoId": "iV-RCh2174s",
+    "date": "2026-11-15",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExLN182bkI2WkZvay40NzZCMERDMjVEN0RFRThB",
+    "comment": "UgwHGVM4GuaXDviXjxl4AaABAg"
+  },
+  "harness-day-all": {
+    "videoId": "1bETgt9u1wU",
+    "date": "2026-11-15",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExmMGpKamhhakZnVS40NzZCMERDMjVEN0RFRThB",
+    "comment": "Ugz1OUQq8v-j8X98Wnl4AaABAg"
   }
 }

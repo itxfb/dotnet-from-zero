@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day01",
+  "series": "BUILD AI APPS",
+  "day": 1,
+  "title": "Call an LLM API from the Terminal",
+  "next": {
+    "day": 2,
+    "title": "Stream a Response Token by Token"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 71},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason"},
+  "keywords": {"API": "api", "key": "dotnet", "JSON": "csharp", "answer": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Call an AI from your terminal.", "cues": {"hookW": "terminal"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Post to the API with your key.", "cues": {"initW": "Post"}},
+      {"id": "hdr", "text": "Add the version and content type.", "cues": {"hdrW": "Add"}},
+      {"id": "add", "text": "Send your question as JSON.", "cues": {"addW": "Send"}},
+      {"id": "fail", "text": "Pipe it through jq. There's the answer.", "cues": {"okW": "answer"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "An LLM API is just one web request.", "cues": {"tkW": "request"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you call it from? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 2: Stream a Response Token by Token!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

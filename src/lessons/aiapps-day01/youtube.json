@@ -1,0 +1,19 @@
+{
+  "title": "Call an LLM API from the Terminal in 30 Seconds",
+  "description": "Chatting with AI is easy. Calling it from your own code? Just one web request. 💻\n\n✅ POST to the Claude API with curl and your key\n✅ Send your question as JSON\n✅ Pipe the reply through jq to read the answer\n\nDay 1 of Build AI Apps. Next up: Day 2, Stream a Response Token by Token.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #api #programming #tutorial #llm",
+  "tags": [
+    "call llm api from terminal",
+    "llm api tutorial",
+    "claude api curl",
+    "claude api for beginners",
+    "anthropic api tutorial",
+    "curl ai api",
+    "how to call an llm api",
+    "build ai apps",
+    "ai api beginner",
+    "jq curl json",
+    "ai app tutorial",
+    "llm api curl example"
+  ],
+  "comment": "Curl or Python: which would you call it from? Tell me in a word! Extra tip: keep your key in the ANTHROPIC_API_KEY environment variable instead of pasting it into the script."
+}

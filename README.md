@@ -145,6 +145,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `harness-day08` | Cap Agent Loops with Step Limits | 23.5 s |
 | `harness-day09` | Hand Off Work Between Context Windows | 24.1 s |
 | `harness-day10` | Score Harness Changes on a Benchmark | 23.7 s |
+| `aiapps-day01` | Call an LLM API from the Terminal | 27.6 s |
 
 ## Make the next lesson (Day 4)
 

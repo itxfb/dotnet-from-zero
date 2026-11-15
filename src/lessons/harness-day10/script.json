@@ -1,0 +1,34 @@
+{
+  "id": "harness-day10",
+  "series": "AGENT HARNESS",
+  "day": 10,
+  "title": "Score Harness Changes on a Benchmark",
+  "next": {
+    "day": 1,
+    "title": "Call an LLM API from the Terminal"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 70},
+  "pronounce": {"AI": "A I"},
+  "keywords": {"benchmark": "csharp", "score": "dotnet", "number": "api", "five": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Did that change help your agent?", "cues": {"hookW": "help"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Loop over five tasks, run the agent.", "cues": {"initW": "Loop"}},
+      {"id": "add", "text": "Count the checks that pass.", "cues": {"addW": "Count"}},
+      {"id": "fail", "text": "Now every tweak gets a number.", "cues": {"okW": "number"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "A benchmark turns harness changes into scores.", "cues": {"tkW": "benchmark"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Benchmark or manual testing: which would you try first? Comment below!", "cues": {"qW": "Benchmark"}},
+      {"id": "bye", "text": "Follow for the new series: Build AI Apps!", "cues": {"end": "Follow", "plug": "series"}}
+    ]}
+  ]
+}

@@ -138,5 +138,25 @@
       "Hand Off Work Between Context Windows",
       "Score Harness Changes on a Benchmark"
     ]
+  },
+  {
+    "name": "Build AI Apps",
+    "badge": "BUILD AI APPS",
+    "prefix": "aiapps-day",
+    "about": "go from chatting with AI to shipping your own app that calls an LLM API",
+    "tags": ["AI", "LLM API", "AI agents", "tool use", "structured output", "MCP", "AI coding", "developer tools"],
+    "hashtags": "#ai #llm #aiapps #aicoding",
+    "topics": [
+      "Call an LLM API from the Terminal",
+      "Stream a Response Token by Token",
+      "Get Structured JSON Every Time",
+      "Give the Model a Tool to Call",
+      "Handle Rate Limits with Retry Backoff",
+      "Track Token Spend per Request",
+      "Cache a Long Prompt to Cut Cost",
+      "Build a Tool-Use Agent Loop",
+      "Expose Your Tool over MCP",
+      "Add Guardrails and Evals to Your App"
+    ]
   }
 ]

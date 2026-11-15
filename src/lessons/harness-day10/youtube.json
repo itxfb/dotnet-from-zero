@@ -1,0 +1,19 @@
+{
+  "title": "AI Agent Benchmark: Score Every Prompt Change",
+  "description": "Did your last prompt tweak actually help your AI agent? 📊\n\n✅ Loop a claude -p run over a folder of tasks\n✅ Count the checks that pass with a tiny bash script\n✅ Turn every harness change into a score like 4/5\n\nDay 10 of Agent Harness, the last one in the series. Next up: the new series Build AI Apps, Day 1: Call an LLM API from the Terminal.\nFollow for a new short every day and build AI agents you can trust.\n\n#shorts #aitools #aicoding #aiagents #claudecode #coding #programming",
+  "tags": [
+    "ai agent benchmark",
+    "benchmark ai coding agent",
+    "claude code benchmark",
+    "test ai agent prompts",
+    "claude -p tutorial",
+    "evaluate ai agent",
+    "ai agent evals for beginners",
+    "claude code tips",
+    "claude code for beginners",
+    "ai agent harness",
+    "bash script benchmark",
+    "ai coding for beginners"
+  ],
+  "comment": "Benchmark or manual testing: which would you try first? Tell me in a word! Extra tip: keep each task small with its own check.sh, so a pass or fail is clear and the score is easy to compare."
+}

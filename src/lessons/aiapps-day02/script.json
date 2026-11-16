@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day02",
+  "series": "BUILD AI APPS",
+  "day": 2,
+  "title": "Stream a Response Token by Token",
+  "next": {
+    "day": 3,
+    "title": "Get Structured JSON Every Time"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 72},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said"},
+  "keywords": {"stream": "api", "live": "api", "delta": "csharp", "buffering": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Make your AI answer word by word.", "cues": {"hookW": "word"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Same request, plus stream true.", "cues": {"initW": "Same", "strW": "stream"}},
+      {"id": "dn", "text": "Dash N turns off curl's buffering.", "cues": {"nW": "Dash"}},
+      {"id": "jq", "text": "Strip the data prefix, then jq pulls each text delta.", "cues": {"jqW": "Strip"}},
+      {"id": "run", "text": "Run it. Words appear live.", "cues": {"okW": "live"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Streaming sends tokens as they're made.", "cues": {"tkW": "Streaming"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you stream with? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 3: Get Structured JSON Every Time!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

@@ -146,6 +146,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `harness-day09` | Hand Off Work Between Context Windows | 24.1 s |
 | `harness-day10` | Score Harness Changes on a Benchmark | 23.7 s |
 | `aiapps-day01` | Call an LLM API from the Terminal | 27.6 s |
+| `aiapps-day02` | Stream a Response Token by Token | 28.3 s |
 
 ## Make the next lesson (Day 4)
 

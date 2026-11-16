@@ -1,0 +1,18 @@
+{
+  "title": "Stream an LLM Response Word by Word with curl",
+  "description": "Why wait for the whole answer? Make your AI type it out live. ⚡\n\n✅ Add stream true to your Claude API request\n✅ Use curl -N so output isn't buffered\n✅ Pull each text delta out with jq\n\nDay 2 of Build AI Apps. Next up: Day 3, Get Structured JSON Every Time.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #llm #api #tutorial #programming",
+  "tags": [
+    "stream llm response",
+    "claude api streaming",
+    "llm streaming tutorial",
+    "stream ai response curl",
+    "server sent events llm",
+    "claude api stream true",
+    "streaming api for beginners",
+    "build ai apps",
+    "anthropic api tutorial",
+    "curl streaming response",
+    "ai app tutorial"
+  ],
+  "comment": "Curl or Python: which would you stream with? Tell me in a word! Extra tip: the text arrives in content_block_delta events, so jq can skip every other event."
+}

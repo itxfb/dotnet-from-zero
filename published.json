@@ -1126,5 +1126,20 @@
     },
     "playlist": "UExPcnNJNzlvLUtHNC4yODlGNEE0NkRGMEEzMEQy",
     "comment": "UgzEEmyNNm9k1CRVgzN4AaABAg"
+  },
+  "aiapps-day03": {
+    "videoId": "y1n9bCc6ak4",
+    "date": "2026-11-17",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExPcnNJNzlvLUtHNC4wMTcyMDhGQUE4NTIzM0Y5",
+    "comment": "Ugwm6nnpPxD3i35NYsB4AaABAg"
   }
 }

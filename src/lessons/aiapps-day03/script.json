@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day03",
+  "series": "BUILD AI APPS",
+  "day": 3,
+  "title": "Get Structured JSON Every Time",
+  "next": {
+    "day": 4,
+    "title": "Give the Model a Tool to Call"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 73},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said"},
+  "keywords": {"schema": "api", "JSON": "csharp", "required": "dotnet", "extra": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop parsing messy AI replies.", "cues": {"hookW": "messy"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add output config with a JSON schema.", "cues": {"initW": "Add", "schW": "schema"}},
+      {"id": "req", "text": "Name and email are required.", "cues": {"reqW": "required"}},
+      {"id": "extra", "text": "No extra keys allowed.", "cues": {"exW": "extra"}},
+      {"id": "run", "text": "Run it. Clean JSON, every time.", "cues": {"okW": "Clean"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "The schema guarantees the shape.", "cues": {"tkW": "guarantees"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you parse it with? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 4: Give the Model a Tool to Call!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

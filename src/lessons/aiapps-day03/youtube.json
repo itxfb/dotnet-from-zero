@@ -1,0 +1,18 @@
+{
+  "title": "Get Structured JSON from an LLM API, Every Single Time",
+  "description": "Tired of parsing messy AI replies? Make the model return clean JSON. 🧩\n\n✅ Add output_config with a json_schema to your Claude API request\n✅ Mark fields required and block extra keys\n✅ Pipe the result through jq\n\nDay 3 of Build AI Apps. Next up: Day 4, Give the Model a Tool to Call.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #json #api #tutorial #programming",
+  "tags": [
+    "structured output llm",
+    "claude api json output",
+    "llm json schema",
+    "get json from ai",
+    "structured outputs claude",
+    "json schema tutorial",
+    "ai api for beginners",
+    "build ai apps",
+    "anthropic api tutorial",
+    "curl json api",
+    "extract data with llm"
+  ],
+  "comment": "Curl or Python: which would you parse it with? Tell me in a word! Extra tip: the JSON comes back as a string in content[0].text, so jq -r prints it ready to pipe on."
+}

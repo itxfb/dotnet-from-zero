@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day04",
+  "series": "BUILD AI APPS",
+  "day": 4,
+  "title": "Give the Model a Tool to Call",
+  "next": {
+    "day": 5,
+    "title": "Handle Rate Limits with Retry Backoff"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 74},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said"},
+  "keywords": {"tools": "api", "tool": "csharp", "schema": "dotnet", "weather": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Let your AI call your code.", "cues": {"hookW": "call"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add a tools list with a name.", "cues": {"initW": "tools"}},
+      {"id": "sch", "text": "The input schema says what to send.", "cues": {"schW": "schema"}},
+      {"id": "ask", "text": "Then ask about the weather.", "cues": {"askW": "weather"}},
+      {"id": "run", "text": "Run it. The model asks for your tool.", "cues": {"okW": "asks"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "The model asks. Your code runs it.", "cues": {"tkW": "asks"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you call tools from? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 5: Handle Rate Limits with Retry Backoff!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

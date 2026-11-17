@@ -148,6 +148,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aiapps-day01` | Call an LLM API from the Terminal | 27.6 s |
 | `aiapps-day02` | Stream a Response Token by Token | 28.3 s |
 | `aiapps-day03` | Get Structured JSON Every Time | 25.9 s |
+| `aiapps-day04` | Give the Model a Tool to Call | 26.7 s |
 
 ## Make the next lesson (Day 4)
 

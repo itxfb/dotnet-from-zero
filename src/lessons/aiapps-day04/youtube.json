@@ -1,0 +1,18 @@
+{
+  "title": "LLM Tool Calling: Let AI Call Your Code (Claude API)",
+  "description": "What if your AI could call your code? Here's how. 🔧\n\n✅ Add a tools list with a name and input_schema\n✅ Ask a question the tool can answer\n✅ Read the tool_use request with jq\n\nDay 4 of Build AI Apps. Next up: Day 5, Handle Rate Limits with Retry Backoff.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #programming #llm #aitools #tutorial",
+  "tags": [
+    "llm tool calling",
+    "claude api tool use",
+    "function calling llm",
+    "ai tool use tutorial",
+    "anthropic tools api",
+    "let ai call functions",
+    "tool_use claude",
+    "ai api for beginners",
+    "build ai apps",
+    "curl llm api",
+    "llm function calling example"
+  ],
+  "comment": "Curl or Python: which would you call tools from? Tell me in a word! Extra tip: the model only asks for the tool. Your code runs it and sends the result back."
+}

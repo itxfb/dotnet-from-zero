@@ -149,6 +149,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aiapps-day02` | Stream a Response Token by Token | 28.3 s |
 | `aiapps-day03` | Get Structured JSON Every Time | 25.9 s |
 | `aiapps-day04` | Give the Model a Tool to Call | 26.7 s |
+| `aiapps-day05` | Handle Rate Limits with Retry Backoff | 26.6 s |
 
 ## Make the next lesson (Day 4)
 

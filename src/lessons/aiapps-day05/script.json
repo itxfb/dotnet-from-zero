@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day05",
+  "series": "BUILD AI APPS",
+  "day": 5,
+  "title": "Handle Rate Limits with Retry Backoff",
+  "next": {
+    "day": 6,
+    "title": "Track Token Spend per Request"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 75},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said"},
+  "keywords": {"429": "api", "retry": "csharp", "longer": "dotnet", "retry-after": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop crashing on 429 errors.", "cues": {"hookW": "429"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "init", "text": "Add retry 5 to curl.", "cues": {"initW": "retry"}},
+      {"id": "back", "text": "It waits longer after each failure.", "cues": {"backW": "longer"}},
+      {"id": "hdr", "text": "It also obeys the server's retry-after.", "cues": {"hdrW": "retry-after"}},
+      {"id": "run", "text": "Run it. No crash.", "cues": {"okW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Wait longer, then try again.", "cues": {"tkW": "longer"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you retry in? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 6: Track Token Spend per Request!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Fix LLM API 429 Rate Limit Errors with One curl Flag",
+  "description": "Your AI app crashes on 429 errors? One flag fixes it. 🔁\n\n✅ Add --retry 5 to your curl call\n✅ It waits longer after each failure\n✅ It also obeys the server's retry-after\n\nDay 5 of Build AI Apps. Next up: Day 6, Track Token Spend per Request.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #api #programming #tutorial #llm",
+  "tags": [
+    "llm api rate limit",
+    "429 too many requests fix",
+    "api rate limit retry",
+    "curl retry backoff",
+    "exponential backoff api",
+    "claude api rate limit",
+    "handle rate limits llm",
+    "curl --retry",
+    "retry after header",
+    "ai api for beginners",
+    "build ai apps"
+  ],
+  "comment": "Curl or Python: which would you retry in? Tell me in a word! Extra tip: curl --retry-delay sets a fixed wait, which turns off the growing backoff."
+}

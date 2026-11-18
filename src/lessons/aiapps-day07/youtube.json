@@ -1,0 +1,18 @@
+{
+  "title": "Claude Prompt Caching: Pay 10% for a Long Prompt",
+  "description": "Stop paying full price for the same long prompt twice. ⚡\n\n✅ Mark the long prompt with cache_control\n✅ First run writes the cache\n✅ Run again and read it back for a tenth of the price\n\nDay 7 of Build AI Apps. Next up: Day 8, Build a Tool-Use Agent Loop.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #programming #api #llm #tutorial",
+  "tags": [
+    "prompt caching",
+    "claude prompt caching",
+    "cache_control ephemeral",
+    "cache long prompt",
+    "reduce llm api cost",
+    "cache_read_input_tokens",
+    "llm api cost",
+    "anthropic api tutorial",
+    "ai api for beginners",
+    "curl api tutorial",
+    "build ai apps"
+  ],
+  "comment": "Docs or code: which would you cache first? Tell me in a word! Extra tip: put the part that never changes first and your changing question last."
+}

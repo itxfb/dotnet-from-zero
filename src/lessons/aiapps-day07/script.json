@@ -1,0 +1,34 @@
+{
+  "id": "aiapps-day07",
+  "series": "BUILD AI APPS",
+  "day": 7,
+  "title": "Cache a Long Prompt to Cut Cost",
+  "next": {
+    "day": 8,
+    "title": "Build a Tool-Use Agent Loop"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 77},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said", "cache_control": "cache control"},
+  "keywords": {"cache_control": "api", "writes": "csharp", "reads": "dotnet", "tenth": "csharp"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop paying full price twice.", "cues": {"hookW": "twice"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "cc", "text": "Mark your long prompt with cache_control.", "cues": {"ccW": "cache_control"}},
+      {"id": "wr", "text": "First run writes it to the cache.", "cues": {"wrW": "writes"}},
+      {"id": "rd", "text": "Run again: it reads the cache for a tenth of the price.", "cues": {"rdW": "reads", "tenW": "tenth"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Cache the part that never changes.", "cues": {"tkW": "never"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Docs or code: which would you cache first? Comment below!", "cues": {"qW": "Docs"}},
+      {"id": "bye", "text": "Follow for Day 8: Build a Tool-Use Agent Loop!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day06",
+  "series": "BUILD AI APPS",
+  "day": 6,
+  "title": "Track Token Spend per Request",
+  "next": {
+    "day": 7,
+    "title": "Cache a Long Prompt to Cut Cost"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 76},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "sed": "said"},
+  "keywords": {"usage": "api", "jq": "csharp", "input": "dotnet", "output": "csharp", "bill": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Know what each request costs.", "cues": {"hookW": "costs"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "use", "text": "Every response has a usage field.", "cues": {"useW": "usage"}},
+      {"id": "jq", "text": "Pipe it through jq.", "cues": {"jqW": "jq"}},
+      {"id": "tok", "text": "It shows input and output tokens.", "cues": {"tokW": "input", "outW": "output"}},
+      {"id": "run", "text": "Run it. Tokens counted.", "cues": {"okW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Tokens in, tokens out: that's your bill.", "cues": {"tkW": "bill"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Input or output: which costs you more? Comment below!", "cues": {"qW": "Input"}},
+      {"id": "bye", "text": "Follow for Day 7: Cache a Long Prompt to Cut Cost!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

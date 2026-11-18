@@ -1,0 +1,18 @@
+{
+  "title": "Track LLM API Token Usage per Request with One jq Filter",
+  "description": "Know what every AI request costs with one jq filter. 🪙\n\n✅ Every API response has a usage field\n✅ Pipe it through jq\n✅ See input and output tokens per request\n\nDay 6 of Build AI Apps. Next up: Day 7, Cache a Long Prompt to Cut Cost.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #coding #programming #api #llm #tutorial",
+  "tags": [
+    "llm api token usage",
+    "track token usage",
+    "count tokens per request",
+    "claude api usage",
+    "llm api cost",
+    "input and output tokens",
+    "jq tutorial",
+    "curl api tutorial",
+    "ai api for beginners",
+    "token cost calculator",
+    "build ai apps"
+  ],
+  "comment": "Input or output: which costs you more? Tell me in a word! Extra tip: add up these two numbers across requests to see your total spend."
+}

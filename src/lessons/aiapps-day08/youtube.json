@@ -1,0 +1,19 @@
+{
+  "title": "AI Agent Loop: Let the Model Call Tools Until Done",
+  "description": "Let the model call your tools in a loop until it has the answer. 🔁\n\n✅ Wrap the request in a loop\n✅ Check stop_reason for tool_use\n✅ Run the tool and append the tool_result\n\nDay 8 of Build AI Apps. Next up: Day 9, Expose Your Tool over MCP.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #aiagents #coding #programming #tutorial #llm",
+  "tags": [
+    "ai agent loop",
+    "tool use agent loop",
+    "claude tool use",
+    "stop_reason tool_use",
+    "tool_result",
+    "llm tool calling",
+    "build ai agent from scratch",
+    "agent loop bash",
+    "anthropic api tutorial",
+    "ai agent for beginners",
+    "function calling loop",
+    "build ai apps"
+  ],
+  "comment": "Bash or Python: which would you loop in? Tell me in a word! Extra tip: the loop ends when stop_reason is no longer tool_use, so add a max turns counter to be safe."
+}

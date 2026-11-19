@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day08",
+  "series": "BUILD AI APPS",
+  "day": 8,
+  "title": "Build a Tool-Use Agent Loop",
+  "next": {
+    "day": 9,
+    "title": "Expose Your Tool over MCP"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 78},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "jq": "j q", "MCP": "M C P", "stop_reason": "stop reason", "tool_use": "tool use", "tool_result": "tool result"},
+  "keywords": {"stop_reason": "api", "tool_use": "csharp", "tool_result": "dotnet", "loop": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Let the model call tools in a loop.", "cues": {"hookW": "loop"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "lp", "text": "Wrap the request in a loop.", "cues": {"lpW": "loop"}},
+      {"id": "sr", "text": "Check stop_reason for tool_use.", "cues": {"srW": "stop_reason", "tuW": "tool_use"}},
+      {"id": "ap", "text": "Run the tool, append the tool_result, go again.", "cues": {"apW": "append"}},
+      {"id": "rn", "text": "Run it: the loop ends with the answer.", "cues": {"rnW": "answer"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Loop until the model stops asking.", "cues": {"tkW": "stops"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Bash or Python: which would you loop in? Comment below!", "cues": {"qW": "Bash"}},
+      {"id": "bye", "text": "Follow for Day 9: Expose Your Tool over MCP!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

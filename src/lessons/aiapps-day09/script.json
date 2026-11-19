@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day09",
+  "series": "BUILD AI APPS",
+  "day": 9,
+  "title": "Expose Your Tool over MCP",
+  "next": {
+    "day": 10,
+    "title": "Add Guardrails and Evals to Your App"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 79},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "MCP": "M C P"},
+  "keywords": {"MCP": "api", "tool": "csharp", "server": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Share your tool with any AI app.", "cues": {"hookW": "Share"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "sv", "text": "Create an MCP server.", "cues": {"svW": "server"}},
+      {"id": "tl", "text": "Mark your function as a tool.", "cues": {"tlW": "tool"}},
+      {"id": "ad", "text": "Then add it to Claude with one command.", "cues": {"adW": "add"}},
+      {"id": "rn", "text": "Run it: your tool is live.", "cues": {"rnW": "live"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Write the tool once, use it anywhere.", "cues": {"tkW": "once"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Python or Node: which would you build a server in? Comment below!", "cues": {"qW": "Python"}},
+      {"id": "bye", "text": "Follow for Day 10: Add Guardrails and Evals to Your App!", "cues": {"end": "Follow", "plug": "Day"}}
+    ]}
+  ]
+}

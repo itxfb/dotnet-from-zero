@@ -1,0 +1,19 @@
+{
+  "title": "MCP Server in 5 Lines: Share Your AI Tool Anywhere",
+  "description": "Write your AI tool once and use it in any MCP app. 🔌\n\n✅ Create an MCP server in Python\n✅ Mark a function as a tool\n✅ Add it to Claude with one command\n\nDay 9 of Build AI Apps. Next up: Day 10, Add Guardrails and Evals to Your App.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #mcp #ai #python #coding #programming #tutorial #claude",
+  "tags": [
+    "mcp server",
+    "mcp server python",
+    "model context protocol",
+    "model context protocol tutorial",
+    "claude mcp add",
+    "how to build an mcp server",
+    "mcp tool python",
+    "claude code mcp",
+    "mcp for beginners",
+    "expose tool to ai",
+    "llm tools mcp",
+    "build ai apps"
+  ],
+  "comment": "Python or Node: which would you build a server in? Tell me in a word! Extra tip: the claude mcp add command needs the -- before uv, so Claude does not read your server flags as its own."
+}

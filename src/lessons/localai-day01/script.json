@@ -1,0 +1,34 @@
+{
+  "id": "localai-day01",
+  "series": "LOCAL AI CODING",
+  "day": 1,
+  "title": "Run a Local Coding Model with Ollama",
+  "next": {
+    "day": 2,
+    "title": "Chat with Your Model from the Terminal"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 81},
+  "pronounce": {"AI": "A I", "Ollama": "oh lama"},
+  "keywords": {"pull": "api", "run": "csharp", "Ollama": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Run a coding AI offline.", "cues": {"hookW": "offline"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "pl", "text": "First, pull a model with Ollama.", "cues": {"plW": "pull"}},
+      {"id": "rn", "text": "Then run it with a prompt.", "cues": {"rnW": "run"}},
+      {"id": "ok", "text": "Code, from your own machine.", "cues": {"okW": "Code"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Pull once, then code offline.", "cues": {"tkW": "Pull"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Local or cloud models: which would you use first? Comment below!", "cues": {"qW": "Local"}},
+      {"id": "bye", "text": "Follow for Day 2: Chat with Your Model from the Terminal!", "cues": {"end": "Follow", "plug": "Day 2"}}
+    ]}
+  ]
+}

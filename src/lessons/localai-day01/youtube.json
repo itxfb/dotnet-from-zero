@@ -1,0 +1,19 @@
+{
+  "title": "Run a Local Coding AI with Ollama, Fully Offline",
+  "description": "Run a coding AI on your own machine, no cloud needed. 💻\n\n✅ Pull a coding model with Ollama\n✅ Run it with a prompt from the terminal\n✅ Get code back from your own machine\n\nDay 1 of Local AI Coding. Next up: Day 2, Chat with Your Model from the Terminal.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localai #ai #coding #programming #aitools #tutorial",
+  "tags": [
+    "ollama tutorial",
+    "run ollama locally",
+    "local coding model",
+    "run ai locally",
+    "local llm for coding",
+    "ollama for beginners",
+    "ollama pull model",
+    "qwen2.5 coder ollama",
+    "offline ai coding",
+    "local ai coding",
+    "open source coding model",
+    "ollama run"
+  ],
+  "comment": "Local or cloud models: which would you use first? Tell me in a word! Extra tip: ollama pull downloads the model once, so after that you can run it again without downloading it."
+}

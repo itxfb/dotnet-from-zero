@@ -155,6 +155,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aiapps-day08` | Build a Tool-Use Agent Loop | 27.1 s |
 | `aiapps-day09` | Expose Your Tool over MCP | 26.2 s |
 | `aiapps-day10` | Add Guardrails and Evals to Your App | 24.9 s |
+| `localai-day01` | Run a Local Coding Model with Ollama | 22.4 s |
 
 ## Make the next lesson (Day 4)
 

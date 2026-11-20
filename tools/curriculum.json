@@ -158,5 +158,25 @@
       "Expose Your Tool over MCP",
       "Add Guardrails and Evals to Your App"
     ]
+  },
+  {
+    "name": "Local AI Coding",
+    "badge": "LOCAL AI CODING",
+    "prefix": "localai-day",
+    "about": "run open-weight models on your own machine and wire them into your coding workflow",
+    "tags": ["AI", "local LLM", "Ollama", "open-weight models", "AI coding", "privacy", "developer tools", "cost savings"],
+    "hashtags": "#ai #localllm #ollama #aicoding",
+    "topics": [
+      "Run a Local Coding Model with Ollama",
+      "Chat with Your Model from the Terminal",
+      "Call Your Local Model with an API Request",
+      "Pick a Model That Fits Your RAM",
+      "Point Your Code at a Local Endpoint",
+      "Shrink a Model with Quantization",
+      "Set Context Length for Bigger Files",
+      "Route Easy Tasks Local, Hard Ones Cloud",
+      "Give a Local Model Tools via MCP",
+      "Benchmark Local vs Cloud on Your Code"
+    ]
   }
 ]

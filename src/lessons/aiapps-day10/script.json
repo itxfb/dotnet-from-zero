@@ -1,0 +1,35 @@
+{
+  "id": "aiapps-day10",
+  "series": "BUILD AI APPS",
+  "day": 10,
+  "title": "Add Guardrails and Evals to Your App",
+  "next": {
+    "day": 1,
+    "title": "Run a Local Coding Model with Ollama"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 80},
+  "pronounce": {"AI": "A I", "API": "A P I", "LLM": "L L M", "JSON": "jason", "Ollama": "oh lama"},
+  "keywords": {"guardrail": "api", "eval": "csharp", "PASS": "dotnet"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Never ship unchecked AI answers.", "cues": {"hookW": "unchecked"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "ask", "text": "Ask your model a question.", "cues": {"askW": "Ask"}},
+      {"id": "gd", "text": "A guardrail blocks bad output.", "cues": {"gdW": "guardrail"}},
+      {"id": "ev", "text": "An eval checks the answer.", "cues": {"evW": "eval"}},
+      {"id": "rn", "text": "Run it: PASS.", "cues": {"rnW": "PASS"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Check every answer before users see it.", "cues": {"tkW": "Check"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Guardrails or evals: which would you add first? Comment below!", "cues": {"qW": "Guardrails"}},
+      {"id": "bye", "text": "Follow for the new series: Local AI Coding!", "cues": {"end": "Follow", "plug": "Local"}}
+    ]}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "AI Guardrails and Evals in 5 Lines of Bash",
+  "description": "Never ship unchecked AI answers. 🛡️\n\n✅ Block bad model output with a guardrail\n✅ Check the answer with a simple eval\n✅ Run it and see PASS\n\nDay 10 of Build AI Apps, the last one! Next up: the new series Local AI Coding, Day 1: Run a Local Coding Model with Ollama.\nFollow for a new short every day and ship your own AI app.\n\n#shorts #ai #aitools #coding #llm #programming #tutorial #aicoding",
+  "tags": [
+    "ai guardrails",
+    "llm guardrails",
+    "llm evals",
+    "how to eval an llm",
+    "ai evals tutorial",
+    "test llm output",
+    "validate ai output",
+    "llm guardrails bash",
+    "build ai apps",
+    "ai app for beginners",
+    "claude api tutorial",
+    "ai testing"
+  ],
+  "comment": "Guardrails or evals: which would you add first? Tell me in a word! Extra tip: start your eval with one question whose answer you know for sure, like Paris, then add more cases over time."
+}

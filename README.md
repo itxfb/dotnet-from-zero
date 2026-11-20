@@ -154,6 +154,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aiapps-day07` | Cache a Long Prompt to Cut Cost | 24.6 s |
 | `aiapps-day08` | Build a Tool-Use Agent Loop | 27.1 s |
 | `aiapps-day09` | Expose Your Tool over MCP | 26.2 s |
+| `aiapps-day10` | Add Guardrails and Evals to Your App | 24.9 s |
 
 ## Make the next lesson (Day 4)
 

@@ -157,6 +157,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `aiapps-day10` | Add Guardrails and Evals to Your App | 24.9 s |
 | `localai-day01` | Run a Local Coding Model with Ollama | 22.4 s |
 | `localai-day02` | Chat with Your Model from the Terminal | 22.9 s |
+| `localai-day03` | Call Your Local Model with an API Request | 25.5 s |
 
 ## Make the next lesson (Day 4)
 

@@ -1,0 +1,19 @@
+{
+  "title": "Call Your Local AI with an API Request (Ollama curl)",
+  "description": "Call your local AI from code with one request. ⚡\n\n✅ Ollama listens on port 11434\n✅ Send a model and a prompt with curl\n✅ Set stream false to get one answer back\n\nDay 3 of Local AI Coding. Next up: Day 4, Pick a Model That Fits Your RAM.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localai #ai #aitools #coding #programming #tutorial",
+  "tags": [
+    "call local ai with api",
+    "ollama api",
+    "ollama api request",
+    "ollama curl example",
+    "ollama api generate",
+    "ollama localhost 11434",
+    "ollama tutorial",
+    "ollama for beginners",
+    "local llm api",
+    "ollama stream false",
+    "qwen2.5 coder ollama",
+    "local ai coding"
+  ],
+  "comment": "Curl or Python: which would you use first? Tell me in a word! Extra tip: leave out stream false and Ollama sends the answer back in many small pieces instead of one reply."
+}

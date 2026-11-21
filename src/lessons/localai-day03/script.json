@@ -1,0 +1,35 @@
+{
+  "id": "localai-day03",
+  "series": "LOCAL AI CODING",
+  "day": 3,
+  "title": "Call Your Local Model with an API Request",
+  "next": {
+    "day": 4,
+    "title": "Pick a Model That Fits Your RAM"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 83},
+  "pronounce": {"AI": "A I", "Ollama": "oh lama", "API": "A P I", "RAM": "ram", "11434": "one one four three four"},
+  "keywords": {"model": "csharp", "prompt": "csharp", "Stream": "dotnet", "Ollama": "dotnet", "reply": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Call your local AI from code.", "cues": {"hookW": "Call"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "cu", "text": "Ollama listens on port 11434.", "cues": {"cuW": "port 11434"}},
+      {"id": "mo", "text": "Send a model and a prompt.", "cues": {"moW": "model", "prW": "prompt"}},
+      {"id": "st", "text": "Stream false gives one answer.", "cues": {"stW": "Stream false"}},
+      {"id": "an", "text": "The reply holds your answer.", "cues": {"anW": "reply"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "One request, one answer.", "cues": {"tkW": "One"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Curl or Python: which would you use first? Comment below!", "cues": {"qW": "Curl"}},
+      {"id": "bye", "text": "Follow for Day 4: Pick a Model That Fits Your RAM!", "cues": {"end": "Follow", "plug": "Day 4"}}
+    ]}
+  ]
+}

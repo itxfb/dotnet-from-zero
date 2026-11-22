@@ -159,6 +159,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `localai-day02` | Chat with Your Model from the Terminal | 22.9 s |
 | `localai-day03` | Call Your Local Model with an API Request | 25.5 s |
 | `localai-day04` | Pick a Model That Fits Your RAM | 27.5 s |
+| `localai-day05` | Point Your Code at a Local Endpoint | 25.9 s |
 
 ## Make the next lesson (Day 4)
 

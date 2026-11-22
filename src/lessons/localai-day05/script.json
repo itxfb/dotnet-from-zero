@@ -1,0 +1,35 @@
+{
+  "id": "localai-day05",
+  "series": "LOCAL AI CODING",
+  "day": 5,
+  "title": "Point Your Code at a Local Endpoint",
+  "next": {
+    "day": 6,
+    "title": "Shrink a Model with Quantization"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 85},
+  "pronounce": {"AI": "A I", "Ollama": "oh lama", "URL": "U R L", "7b": "seven B"},
+  "keywords": {"URL": "csharp", "ollama": "dotnet", "model": "api", "Python": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Swap one URL, keep your code.", "cues": {"hookW": "Swap"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "bu", "text": "Set the base URL to your local Ollama.", "cues": {"buW": "base"}},
+      {"id": "ky", "text": "The key can be anything.", "cues": {"kyW": "key"}},
+      {"id": "md", "text": "Name the model you pulled.", "cues": {"mdW": "model"}},
+      {"id": "rn", "text": "Run it. Your local model answers.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Same code, local model.", "cues": {"tkW": "Same"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Python or Node: which would you use first? Comment below!", "cues": {"qW": "Python"}},
+      {"id": "bye", "text": "Follow for Day 6: Shrink a Model with Quantization!", "cues": {"end": "Follow", "plug": "Day 6"}}
+    ]}
+  ]
+}

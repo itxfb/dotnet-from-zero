@@ -1,0 +1,20 @@
+{
+  "title": "Use Ollama as an OpenAI API in Python: Swap One URL",
+  "description": "Swap one URL and your code talks to a local model. ⚡\n\n✅ Set base_url to Ollama on localhost:11434/v1\n✅ The api_key is required, but any text works\n✅ Name the model you pulled and run it\n\nDay 5 of Local AI Coding. Next up: Day 6, Shrink a Model with Quantization.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localllm #localai #aicoding #python #coding #programming",
+  "tags": [
+    "ollama openai api",
+    "ollama python openai",
+    "ollama base_url",
+    "ollama openai compatible",
+    "ollama localhost 11434",
+    "use ollama in python",
+    "local llm api python",
+    "point code at local model",
+    "ollama api key",
+    "ollama tutorial",
+    "ollama for beginners",
+    "qwen2.5 coder ollama",
+    "local ai coding"
+  ],
+  "comment": "Python or Node: which would you use first? Tell me in a word! Extra tip: the api_key must be set, but Ollama ignores its value, so any text works."
+}

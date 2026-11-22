@@ -145,6 +145,8 @@ import {LocalaiDay02} from './localai-day02/LocalaiDay02';
 import localaiDay02Timeline from './localai-day02/timeline.json';
 import {LocalaiDay03} from './localai-day03/LocalaiDay03';
 import localaiDay03Timeline from './localai-day03/timeline.json';
+import {LocalaiDay04} from './localai-day04/LocalaiDay04';
+import localaiDay04Timeline from './localai-day04/timeline.json';
 import {HarnessDay01} from './harness-day01/HarnessDay01';
 import harnessDay01Timeline from './harness-day01/timeline.json';
 import {HarnessDay02} from './harness-day02/HarnessDay02';
@@ -260,6 +262,7 @@ export const LESSONS: Lesson[] = [
   lesson('localai-day01', localaiDay01Timeline, LocalaiDay01),
   lesson('localai-day02', localaiDay02Timeline, LocalaiDay02),
   lesson('localai-day03', localaiDay03Timeline, LocalaiDay03),
+  lesson('localai-day04', localaiDay04Timeline, LocalaiDay04),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

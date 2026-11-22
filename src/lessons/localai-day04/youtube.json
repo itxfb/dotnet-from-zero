@@ -1,0 +1,19 @@
+{
+  "title": "Ollama Model Size for Your RAM: Which One Fits?",
+  "description": "Will your local AI model fit your RAM? Check before you pull. ⚡\n\n✅ Model size plus headroom is the RAM you need\n✅ 8 GB RAM: pull the 3b, 16 GB RAM: pull the 7b\n✅ Run ollama list to see each model's size\n\nDay 4 of Local AI Coding. Next up: Day 5, Point Your Code at a Local Endpoint.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localllm #localai #aitools #coding #programming #tutorial",
+  "tags": [
+    "ollama model size",
+    "ollama how much ram",
+    "which ollama model should i use",
+    "ollama 8gb ram",
+    "ollama 16gb ram",
+    "ollama list",
+    "ollama pull model",
+    "qwen2.5 coder ollama",
+    "best local llm for coding",
+    "run llm locally low ram",
+    "ollama tutorial",
+    "local ai coding"
+  ],
+  "comment": "3b or 7b: which would you pull first? Tell me in a word! Extra tip: the model size you see in ollama list is only the starting point, so leave a few gigabytes of RAM free."
+}

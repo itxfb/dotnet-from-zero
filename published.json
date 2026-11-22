@@ -1291,5 +1291,20 @@
     },
     "playlist": "UExTVkcwU3B5Vzd2RS4wMTcyMDhGQUE4NTIzM0Y5",
     "comment": "Ugx8oeZhNfbwdCyk3T94AaABAg"
+  },
+  "localai-day04": {
+    "videoId": "vLLyA6SCvZY",
+    "date": "2026-11-22",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExTVkcwU3B5Vzd2RS41MjE1MkI0OTQ2QzJGNzNG",
+    "comment": "UgyiZPgwhdck7QxJdLZ4AaABAg"
   }
 }

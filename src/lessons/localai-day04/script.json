@@ -1,0 +1,35 @@
+{
+  "id": "localai-day04",
+  "series": "LOCAL AI CODING",
+  "day": 4,
+  "title": "Pick a Model That Fits Your RAM",
+  "next": {
+    "day": 5,
+    "title": "Point Your Code at a Local Endpoint"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 84},
+  "pronounce": {"AI": "A I", "Ollama": "oh lama", "RAM": "ram", "3b": "three B", "7b": "seven B"},
+  "keywords": {"RAM": "csharp", "3b": "dotnet", "7b": "api", "list": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Will this model fit your RAM?", "cues": {"hookW": "Will"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "sz", "text": "Model size plus headroom is the RAM you need.", "cues": {"szW": "headroom"}},
+      {"id": "e8", "text": "Eight gigabytes? Pull the 3b.", "cues": {"e8W": "3b"}},
+      {"id": "s16", "text": "Sixteen? Pull the 7b.", "cues": {"s16W": "7b"}},
+      {"id": "ls", "text": "Ollama list shows each size.", "cues": {"lsW": "list"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Pick a size below your RAM.", "cues": {"tkW": "Pick"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "3b or 7b: which would you pull first? Comment below!", "cues": {"qW": "3b"}},
+      {"id": "bye", "text": "Follow for Day 5: Point Your Code at a Local Endpoint!", "cues": {"end": "Follow", "plug": "Day 5"}}
+    ]}
+  ]
+}

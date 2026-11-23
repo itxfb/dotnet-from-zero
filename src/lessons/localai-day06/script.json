@@ -1,0 +1,34 @@
+{
+  "id": "localai-day06",
+  "series": "LOCAL AI CODING",
+  "day": 6,
+  "title": "Shrink a Model with Quantization",
+  "next": {
+    "day": 7,
+    "title": "Set Context Length for Bigger Files"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 86},
+  "pronounce": {"AI": "A I", "Ollama": "oh lama", "q4_K_M": "Q four K M", "Q4": "Q four", "Q8": "Q eight", "GB": "gigabytes", "15": "fifteen"},
+  "keywords": {"15": "csharp", "q4_K_M": "dotnet", "4.7": "api", "list": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Shrink a 15 GB model to 4.7.", "cues": {"hookW": "Shrink"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "fp", "text": "Full precision is 15 GB.", "cues": {"fpW": "Full"}},
+      {"id": "q4", "text": "Pull the q4_K_M tag instead.", "cues": {"q4W": "q4_K_M"}},
+      {"id": "ls", "text": "Ollama list shows 4.7 GB.", "cues": {"lsW": "list"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Fewer bits, smaller model.", "cues": {"tkW": "Fewer"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Q4 or Q8: which would you pull first? Comment below!", "cues": {"qW": "Q4"}},
+      {"id": "bye", "text": "Follow for Day 7: Set Context Length for Bigger Files!", "cues": {"end": "Follow", "plug": "Day 7"}}
+    ]}
+  ]
+}

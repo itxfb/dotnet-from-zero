@@ -1,0 +1,19 @@
+{
+  "title": "Quantization in Ollama: Shrink a 15 GB Model to 4.7 GB",
+  "description": "Shrink a 15 GB coding model to 4.7 GB with one pull. ⚡\n\n✅ Full precision (fp16) is 15 GB\n✅ Pull the q4_K_M tag instead\n✅ Check the size with ollama list\n\nDay 6 of Local AI Coding. Next up: Day 7, Set Context Length for Bigger Files.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localllm #localai #quantization #aicoding #coding",
+  "tags": [
+    "ollama quantization",
+    "what is quantization llm",
+    "q4_K_M explained",
+    "ollama pull quantized model",
+    "shrink llm size",
+    "run llm on less ram",
+    "qwen2.5 coder ollama",
+    "ollama q4_K_M",
+    "ollama list",
+    "local llm for beginners",
+    "ollama tutorial",
+    "local ai coding"
+  ],
+  "comment": "Q4 or Q8: which would you pull first? Tell me in a word! Extra tip: the default qwen2.5-coder:7b tag is the same 4.7 GB size as q4_K_M, so you may already be using it."
+}

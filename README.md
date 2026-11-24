@@ -161,6 +161,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `localai-day04` | Pick a Model That Fits Your RAM | 27.5 s |
 | `localai-day05` | Point Your Code at a Local Endpoint | 25.9 s |
 | `localai-day06` | Shrink a Model with Quantization | 26.3 s |
+| `localai-day07` | Set Context Length for Bigger Files | 25.8 s |
 
 ## Make the next lesson (Day 4)
 

@@ -1,0 +1,18 @@
+{
+  "title": "Ollama Context Length: Fix 4k Limits for Big Files",
+  "description": "Your local model forgets big files? One setting fixes it. ⚡\n\n✅ Small GPUs default to 4k tokens\n✅ Set OLLAMA_CONTEXT_LENGTH when you serve\n✅ Check it with ollama ps\n\nDay 7 of Local AI Coding. Next up: Day 8, Route Easy Tasks Local, Hard Ones Cloud.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #localllm #localai #aicoding #coding #aitools",
+  "tags": [
+    "ollama context length",
+    "ollama num_ctx",
+    "OLLAMA_CONTEXT_LENGTH",
+    "increase context window ollama",
+    "ollama ps",
+    "local llm context window",
+    "ollama tutorial",
+    "local llm for beginners",
+    "run llm locally",
+    "qwen2.5 coder ollama",
+    "local ai coding"
+  ],
+  "comment": "4k or 32k: which would you set first? Tell me in a word! Extra tip: a bigger context uses more memory, so run ollama ps after you serve to confirm the CONTEXT column shows the value you set."
+}

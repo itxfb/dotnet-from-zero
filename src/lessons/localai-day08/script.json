@@ -1,0 +1,34 @@
+{
+  "id": "localai-day08",
+  "series": "LOCAL AI CODING",
+  "day": 8,
+  "title": "Route Easy Tasks Local, Hard Ones Cloud",
+  "next": {
+    "day": 9,
+    "title": "Give a Local Model Tools via MCP"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 88},
+  "pronounce": {"AI": "A I", "MCP": "M C P"},
+  "keywords": {"easy": "dotnet", "hard": "csharp", "Run": "api"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop paying cloud prices for easy tasks.", "cues": {"hookW": "paying"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "lo", "text": "Easy tasks go to your local endpoint.", "cues": {"loW": "Easy"}},
+      {"id": "cl", "text": "Hard ones go to the cloud.", "cues": {"clW": "Hard"}},
+      {"id": "rn", "text": "Run it: each task finds its route.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Easy local, hard cloud.", "cues": {"tkW": "Easy"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Local or cloud: which gets your next task? Comment below!", "cues": {"qW": "Local"}},
+      {"id": "bye", "text": "Follow for Day 9: Give a Local Model Tools via MCP!", "cues": {"end": "Follow", "plug": "Day 9"}}
+    ]}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Local LLM Tools via MCP: Let Ollama Use Your Files",
+  "description": "Your local model can't touch your files yet. Here's the fix. 🔧\n\n✅ Add an MCP server to a servers.json config\n✅ Start an MCP client for Ollama with your model\n✅ Run it and watch the model use a tool\n\nDay 9 of Local AI Coding. Next up: Day 10, Benchmark Local vs Cloud on Your Code.\nFollow for a new short every day and build your local AI setup.\n\n#shorts #ollama #mcp #localai #aitools #coding #aicoding #llm",
+  "tags": [
+    "ollama mcp",
+    "local llm mcp",
+    "mcp tools for local models",
+    "ollama tool calling",
+    "mcp client for ollama",
+    "ollmcp",
+    "mcp filesystem server",
+    "mcp server tutorial",
+    "local ai coding",
+    "ollama tutorial",
+    "run llm locally",
+    "local llm for beginners"
+  ],
+  "comment": "Files or search: which tool would you add first? Tell me in a word! Extra tip: the filesystem server only sees the folder you pass it, so start with a small project folder."
+}

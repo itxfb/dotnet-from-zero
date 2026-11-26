@@ -178,5 +178,25 @@
       "Give a Local Model Tools via MCP",
       "Benchmark Local vs Cloud on Your Code"
     ]
+  },
+  {
+    "name": "Code Search RAG",
+    "badge": "CODE SEARCH RAG",
+    "prefix": "coderag-day",
+    "about": "give AI the right code at the right time with embeddings, retrieval and reranking",
+    "tags": ["AI", "RAG", "embeddings", "semantic search", "vector search", "AI coding", "codebase", "developer tools"],
+    "hashtags": "#ai #rag #embeddings #aicoding",
+    "topics": [
+      "Embed a Sentence and Compare Meaning",
+      "Search Your Docs with Cosine Similarity",
+      "Split Code into Chunks by Function",
+      "Index Your Repo in a Local Vector Store",
+      "Answer Questions from Your Codebase",
+      "Add Keyword Search for Hybrid Results",
+      "Rerank Results to Fix Bad Matches",
+      "Keep Your Index Fresh on Every Commit",
+      "Serve Code Search to Agents over MCP",
+      "Score Retrieval with a Hit-Rate Eval"
+    ]
   }
 ]

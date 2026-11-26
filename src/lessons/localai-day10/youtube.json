@@ -1,0 +1,18 @@
+{
+  "title": "Local LLM vs Cloud: Which Is Faster on Your Code?",
+  "description": "Is your local model really slower than the cloud? Time it yourself. ⏱️\n\n✅ Make one client for local Ollama and one for the cloud\n✅ Time the same task in a loop\n✅ Run it and compare the seconds\n\nDay 10 of Local AI Coding, the last one in the series. Next up: a new series, Code Search RAG, Day 1: Embed a Sentence and Compare Meaning.\nFollow for a new short every day.\n\n#shorts #ollama #localllm #localai #aicoding #llm #coding #python",
+  "tags": [
+    "local llm vs cloud",
+    "ollama vs openai",
+    "benchmark local llm",
+    "ollama speed test",
+    "is local llm slower than cloud",
+    "ollama openai compatible api",
+    "compare llm speed python",
+    "local ai coding",
+    "ollama tutorial",
+    "run llm locally",
+    "local llm for beginners"
+  ],
+  "comment": "Local or cloud: which won on your machine? Tell me in a word! Extra tip: run the loop a few times, since the first local call is often slower while the model loads."
+}

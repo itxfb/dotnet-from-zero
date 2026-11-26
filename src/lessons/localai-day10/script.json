@@ -1,0 +1,34 @@
+{
+  "id": "localai-day10",
+  "series": "LOCAL AI CODING",
+  "day": 10,
+  "title": "Benchmark Local vs Cloud on Your Code",
+  "next": {
+    "day": 1,
+    "title": "Embed a Sentence and Compare Meaning"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 90},
+  "pronounce": {"AI": "A I", "RAG": "rag"},
+  "keywords": {"local": "dotnet", "cloud": "api", "Run": "csharp"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Is local really slower than cloud?", "cues": {"hookW": "slower"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "sv", "text": "Make one client for each.", "cues": {"svW": "client"}},
+      {"id": "cl", "text": "Time the same task in a loop.", "cues": {"clW": "Time"}},
+      {"id": "rn", "text": "Run it: compare the seconds.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Measure on your own code, then choose.", "cues": {"tkW": "Measure"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Local or cloud: which won on your machine? Comment below!", "cues": {"qW": "Local"}},
+      {"id": "bye", "text": "Follow for the new series: Code Search RAG!", "cues": {"end": "Follow", "plug": "Code Search"}}
+    ]}
+  ]
+}

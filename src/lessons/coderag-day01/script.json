@@ -1,0 +1,35 @@
+{
+  "id": "coderag-day01",
+  "series": "CODE SEARCH RAG",
+  "day": 1,
+  "title": "Embed a Sentence and Compare Meaning",
+  "next": {
+    "day": 2,
+    "title": "Search Your Docs with Cosine Similarity"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 91},
+  "pronounce": {"AI": "A I", "RAG": "rag"},
+  "keywords": {"meaning": "dotnet", "Embed": "api", "Run": "csharp"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Make AI search by meaning, not words.", "cues": {"hookW": "meaning"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "ld", "text": "Load a small embedding model.", "cues": {"ldW": "Load"}},
+      {"id": "en", "text": "Embed three sentences into numbers.", "cues": {"enW": "Embed"}},
+      {"id": "cp", "text": "Compare them: close meaning scores high.", "cues": {"cpW": "Compare"}},
+      {"id": "rn", "text": "Run it.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Similar meaning, similar numbers.", "cues": {"tkW": "Similar"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Python or C sharp: which would you embed with? Comment below!", "cues": {"qW": "Python"}},
+      {"id": "bye", "text": "Follow for Day 2: Search Your Docs with Cosine Similarity!", "cues": {"end": "Follow", "plug": "Search Your"}}
+    ]}
+  ]
+}

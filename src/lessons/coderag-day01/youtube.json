@@ -1,0 +1,18 @@
+{
+  "title": "Embeddings Explained: Make AI Search by Meaning",
+  "description": "What if your AI could search by meaning, not exact words? 🔎\n\n✅ Load a small embedding model in Python\n✅ Embed three sentences into numbers\n✅ Compare them: the sunny sentence scores 0.67, the stadium one 0.10\n\nDay 1 of Code Search RAG. Next up: Day 2, Search Your Docs with Cosine Similarity.\nFollow for a new short every day.\n\n#shorts #embeddings #rag #ai #python #machinelearning #coding #aicoding",
+  "tags": [
+    "what are embeddings",
+    "embeddings explained",
+    "sentence transformers python",
+    "sentence embeddings tutorial",
+    "semantic search python",
+    "compare sentence similarity python",
+    "rag for beginners",
+    "code search rag",
+    "all-MiniLM-L6-v2",
+    "text embeddings tutorial",
+    "vector embeddings for beginners"
+  ],
+  "comment": "Python or C sharp: which would you embed with? Tell me in a word! Extra tip: the first run downloads the model, so it is slower; after that it loads from your cache."
+}

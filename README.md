@@ -165,6 +165,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `localai-day08` | Route Easy Tasks Local, Hard Ones Cloud | 25.7 s |
 | `localai-day09` | Give a Local Model Tools via MCP | 25.8 s |
 | `localai-day10` | Benchmark Local vs Cloud on Your Code | 22.6 s |
+| `coderag-day01` | Embed a Sentence and Compare Meaning | 26.3 s |
 
 ## Make the next lesson (Day 4)
 

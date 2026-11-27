@@ -1426,5 +1426,20 @@
     },
     "playlist": "UExTSjVjVDR6WnpHWS41NkI0NEY2RDEwNTU3Q0M2",
     "comment": "UgxufY6RgD-gVAeS2yx4AaABAg"
+  },
+  "coderag-day02": {
+    "videoId": "nQmKY0zKnfI",
+    "date": "2026-11-28",
+    "channel": "Adventure of Career",
+    "status": {
+      "uploadStatus": "uploaded",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "selfDeclaredMadeForKids": false
+    },
+    "playlist": "UExTSjVjVDR6WnpHWS4yODlGNEE0NkRGMEEzMEQy",
+    "comment": "Ugz5QzKuzLV0LgwWcDZ4AaABAg"
   }
 }

@@ -1,0 +1,36 @@
+{
+  "id": "coderag-day02",
+  "series": "CODE SEARCH RAG",
+  "day": 2,
+  "title": "Search Your Docs with Cosine Similarity",
+  "next": {
+    "day": 3,
+    "title": "Split Code into Chunks by Function"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 92},
+  "pronounce": {"AI": "A I", "RAG": "rag"},
+  "keywords": {"docs": "dotnet", "Embed": "api", "Run": "csharp"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Find the right doc in one line.", "cues": {"hookW": "right doc"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "dc", "text": "Embed your docs once.", "cues": {"dcW": "Embed"}},
+      {"id": "qu", "text": "Embed the question too.", "cues": {"quW": "question"}},
+      {"id": "sc", "text": "Cosine similarity scores each doc.", "cues": {"scW": "Cosine"}},
+      {"id": "bs", "text": "Take the highest score.", "cues": {"bsW": "highest"}},
+      {"id": "rn", "text": "Run it.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "Highest cosine score wins.", "cues": {"tkW": "Highest"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Docs or code: which would you search first? Comment below!", "cues": {"qW": "Docs"}},
+      {"id": "bye", "text": "Follow for Day 3: Split Code into Chunks by Function!", "cues": {"end": "Follow", "plug": "Split Code"}}
+    ]}
+  ]
+}

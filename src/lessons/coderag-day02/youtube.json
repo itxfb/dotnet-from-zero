@@ -1,0 +1,17 @@
+{
+  "title": "Cosine Similarity Search: Find the Right Doc in 1 Line",
+  "description": "Find the right doc with one line of Python 🔎\n\n✅ Embed your docs once\n✅ Embed the question and score every doc with cosine similarity\n✅ Take the highest score as the best match\n\nDay 2 of Code Search RAG. Next up: Day 3, Split Code into Chunks by Function.\nFollow for a new short every day.\n\n#shorts #youtubeshorts #rag #embeddings #ai #python #coding #aicoding",
+  "tags": [
+    "cosine similarity",
+    "cosine similarity python",
+    "semantic search python",
+    "search documents with embeddings",
+    "sentence transformers similarity",
+    "embedding search tutorial",
+    "rag for beginners",
+    "code search rag",
+    "all-MiniLM-L6-v2",
+    "vector search for beginners"
+  ],
+  "comment": "Docs or code: which would you search first? Tell me in a word! Extra tip: embed your docs once and reuse the vectors, so each new question only needs one encode call."
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Chunk Code by Function: Stop Embedding Whole Files",
+  "description": "Stop embedding whole files, split them by function instead 🔪\n\n✅ Parse a Python file with the ast module\n✅ Keep each function as one chunk\n✅ Print the chunk count and see the result\n\nDay 3 of Code Search RAG. Next up: Day 4, Index Your Repo in a Local Vector Store.\nFollow for a new short every day.\n\n#shorts #python #coding #rag #aitools #embeddings #programming",
+  "tags": [
+    "chunk code by function",
+    "split code into chunks",
+    "code chunking for rag",
+    "python ast parse functions",
+    "ast get_source_segment",
+    "rag for beginners",
+    "code search rag",
+    "chunking strategies rag",
+    "python ast tutorial",
+    "code embeddings"
+  ],
+  "comment": "Functions or classes: which would you chunk by? Tell me in a word! Extra tip: ast.parse only needs a Python file, so you can chunk any file you already have."
+}

@@ -163,6 +163,8 @@ import {CoderagDay01} from './coderag-day01/CoderagDay01';
 import coderagDay01Timeline from './coderag-day01/timeline.json';
 import {CoderagDay02} from './coderag-day02/CoderagDay02';
 import coderagDay02Timeline from './coderag-day02/timeline.json';
+import {CoderagDay03} from './coderag-day03/CoderagDay03';
+import coderagDay03Timeline from './coderag-day03/timeline.json';
 import {HarnessDay01} from './harness-day01/HarnessDay01';
 import harnessDay01Timeline from './harness-day01/timeline.json';
 import {HarnessDay02} from './harness-day02/HarnessDay02';
@@ -287,6 +289,7 @@ export const LESSONS: Lesson[] = [
   lesson('localai-day10', localaiDay10Timeline, LocalaiDay10),
   lesson('coderag-day01', coderagDay01Timeline, CoderagDay01),
   lesson('coderag-day02', coderagDay02Timeline, CoderagDay02),
+  lesson('coderag-day03', coderagDay03Timeline, CoderagDay03),
 ];
 
 export const lessonVideo = (l: Lesson): React.FC => {

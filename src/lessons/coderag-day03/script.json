@@ -1,0 +1,35 @@
+{
+  "id": "coderag-day03",
+  "series": "CODE SEARCH RAG",
+  "day": 3,
+  "title": "Split Code into Chunks by Function",
+  "next": {
+    "day": 4,
+    "title": "Index Your Repo in a Local Vector Store"
+  },
+  "fps": 30,
+  "targetSeconds": 35,
+  "voice": {"engine": "kokoro", "name": "am_puck", "speed": 1.0, "lang": "en-us"},
+  "music": {"enabled": true, "bpm": 100, "seed": 93},
+  "pronounce": {"AI": "A I", "RAG": "rag"},
+  "keywords": {"function": "dotnet", "Parse": "api", "Run": "csharp"},
+  "timing": {"leadIn": 0.35, "sentenceGap": 0.3, "colonGap": 0.38, "lineGap": 0.42, "sceneGap": 0.6, "sceneLead": 0.35, "tail": 1.25},
+  "scenes": [
+    {"id": "hook", "lines": [
+      {"id": "hook", "text": "Stop embedding whole files.", "cues": {"hookW": "whole files"}}
+    ]},
+    {"id": "code", "lines": [
+      {"id": "ps", "text": "Parse the file.", "cues": {"psW": "Parse"}},
+      {"id": "kp", "text": "Keep each function as one chunk.", "cues": {"kpW": "Keep"}},
+      {"id": "pr", "text": "Print the chunk count.", "cues": {"prW": "Print"}},
+      {"id": "rn", "text": "Run it.", "cues": {"rnW": "Run"}}
+    ]},
+    {"id": "recap", "lines": [
+      {"id": "tk", "text": "One function, one chunk.", "cues": {"tkW": "One function"}}
+    ]},
+    {"id": "outro", "lines": [
+      {"id": "q", "text": "Functions or classes: which would you chunk by? Comment below!", "cues": {"qW": "Functions"}},
+      {"id": "bye", "text": "Follow for Day 4: Index Your Repo in a Local Vector Store!", "cues": {"end": "Follow", "plug": "Index Your Repo"}}
+    ]}
+  ]
+}

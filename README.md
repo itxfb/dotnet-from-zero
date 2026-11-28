@@ -167,6 +167,7 @@ Shots (`src/engine/direction.tsx`): `hero` (big, centred), `teach` (bottom-left,
 | `localai-day10` | Benchmark Local vs Cloud on Your Code | 22.6 s |
 | `coderag-day01` | Embed a Sentence and Compare Meaning | 26.3 s |
 | `coderag-day02` | Search Your Docs with Cosine Similarity | 26.0 s |
+| `coderag-day03` | Split Code into Chunks by Function | 23.2 s |
 
 ## Make the next lesson (Day 4)
 
